@@ -1,0 +1,8 @@
+node_modules/
+.openai/
+.local/
+server/assets.generated.mjs
+.env
+.env.*
+*.tar.gz
+*.zip
