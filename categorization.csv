@@ -1,4 +1,4 @@
-﻿ID,OriginalBook,Book,Chapter,Finnish,English,Topic,PrintedPage,BookForm,Placement
+ID,OriginalBook,Book,Chapter,Finnish,English,Topic,PrintedPage,BookForm,Placement
 e1165,1,1,1,aakkoset,alphabet,Tutustuminen ja tervehdykset (Introductions and greetings),10,aakkoset,located
 e1166,1,1,2,nähdään huomenna,see you tomorrow,Kappaleen sanasto ja kielioppi (Chapter vocabulary and grammar),29,nähdään huomenna,located
 e1167,1,1,2,moikka,hi; bye,Kappaleen sanasto ja kielioppi (Chapter vocabulary and grammar),29,moikka,located
@@ -119,7 +119,7 @@ e1281,1,1,5,vauva,baby,Päivän kulku (Daily routines),137,vauva,located
 e1282,1,1,8,vesimeloni,watermelon,Ruoka ja juoma (Food and drink),,,thematic
 e1283,1,1,8,vihannes,vegetable,Ruoka ja juoma (Food and drink),225,Vihannekset / kasvikset,related-form
 e1284,1,1,8,välissä,between; in the middle,Kappaleen sanasto ja kielioppi (Chapter vocabulary and grammar),234,välissä,located
-e1285,1,1,4,väri,color,Ulkonäkö ja värit (Appearance and colours),108,väri,located
+e1285,1,1,4,väri,color,Ulkonäkö ja värit (Appearance and colors),108,väri,located
 e1286,1,1,3,väärin,incorrectly; wrongly,Kappaleen sanasto ja kielioppi (Chapter vocabulary and grammar),69,väärin,located
 e1287,1,2,6,yhteinen,common; shared; joint,Onnea hääparille!: kappaleen sanasto (Congratulations to the newlyweds: chapter vocabulary),183,yhteinen,located
 e1288,1,1,3,yksikkö,singular,Kappaleen sanasto ja kielioppi (Chapter vocabulary and grammar),67,yksikkö,located
@@ -215,7 +215,7 @@ e2339,2,2,2,selkäkipu,backache,Terveys ja sairaus (Health and illness),,,themat
 e2340,2,2,6,seurustelu,dating; relationship,Parisuhde ja avioliitto (Relationships and marriage),184,seurustella,related-form
 e2341,2,2,4,sienestys,mushroom picking,Vapaa-aika ja harrastukset (Free time and hobbies),120,sienestämässä,related-form
 e2342,2,2,2,sukuelin,genital; reproductive organ,Ruumiinosat (Body parts),49,sukuelimet,related-form
-e2343,2,1,4,suloinen,sweet; adorable,Ulkonäkö ja värit (Appearance and colours),90,suloinen,located
+e2343,2,1,4,suloinen,sweet; adorable,Ulkonäkö ja värit (Appearance and colors),90,suloinen,located
 e2344,2,2,4,suosio,popularity,Suomalaiset arvostavat vapaa-aikaa (Finns value their free time),,,thematic
 e2345,2,2,5,suppea,limited; narrow,Kotivakuutus (Home insurance),152,suppea,located
 e2346,2,2,7,suunnilleen,approximately; roughly,Työnhaku ja TE-toimistossa (Job seeking and the employment office),224,suunnilleen,located
@@ -231,7 +231,7 @@ e2355,2,2,7,tiimi-ilta,team evening; team social gathering,Alexin haastattelu: k
 e2356,2,2,3,todennäköisesti,probably; most likely,Mökillä: kappaleen sanasto (At the cottage: chapter vocabulary),,,thematic
 e2357,2,2,8,toimittaa,to deliver; to supply,Verkkokaupassa (Shopping online),261,toimittaa,located
 e2358,2,1,9,toimitusjohtaja,chief executive officer; managing director,Ammatit (Occupations),260,toimitusjohtaja,located
-e2359,2,1,4,tukeva,stout; sturdy,Ulkonäkö ja värit (Appearance and colours),90,tukeva,located
+e2359,2,1,4,tukeva,stout; sturdy,Ulkonäkö ja värit (Appearance and colors),90,tukeva,located
 e2360,2,2,6,tulla toimeen,to get along; to manage,Parisuhde ja avioliitto (Relationships and marriage),183,tulla toimeen,located
 e2361,2,2,5,turva,security; protection; insurance coverage,Kotivakuutus (Home insurance),152,turva,located
 e2362,2,2,4,tutkimus,research; study,Suomalaiset arvostavat vapaa-aikaa (Finns value their free time),124,tutkimus,located

@@ -1,0 +1,602 @@
+{
+  "revision": 1,
+  "before": 2385,
+  "after": 2358,
+  "mergedGroups": [
+    {
+      "canonicalId": "e0020",
+      "mergedIds": [
+        "e0020",
+        "e0021"
+      ],
+      "book": 1,
+      "chapter": "sm1-1",
+      "fi": "terve",
+      "senses": [
+        {
+          "fi": "terve",
+          "pos": "A",
+          "en": "healthy; well"
+        },
+        {
+          "fi": "terve",
+          "pos": "IN",
+          "en": "hello; hi"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0031",
+      "mergedIds": [
+        "e0031",
+        "e0032"
+      ],
+      "book": 1,
+      "chapter": "sm1-1",
+      "fi": "se",
+      "senses": [
+        {
+          "fi": "se",
+          "pos": "PR",
+          "en": "he; she; it (colloquial for person)"
+        },
+        {
+          "fi": "se",
+          "pos": "PR",
+          "en": "it; he/she (in casual speech)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0115",
+      "mergedIds": [
+        "e0115",
+        "e0116"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "muu",
+      "senses": [
+        {
+          "fi": "muu",
+          "pos": "A",
+          "en": "other; another"
+        },
+        {
+          "fi": "muu",
+          "pos": "PR",
+          "en": "other; someone else"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0156",
+      "mergedIds": [
+        "e0156",
+        "e0157"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "suomi",
+      "senses": [
+        {
+          "fi": "suomi",
+          "pos": "N",
+          "en": "Finnish (language)"
+        },
+        {
+          "fi": "Suomi",
+          "pos": "PN",
+          "en": "Finland"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0158",
+      "mergedIds": [
+        "e0158",
+        "e0159"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "ranska",
+      "senses": [
+        {
+          "fi": "ranska",
+          "pos": "N",
+          "en": "French (language)"
+        },
+        {
+          "fi": "Ranska",
+          "pos": "PN",
+          "en": "France"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0161",
+      "mergedIds": [
+        "e0161",
+        "e0162"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "kreikka",
+      "senses": [
+        {
+          "fi": "kreikka",
+          "pos": "N",
+          "en": "Greek (language)"
+        },
+        {
+          "fi": "Kreikka",
+          "pos": "PN",
+          "en": "Greece"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0164",
+      "mergedIds": [
+        "e0164",
+        "e0165"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "islanti",
+      "senses": [
+        {
+          "fi": "islanti",
+          "pos": "N",
+          "en": "Icelandic (language)"
+        },
+        {
+          "fi": "Islanti",
+          "pos": "PN",
+          "en": "Iceland"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0170",
+      "mergedIds": [
+        "e0170",
+        "e0171"
+      ],
+      "book": 1,
+      "chapter": "sm1-2",
+      "fi": "venäjä",
+      "senses": [
+        {
+          "fi": "venäjä",
+          "pos": "N",
+          "en": "Russian (language)"
+        },
+        {
+          "fi": "Venäjä",
+          "pos": "PN",
+          "en": "Russia"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0274",
+      "mergedIds": [
+        "e0274",
+        "e0275"
+      ],
+      "book": 1,
+      "chapter": "sm1-3",
+      "fi": "vasta",
+      "senses": [
+        {
+          "fi": "vasta",
+          "pos": "AV",
+          "en": "only; not until; just now"
+        },
+        {
+          "fi": "vasta",
+          "pos": "N",
+          "en": "birch whisk (sauna; regional synonym)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0278",
+      "mergedIds": [
+        "e0278",
+        "e0279"
+      ],
+      "book": 1,
+      "chapter": "sm1-3",
+      "fi": "aika",
+      "senses": [
+        {
+          "fi": "aika",
+          "pos": "AV",
+          "en": "quite; rather"
+        },
+        {
+          "fi": "aika",
+          "pos": "N",
+          "en": "time; period; appointment"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0294",
+      "mergedIds": [
+        "e0294",
+        "e0295"
+      ],
+      "book": 1,
+      "chapter": "sm1-3",
+      "fi": "sama",
+      "senses": [
+        {
+          "fi": "sama",
+          "pos": "A",
+          "en": "same"
+        },
+        {
+          "fi": "sama",
+          "pos": "PR",
+          "en": "same"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0316",
+      "mergedIds": [
+        "e0316",
+        "e0317"
+      ],
+      "book": 1,
+      "chapter": "sm1-3",
+      "fi": "kyllä",
+      "senses": [
+        {
+          "fi": "kyllä",
+          "pos": "AV",
+          "en": "yes; indeed; certainly"
+        },
+        {
+          "fi": "kyllä",
+          "pos": "IN",
+          "en": "yes"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0318",
+      "mergedIds": [
+        "e0318",
+        "e0319"
+      ],
+      "book": 1,
+      "chapter": "sm1-3",
+      "fi": "koko",
+      "senses": [
+        {
+          "fi": "koko",
+          "pos": "AV",
+          "en": "whole; entire"
+        },
+        {
+          "fi": "koko",
+          "pos": "N",
+          "en": "size; extent; whole"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0471",
+      "mergedIds": [
+        "e0471",
+        "e0472"
+      ],
+      "book": 1,
+      "chapter": "sm1-4",
+      "fi": "tota",
+      "senses": [
+        {
+          "fi": "tota",
+          "pos": "IN",
+          "en": "um; well (spoken filler)"
+        },
+        {
+          "fi": "tota",
+          "pos": "PH",
+          "en": "well; um (spoken filler)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0523",
+      "mergedIds": [
+        "e0523",
+        "e0524"
+      ],
+      "book": 1,
+      "chapter": "sm1-5",
+      "fi": "jälkeen",
+      "senses": [
+        {
+          "fi": "jälkeen",
+          "pos": "AV",
+          "en": "after; afterwards"
+        },
+        {
+          "fi": "jälkeen",
+          "pos": "PO",
+          "en": "after"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0581",
+      "mergedIds": [
+        "e0581",
+        "e0582"
+      ],
+      "book": 1,
+      "chapter": "sm1-5",
+      "fi": "ne",
+      "senses": [
+        {
+          "fi": "ne",
+          "pos": "PR",
+          "en": "they (spoken for people)"
+        },
+        {
+          "fi": "ne",
+          "pos": "PR",
+          "en": "they; those"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0588",
+      "mergedIds": [
+        "e0588",
+        "e0589"
+      ],
+      "book": 1,
+      "chapter": "sm1-5",
+      "fi": "mut",
+      "senses": [
+        {
+          "fi": "mut",
+          "pos": "CO",
+          "en": "but (spoken)"
+        },
+        {
+          "fi": "mut",
+          "pos": "PR",
+          "en": "me (object, spoken)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0708",
+      "mergedIds": [
+        "e0708",
+        "e0709"
+      ],
+      "book": 1,
+      "chapter": "sm1-6",
+      "fi": "rappu",
+      "senses": [
+        {
+          "fi": "rappu",
+          "pos": "N",
+          "en": "stairwell; stairway (informal)"
+        },
+        {
+          "fi": "rappu",
+          "pos": "N",
+          "en": "stairwell; entrance; stairs (spoken)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e0893",
+      "mergedIds": [
+        "e0893",
+        "e0894"
+      ],
+      "book": 1,
+      "chapter": "sm1-8",
+      "fi": "vieressä",
+      "senses": [
+        {
+          "fi": "vieressä",
+          "pos": "AV",
+          "en": "beside; next to"
+        },
+        {
+          "fi": "vieressä",
+          "pos": "PO",
+          "en": "next to; beside"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1039",
+      "mergedIds": [
+        "e1039",
+        "e1040"
+      ],
+      "book": 1,
+      "chapter": "sm1-8",
+      "fi": "noin",
+      "senses": [
+        {
+          "fi": "noin",
+          "pos": "AV",
+          "en": "approximately; about"
+        },
+        {
+          "fi": "noin",
+          "pos": "IN",
+          "en": "there; like that; okay"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1115",
+      "mergedIds": [
+        "e1115",
+        "e1116"
+      ],
+      "book": 1,
+      "chapter": "sm1-9",
+      "fi": "läpi",
+      "senses": [
+        {
+          "fi": "läpi",
+          "pos": "AV",
+          "en": "through; across"
+        },
+        {
+          "fi": "läpi",
+          "pos": "PO",
+          "en": "through; across"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1307",
+      "mergedIds": [
+        "e1307",
+        "e1308"
+      ],
+      "book": 2,
+      "chapter": "sm2-1",
+      "fi": "joka",
+      "senses": [
+        {
+          "fi": "joka",
+          "pos": "AV",
+          "en": "every; each"
+        },
+        {
+          "fi": "joka",
+          "pos": "PR",
+          "en": "which; who; that (relative pronoun)"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1530",
+      "mergedIds": [
+        "e1530",
+        "e1531"
+      ],
+      "book": 2,
+      "chapter": "sm2-3",
+      "fi": "asti",
+      "senses": [
+        {
+          "fi": "asti",
+          "pos": "AV",
+          "en": "until; as far as"
+        },
+        {
+          "fi": "asti",
+          "pos": "PO",
+          "en": "until; up to"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1668",
+      "mergedIds": [
+        "e1668",
+        "e1669"
+      ],
+      "book": 2,
+      "chapter": "sm2-3",
+      "fi": "ilman",
+      "senses": [
+        {
+          "fi": "ilman",
+          "pos": "PO",
+          "en": "without"
+        },
+        {
+          "fi": "ilman",
+          "pos": "PE",
+          "en": "without"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1839",
+      "mergedIds": [
+        "e1839",
+        "e1840",
+        "e1841"
+      ],
+      "book": 2,
+      "chapter": "sm2-5",
+      "fi": "ennen",
+      "senses": [
+        {
+          "fi": "ennen",
+          "pos": "AV",
+          "en": "before; previously"
+        },
+        {
+          "fi": "ennen",
+          "pos": "PO",
+          "en": "before"
+        },
+        {
+          "fi": "ennen",
+          "pos": "PE",
+          "en": "before"
+        }
+      ]
+    },
+    {
+      "canonicalId": "e1968",
+      "mergedIds": [
+        "e1968",
+        "e1969"
+      ],
+      "book": 2,
+      "chapter": "sm2-6",
+      "fi": "ikävä",
+      "senses": [
+        {
+          "fi": "ikävä",
+          "pos": "A",
+          "en": "unpleasant; sad; regrettable"
+        },
+        {
+          "fi": "ikävä",
+          "pos": "N",
+          "en": "longing; missing someone"
+        }
+      ]
+    }
+  ],
+  "placementCorrections": [
+    {
+      "id": "e1658",
+      "fi": "kuusi",
+      "en": "six",
+      "from": "sm2-c3-nature",
+      "to": "sm1-c1-numbers",
+      "printedPage": 15
+    },
+    {
+      "id": "e1657",
+      "fi": "kuusi",
+      "en": "spruce tree",
+      "topic": "sm2-c3-nature",
+      "printedPage": 89
+    }
+  ]
+}

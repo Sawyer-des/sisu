@@ -1,6 +1,6 @@
 # Sisu — Finnish vocabulary studio
 
-Finnish–English vocabulary learning with 2,385 entries, 17 chapters, 58 topics and six study modes. Study setup always starts Finnish → English and includes the entire chosen collection, with optional smaller batches. Flashcards offer Still learning, Remembered and Skip; there are no timed reviews. Motion respects device reduced-motion preferences, and appearance can follow the device or use Light/Dark.
+Finnish–English vocabulary learning with 2,358 entries, 17 chapters, 58 topics and six study modes. Study setup always starts Finnish → English and includes the entire chosen collection, with optional smaller batches. Flashcards offer Still learning, Remembered and Skip; there are no timed reviews. Motion respects device reduced-motion preferences, and appearance can follow the device or use Light/Dark.
 
 ## Vocabulary editing permissions
 Only the existing Sawyer account can add, edit, remove or import vocabulary. The API binds this permission to the immutable account ID, not to a browser flag or a typed username. Other users can practise, save progress, star words and restore their own progress backups, but backups cannot change their vocabulary. Existing vocabulary edits were personal to each account; this change does not publish edits globally.
@@ -34,7 +34,7 @@ This is a full-stack Cloudflare Worker with a D1 database, not a GitHub Pages-on
 Original book PDFs, source Word uploads, real accounts, session tokens, local databases and browser backups are not included in this repository. Do not commit `.local`, `.env`, database exports or account data.
 
 ## Vocabulary and source notes
-Book 1 has 1,273 entries and Book 2 has 1,112. Chapters, Topics and All words are views of the same entries. The 259 previously unplaced entries were reorganized with page searches in both scanned textbooks: 175 have located wording, 29 a related or inflected form, and 55 are placed by meaning without a claimed source page. The editor’s Source information and `categorization.csv` distinguish these. Original translations and the already-chaptered entries were not exhaustively verified word by word.
+Book 1 has 1,253 entries and Book 2 has 1,105. Chapters, Topics and All words are views of the same entries. The 259 previously unplaced entries were reorganized with page searches in both scanned textbooks: 175 have located wording, 29 a related or inflected form, and 55 are placed by meaning without a claimed source page. The editor’s Source information and `categorization.csv` distinguish these. Original translations and the already-chaptered entries were not exhaustively verified word by word.
 
 Use Manage & settings to add, edit, import or export vocabulary while signed in. Imports accept CSV with required `fi,en`, or JSON entries. Keep vocabulary IDs stable when editing the source. Progress keys combine Finnish, part of speech and meaning. Four consecutive successful recalls mark a word mastered; a miss resets recall progress. Matching counts as signed-in practice without raising mastery. Skipping never changes progress or counts.
 
@@ -51,3 +51,8 @@ Earlier versions used the browser key `sisu-studio-v1`. That old data is not sho
 - `tests/accounts.test.mjs`: server authentication and isolation checks.
 
 `Sisu.html` is an offline guest-practice copy; accounts require the server-backed website. Account registration and data never work by publishing static files alone.
+
+## Chapter duplicate cleanup and American English
+The vocabulary now has one normalized Finnish headword per book/chapter. Twenty-six repeated headword groups were consolidated, removing 27 duplicate rows while retaining their meanings and parts of speech. Case variants such as suomi / Suomi are annotated in the meanings. Identical headwords in separate chapters/books remain separate source entries. The kuusi numeral was moved to SM1 Chapter 1 Numbers (printed page 15); the spruce meaning stays in SM2 Chapter 3 tree vocabulary (printed page 89). `vocabulary-audit.json` records the consolidations and source corrections.
+
+Combined entries carry structured senses and a combined grammatical label. Typed English answers accept the original meanings without requiring grammatical labels. Old IDs and progress keys are retained as aliases: old progress is consulted conservatively without adding duplicate review counts, and a new review continues from that progress. Backups retain the original account records. The interface uses en-US and American English spelling/terms.

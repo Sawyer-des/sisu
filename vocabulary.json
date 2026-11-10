@@ -1646,7 +1646,7 @@
       "id": "sm1-c4-appearance",
       "book": 1,
       "chapter": "sm1-4",
-      "title": "Ulkonäkö ja värit (Appearance and colours)",
+      "title": "Ulkonäkö ja värit (Appearance and colors)",
       "oldIds": [
         "s20",
         "s21"
@@ -2460,28 +2460,31 @@
     {
       "id": "e0020",
       "fi": "terve",
-      "en": "healthy; well",
-      "pos": "A",
+      "en": "healthy; well (adjective); hello; hi (interjection)",
+      "pos": "A+IN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-1",
       "section": "sm1-c1-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s1"
-    },
-    {
-      "id": "e0021",
-      "fi": "terve",
-      "en": "hello; hi",
-      "pos": "IN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-1",
-      "section": "sm1-c1-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s1"
+      "originalSection": "s1",
+      "sourceEntryIds": [
+        "e0020",
+        "e0021"
+      ],
+      "senses": [
+        {
+          "fi": "terve",
+          "pos": "A",
+          "en": "healthy; well"
+        },
+        {
+          "fi": "terve",
+          "pos": "IN",
+          "en": "hello; hi"
+        }
+      ]
     },
     {
       "id": "e0022",
@@ -2603,7 +2606,7 @@
     {
       "id": "e0031",
       "fi": "se",
-      "en": "he; she; it (colloquial for person)",
+      "en": "he; she; it (colloquial for person) (pronoun); it; he/she (in casual speech) (pronoun)",
       "pos": "PR",
       "spoken": true,
       "book": 1,
@@ -2611,20 +2614,23 @@
       "section": "sm1-c1-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s1"
-    },
-    {
-      "id": "e0032",
-      "fi": "se",
-      "en": "it; he/she (in casual speech)",
-      "pos": "PR",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-1",
-      "section": "sm1-c1-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s1"
+      "originalSection": "s1",
+      "sourceEntryIds": [
+        "e0031",
+        "e0032"
+      ],
+      "senses": [
+        {
+          "fi": "se",
+          "pos": "PR",
+          "en": "he; she; it (colloquial for person)"
+        },
+        {
+          "fi": "se",
+          "pos": "PR",
+          "en": "it; he/she (in casual speech)"
+        }
+      ]
     },
     {
       "id": "e0033",
@@ -3747,28 +3753,31 @@
     {
       "id": "e0115",
       "fi": "muu",
-      "en": "other; another",
-      "pos": "A",
+      "en": "other; another (adjective); other; someone else (pronoun)",
+      "pos": "A+PR",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s6"
-    },
-    {
-      "id": "e0116",
-      "fi": "muu",
-      "en": "other; someone else",
-      "pos": "PR",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s6"
+      "originalSection": "s6",
+      "sourceEntryIds": [
+        "e0115",
+        "e0116"
+      ],
+      "senses": [
+        {
+          "fi": "muu",
+          "pos": "A",
+          "en": "other; another"
+        },
+        {
+          "fi": "muu",
+          "pos": "PR",
+          "en": "other; someone else"
+        }
+      ]
     },
     {
       "id": "e0117",
@@ -4735,54 +4744,60 @@
     {
       "id": "e0156",
       "fi": "suomi",
-      "en": "Finnish (language)",
-      "pos": "N",
+      "en": "Finnish (language) (noun); Finland (proper noun, Suomi)",
+      "pos": "N+PN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-countries",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s7"
-    },
-    {
-      "id": "e0157",
-      "fi": "Suomi",
-      "en": "Finland",
-      "pos": "PN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-countries",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s7"
+      "originalSection": "s7",
+      "sourceEntryIds": [
+        "e0156",
+        "e0157"
+      ],
+      "senses": [
+        {
+          "fi": "suomi",
+          "pos": "N",
+          "en": "Finnish (language)"
+        },
+        {
+          "fi": "Suomi",
+          "pos": "PN",
+          "en": "Finland"
+        }
+      ]
     },
     {
       "id": "e0158",
       "fi": "ranska",
-      "en": "French (language)",
-      "pos": "N",
+      "en": "French (language) (noun); France (proper noun, Ranska)",
+      "pos": "N+PN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-countries",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s7"
-    },
-    {
-      "id": "e0159",
-      "fi": "Ranska",
-      "en": "France",
-      "pos": "PN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-countries",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s7"
+      "originalSection": "s7",
+      "sourceEntryIds": [
+        "e0158",
+        "e0159"
+      ],
+      "senses": [
+        {
+          "fi": "ranska",
+          "pos": "N",
+          "en": "French (language)"
+        },
+        {
+          "fi": "Ranska",
+          "pos": "PN",
+          "en": "France"
+        }
+      ]
     },
     {
       "id": "e0160",
@@ -4800,28 +4815,31 @@
     {
       "id": "e0161",
       "fi": "kreikka",
-      "en": "Greek (language)",
-      "pos": "N",
+      "en": "Greek (language) (noun); Greece (proper noun, Kreikka)",
+      "pos": "N+PN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-countries",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s7"
-    },
-    {
-      "id": "e0162",
-      "fi": "Kreikka",
-      "en": "Greece",
-      "pos": "PN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-countries",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s7"
+      "originalSection": "s7",
+      "sourceEntryIds": [
+        "e0161",
+        "e0162"
+      ],
+      "senses": [
+        {
+          "fi": "kreikka",
+          "pos": "N",
+          "en": "Greek (language)"
+        },
+        {
+          "fi": "Kreikka",
+          "pos": "PN",
+          "en": "Greece"
+        }
+      ]
     },
     {
       "id": "e0163",
@@ -4839,28 +4857,31 @@
     {
       "id": "e0164",
       "fi": "islanti",
-      "en": "Icelandic (language)",
-      "pos": "N",
+      "en": "Icelandic (language) (noun); Iceland (proper noun, Islanti)",
+      "pos": "N+PN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-countries",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s7"
-    },
-    {
-      "id": "e0165",
-      "fi": "Islanti",
-      "en": "Iceland",
-      "pos": "PN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-countries",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s7"
+      "originalSection": "s7",
+      "sourceEntryIds": [
+        "e0164",
+        "e0165"
+      ],
+      "senses": [
+        {
+          "fi": "islanti",
+          "pos": "N",
+          "en": "Icelandic (language)"
+        },
+        {
+          "fi": "Islanti",
+          "pos": "PN",
+          "en": "Iceland"
+        }
+      ]
     },
     {
       "id": "e0166",
@@ -4917,28 +4938,31 @@
     {
       "id": "e0170",
       "fi": "venäjä",
-      "en": "Russian (language)",
-      "pos": "N",
+      "en": "Russian (language) (noun); Russia (proper noun, Venäjä)",
+      "pos": "N+PN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-2",
       "section": "sm1-c2-countries",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s7"
-    },
-    {
-      "id": "e0171",
-      "fi": "Venäjä",
-      "en": "Russia",
-      "pos": "PN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-2",
-      "section": "sm1-c2-countries",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s7"
+      "originalSection": "s7",
+      "sourceEntryIds": [
+        "e0170",
+        "e0171"
+      ],
+      "senses": [
+        {
+          "fi": "venäjä",
+          "pos": "N",
+          "en": "Russian (language)"
+        },
+        {
+          "fi": "Venäjä",
+          "pos": "PN",
+          "en": "Russia"
+        }
+      ]
     },
     {
       "id": "e0172",
@@ -5902,28 +5926,31 @@
     {
       "id": "e0274",
       "fi": "vasta",
-      "en": "only; not until; just now",
-      "pos": "AV",
+      "en": "only; not until; just now (adverb); birch whisk (sauna; regional synonym) (noun)",
+      "pos": "AV+N",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-3",
       "section": "sm1-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s13"
-    },
-    {
-      "id": "e0275",
-      "fi": "vasta",
-      "en": "birch whisk (sauna; regional synonym)",
-      "pos": "N",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-3",
-      "section": "sm1-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s13"
+      "originalSection": "s13",
+      "sourceEntryIds": [
+        "e0274",
+        "e0275"
+      ],
+      "senses": [
+        {
+          "fi": "vasta",
+          "pos": "AV",
+          "en": "only; not until; just now"
+        },
+        {
+          "fi": "vasta",
+          "pos": "N",
+          "en": "birch whisk (sauna; regional synonym)"
+        }
+      ]
     },
     {
       "id": "e0276",
@@ -5954,28 +5981,31 @@
     {
       "id": "e0278",
       "fi": "aika",
-      "en": "quite; rather",
-      "pos": "AV",
+      "en": "quite; rather (adverb); time; period; appointment (noun)",
+      "pos": "AV+N",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-3",
       "section": "sm1-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s13"
-    },
-    {
-      "id": "e0279",
-      "fi": "aika",
-      "en": "time; period; appointment",
-      "pos": "N",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-3",
-      "section": "sm1-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s13"
+      "originalSection": "s13",
+      "sourceEntryIds": [
+        "e0278",
+        "e0279"
+      ],
+      "senses": [
+        {
+          "fi": "aika",
+          "pos": "AV",
+          "en": "quite; rather"
+        },
+        {
+          "fi": "aika",
+          "pos": "N",
+          "en": "time; period; appointment"
+        }
+      ]
     },
     {
       "id": "e0280",
@@ -6162,28 +6192,31 @@
     {
       "id": "e0294",
       "fi": "sama",
-      "en": "same",
-      "pos": "A",
+      "en": "same (adjective); same (pronoun)",
+      "pos": "A+PR",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-3",
       "section": "sm1-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s13"
-    },
-    {
-      "id": "e0295",
-      "fi": "sama",
-      "en": "same",
-      "pos": "PR",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-3",
-      "section": "sm1-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s13"
+      "originalSection": "s13",
+      "sourceEntryIds": [
+        "e0294",
+        "e0295"
+      ],
+      "senses": [
+        {
+          "fi": "sama",
+          "pos": "A",
+          "en": "same"
+        },
+        {
+          "fi": "sama",
+          "pos": "PR",
+          "en": "same"
+        }
+      ]
     },
     {
       "id": "e0296",
@@ -6448,54 +6481,60 @@
     {
       "id": "e0316",
       "fi": "kyllä",
-      "en": "yes; indeed; certainly",
-      "pos": "AV",
+      "en": "yes; indeed; certainly (adverb); yes (interjection)",
+      "pos": "AV+IN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-3",
       "section": "sm1-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s14"
-    },
-    {
-      "id": "e0317",
-      "fi": "kyllä",
-      "en": "yes",
-      "pos": "IN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-3",
-      "section": "sm1-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s14"
+      "originalSection": "s14",
+      "sourceEntryIds": [
+        "e0316",
+        "e0317"
+      ],
+      "senses": [
+        {
+          "fi": "kyllä",
+          "pos": "AV",
+          "en": "yes; indeed; certainly"
+        },
+        {
+          "fi": "kyllä",
+          "pos": "IN",
+          "en": "yes"
+        }
+      ]
     },
     {
       "id": "e0318",
       "fi": "koko",
-      "en": "whole; entire",
-      "pos": "AV",
+      "en": "whole; entire (adverb); size; extent; whole (noun)",
+      "pos": "AV+N",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-3",
       "section": "sm1-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s14"
-    },
-    {
-      "id": "e0319",
-      "fi": "koko",
-      "en": "size; extent; whole",
-      "pos": "N",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-3",
-      "section": "sm1-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s14"
+      "originalSection": "s14",
+      "sourceEntryIds": [
+        "e0318",
+        "e0319"
+      ],
+      "senses": [
+        {
+          "fi": "koko",
+          "pos": "AV",
+          "en": "whole; entire"
+        },
+        {
+          "fi": "koko",
+          "pos": "N",
+          "en": "size; extent; whole"
+        }
+      ]
     },
     {
       "id": "e0320",
@@ -7253,7 +7292,7 @@
     {
       "id": "e0363",
       "fi": "syksy",
-      "en": "autumn; fall",
+      "en": "fall",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -8134,7 +8173,7 @@
     {
       "id": "e0424",
       "fi": "harmaa",
-      "en": "gray; grey",
+      "en": "gray",
       "pos": "A",
       "spoken": false,
       "book": 1,
@@ -8851,28 +8890,31 @@
     {
       "id": "e0471",
       "fi": "tota",
-      "en": "um; well (spoken filler)",
-      "pos": "IN",
+      "en": "um; well (spoken filler) (interjection); well; um (spoken filler) (phrase)",
+      "pos": "IN+PH",
       "spoken": true,
       "book": 1,
       "chapter": "sm1-4",
       "section": "sm1-c4-clothing",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s23"
-    },
-    {
-      "id": "e0472",
-      "fi": "tota",
-      "en": "well; um (spoken filler)",
-      "pos": "PH",
-      "spoken": true,
-      "book": 1,
-      "chapter": "sm1-4",
-      "section": "sm1-c4-clothing",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s23"
+      "originalSection": "s23",
+      "sourceEntryIds": [
+        "e0471",
+        "e0472"
+      ],
+      "senses": [
+        {
+          "fi": "tota",
+          "pos": "IN",
+          "en": "um; well (spoken filler)"
+        },
+        {
+          "fi": "tota",
+          "pos": "PH",
+          "en": "well; um (spoken filler)"
+        }
+      ]
     },
     {
       "id": "e0473",
@@ -9033,7 +9075,7 @@
     {
       "id": "e0485",
       "fi": "housut",
-      "en": "trousers; pants",
+      "en": "pants",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -9563,28 +9605,31 @@
     {
       "id": "e0523",
       "fi": "jälkeen",
-      "en": "after; afterwards",
-      "pos": "AV",
+      "en": "after; afterwards (adverb); after (postposition)",
+      "pos": "AV+PO",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-5",
       "section": "sm1-c5-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s25"
-    },
-    {
-      "id": "e0524",
-      "fi": "jälkeen",
-      "en": "after",
-      "pos": "PO",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-5",
-      "section": "sm1-c5-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s25"
+      "originalSection": "s25",
+      "sourceEntryIds": [
+        "e0523",
+        "e0524"
+      ],
+      "senses": [
+        {
+          "fi": "jälkeen",
+          "pos": "AV",
+          "en": "after; afterwards"
+        },
+        {
+          "fi": "jälkeen",
+          "pos": "PO",
+          "en": "after"
+        }
+      ]
     },
     {
       "id": "e0525",
@@ -10207,7 +10252,7 @@
     {
       "id": "e0581",
       "fi": "ne",
-      "en": "they (spoken for people)",
+      "en": "they (spoken for people) (pronoun); they; those (pronoun)",
       "pos": "PR",
       "spoken": true,
       "book": 1,
@@ -10215,20 +10260,23 @@
       "section": "sm1-c5-verbs",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s29"
-    },
-    {
-      "id": "e0582",
-      "fi": "ne",
-      "en": "they; those",
-      "pos": "PR",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-5",
-      "section": "sm1-c5-verbs",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s29"
+      "originalSection": "s29",
+      "sourceEntryIds": [
+        "e0581",
+        "e0582"
+      ],
+      "senses": [
+        {
+          "fi": "ne",
+          "pos": "PR",
+          "en": "they (spoken for people)"
+        },
+        {
+          "fi": "ne",
+          "pos": "PR",
+          "en": "they; those"
+        }
+      ]
     },
     {
       "id": "e0583",
@@ -10298,28 +10346,31 @@
     {
       "id": "e0588",
       "fi": "mut",
-      "en": "but (spoken)",
-      "pos": "CO",
+      "en": "but (spoken) (conjunction); me (object, spoken) (pronoun)",
+      "pos": "CO+PR",
       "spoken": true,
       "book": 1,
       "chapter": "sm1-5",
       "section": "sm1-c5-verbs",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s29"
-    },
-    {
-      "id": "e0589",
-      "fi": "mut",
-      "en": "me (object, spoken)",
-      "pos": "PR",
-      "spoken": true,
-      "book": 1,
-      "chapter": "sm1-5",
-      "section": "sm1-c5-verbs",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s29"
+      "originalSection": "s29",
+      "sourceEntryIds": [
+        "e0588",
+        "e0589"
+      ],
+      "senses": [
+        {
+          "fi": "mut",
+          "pos": "CO",
+          "en": "but (spoken)"
+        },
+        {
+          "fi": "mut",
+          "pos": "PR",
+          "en": "me (object, spoken)"
+        }
+      ]
     },
     {
       "id": "e1234",
@@ -10887,7 +10938,7 @@
     {
       "id": "e0603",
       "fi": "hissi",
-      "en": "elevator; lift",
+      "en": "elevator",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -12428,7 +12479,7 @@
     {
       "id": "e0708",
       "fi": "rappu",
-      "en": "stairwell; stairway (informal)",
+      "en": "stairwell; stairway (informal) (noun); stairwell; entrance; stairs (spoken) (noun)",
       "pos": "N",
       "spoken": true,
       "book": 1,
@@ -12436,20 +12487,23 @@
       "section": "sm1-c6-housing",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s33"
-    },
-    {
-      "id": "e0709",
-      "fi": "rappu",
-      "en": "stairwell; entrance; stairs (spoken)",
-      "pos": "N",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-6",
-      "section": "sm1-c6-housing",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s33"
+      "originalSection": "s33",
+      "sourceEntryIds": [
+        "e0708",
+        "e0709"
+      ],
+      "senses": [
+        {
+          "fi": "rappu",
+          "pos": "N",
+          "en": "stairwell; stairway (informal)"
+        },
+        {
+          "fi": "rappu",
+          "pos": "N",
+          "en": "stairwell; entrance; stairs (spoken)"
+        }
+      ]
     },
     {
       "id": "e0710",
@@ -14280,7 +14334,7 @@
     {
       "id": "e0832",
       "fi": "rekka",
-      "en": "truck; lorry",
+      "en": "truck",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -14332,7 +14386,7 @@
     {
       "id": "e0836",
       "fi": "rekka-auto",
-      "en": "truck; lorry",
+      "en": "truck",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -15073,28 +15127,31 @@
     {
       "id": "e0893",
       "fi": "vieressä",
-      "en": "beside; next to",
-      "pos": "AV",
+      "en": "beside; next to (adverb); next to; beside (postposition)",
+      "pos": "AV+PO",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-8",
       "section": "sm1-c8-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s42"
-    },
-    {
-      "id": "e0894",
-      "fi": "vieressä",
-      "en": "next to; beside",
-      "pos": "PO",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-8",
-      "section": "sm1-c8-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s42"
+      "originalSection": "s42",
+      "sourceEntryIds": [
+        "e0893",
+        "e0894"
+      ],
+      "senses": [
+        {
+          "fi": "vieressä",
+          "pos": "AV",
+          "en": "beside; next to"
+        },
+        {
+          "fi": "vieressä",
+          "pos": "PO",
+          "en": "next to; beside"
+        }
+      ]
     },
     {
       "id": "e0895",
@@ -16370,7 +16427,7 @@
     {
       "id": "e0982",
       "fi": "keksi",
-      "en": "cookie; biscuit",
+      "en": "cookie",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -17345,28 +17402,31 @@
     {
       "id": "e1039",
       "fi": "noin",
-      "en": "approximately; about",
-      "pos": "AV",
+      "en": "approximately; about (adverb); there; like that; okay (interjection)",
+      "pos": "AV+IN",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-8",
       "section": "sm1-c8-directions",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s56"
-    },
-    {
-      "id": "e1040",
-      "fi": "noin",
-      "en": "there; like that; okay",
-      "pos": "IN",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-8",
-      "section": "sm1-c8-directions",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s56"
+      "originalSection": "s56",
+      "sourceEntryIds": [
+        "e1039",
+        "e1040"
+      ],
+      "senses": [
+        {
+          "fi": "noin",
+          "pos": "AV",
+          "en": "approximately; about"
+        },
+        {
+          "fi": "noin",
+          "pos": "IN",
+          "en": "there; like that; okay"
+        }
+      ]
     },
     {
       "id": "e1041",
@@ -18291,7 +18351,7 @@
     {
       "id": "e1109",
       "fi": "loma",
-      "en": "holiday; vacation; leave",
+      "en": "vacation; leave",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -18369,28 +18429,31 @@
     {
       "id": "e1115",
       "fi": "läpi",
-      "en": "through; across",
-      "pos": "AV",
+      "en": "through; across (adverb); through; across (postposition)",
+      "pos": "AV+PO",
       "spoken": false,
       "book": 1,
       "chapter": "sm1-9",
       "section": "sm1-c9-work",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s59"
-    },
-    {
-      "id": "e1116",
-      "fi": "läpi",
-      "en": "through; across",
-      "pos": "PO",
-      "spoken": false,
-      "book": 1,
-      "chapter": "sm1-9",
-      "section": "sm1-c9-work",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s59"
+      "originalSection": "s59",
+      "sourceEntryIds": [
+        "e1115",
+        "e1116"
+      ],
+      "senses": [
+        {
+          "fi": "läpi",
+          "pos": "AV",
+          "en": "through; across"
+        },
+        {
+          "fi": "läpi",
+          "pos": "PO",
+          "en": "through; across"
+        }
+      ]
     },
     {
       "id": "e1117",
@@ -18538,7 +18601,7 @@
     {
       "id": "e1128",
       "fi": "kännykkä",
-      "en": "mobile phone; cell phone (spoken/informal)",
+      "en": "cell phone (spoken/informal)",
       "pos": "N",
       "spoken": false,
       "book": 1,
@@ -19399,7 +19462,7 @@
     {
       "id": "e1301",
       "fi": "autokyyti",
-      "en": "car ride; lift by car",
+      "en": "car ride",
       "pos": "N",
       "spoken": false,
       "book": 2,
@@ -19477,28 +19540,31 @@
     {
       "id": "e1307",
       "fi": "joka",
-      "en": "every; each",
-      "pos": "AV",
+      "en": "every; each (adverb); which; who; that (relative pronoun) (pronoun)",
+      "pos": "AV+PR",
       "spoken": false,
       "book": 2,
       "chapter": "sm2-1",
       "section": "sm2-c1-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s64"
-    },
-    {
-      "id": "e1308",
-      "fi": "joka",
-      "en": "which; who; that (relative pronoun)",
-      "pos": "PR",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-1",
-      "section": "sm2-c1-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s64"
+      "originalSection": "s64",
+      "sourceEntryIds": [
+        "e1307",
+        "e1308"
+      ],
+      "senses": [
+        {
+          "fi": "joka",
+          "pos": "AV",
+          "en": "every; each"
+        },
+        {
+          "fi": "joka",
+          "pos": "PR",
+          "en": "which; who; that (relative pronoun)"
+        }
+      ]
     },
     {
       "id": "e1309",
@@ -19685,7 +19751,7 @@
     {
       "id": "e1323",
       "fi": "kyyti",
-      "en": "ride; lift",
+      "en": "ride",
       "pos": "N",
       "spoken": false,
       "book": 2,
@@ -22654,28 +22720,31 @@
     {
       "id": "e1530",
       "fi": "asti",
-      "en": "until; as far as",
-      "pos": "AV",
+      "en": "until; as far as (adverb); until; up to (postposition)",
+      "pos": "AV+PO",
       "spoken": false,
       "book": 2,
       "chapter": "sm2-3",
       "section": "sm2-c3-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s72"
-    },
-    {
-      "id": "e1531",
-      "fi": "asti",
-      "en": "until; up to",
-      "pos": "PO",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-3",
-      "section": "sm2-c3-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s72"
+      "originalSection": "s72",
+      "sourceEntryIds": [
+        "e1530",
+        "e1531"
+      ],
+      "senses": [
+        {
+          "fi": "asti",
+          "pos": "AV",
+          "en": "until; as far as"
+        },
+        {
+          "fi": "asti",
+          "pos": "PO",
+          "en": "until; up to"
+        }
+      ]
     },
     {
       "id": "e1532",
@@ -24417,9 +24486,12 @@
       "book": 2,
       "chapter": "sm2-3",
       "section": "sm2-c3-nature",
-      "notes": "",
+      "notes": "Tree vocabulary: spruce. The numeral six is studied in SM1 Chapter 1.",
       "placement": "inherited",
-      "originalSection": "s82"
+      "originalSection": "s82",
+      "sourcePlacement": "located",
+      "sourcePage": 89,
+      "sourceForm": "kuusi"
     },
     {
       "id": "e1658",
@@ -24427,12 +24499,15 @@
       "en": "six",
       "pos": "NU",
       "spoken": false,
-      "book": 2,
-      "chapter": "sm2-3",
-      "section": "sm2-c3-nature",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s82"
+      "book": 1,
+      "chapter": "sm1-1",
+      "section": "sm1-c1-numbers",
+      "notes": "Numeral in the SM1 Chapter 1 number list (printed page 15). The tree in SM2 Chapter 3 is a separate meaning.",
+      "placement": "source-corrected",
+      "originalSection": "s82",
+      "sourcePlacement": "located",
+      "sourcePage": 15,
+      "sourceForm": "kuusi"
     },
     {
       "id": "e1659",
@@ -24554,28 +24629,31 @@
     {
       "id": "e1668",
       "fi": "ilman",
-      "en": "without",
-      "pos": "PO",
+      "en": "without (postposition); without (preposition)",
+      "pos": "PO+PE",
       "spoken": false,
       "book": 2,
       "chapter": "sm2-3",
       "section": "sm2-c3-rights",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s83"
-    },
-    {
-      "id": "e1669",
-      "fi": "ilman",
-      "en": "without",
-      "pos": "PE",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-3",
-      "section": "sm2-c3-rights",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s83"
+      "originalSection": "s83",
+      "sourceEntryIds": [
+        "e1668",
+        "e1669"
+      ],
+      "senses": [
+        {
+          "fi": "ilman",
+          "pos": "PO",
+          "en": "without"
+        },
+        {
+          "fi": "ilman",
+          "pos": "PE",
+          "en": "without"
+        }
+      ]
     },
     {
       "id": "e1670",
@@ -27357,41 +27435,37 @@
     {
       "id": "e1839",
       "fi": "ennen",
-      "en": "before; previously",
-      "pos": "AV",
+      "en": "before; previously (adverb); before (postposition); before (preposition)",
+      "pos": "AV+PO+PE",
       "spoken": false,
       "book": 2,
       "chapter": "sm2-5",
       "section": "sm2-c5-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s90"
-    },
-    {
-      "id": "e1840",
-      "fi": "ennen",
-      "en": "before",
-      "pos": "PO",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-5",
-      "section": "sm2-c5-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s90"
-    },
-    {
-      "id": "e1841",
-      "fi": "ennen",
-      "en": "before",
-      "pos": "PE",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-5",
-      "section": "sm2-c5-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s90"
+      "originalSection": "s90",
+      "sourceEntryIds": [
+        "e1839",
+        "e1840",
+        "e1841"
+      ],
+      "senses": [
+        {
+          "fi": "ennen",
+          "pos": "AV",
+          "en": "before; previously"
+        },
+        {
+          "fi": "ennen",
+          "pos": "PO",
+          "en": "before"
+        },
+        {
+          "fi": "ennen",
+          "pos": "PE",
+          "en": "before"
+        }
+      ]
     },
     {
       "id": "e1842",
@@ -28473,7 +28547,7 @@
     {
       "id": "e1911",
       "fi": "olla jonossa",
-      "en": "to be in a queue",
+      "en": "to be in line",
       "pos": "PH",
       "spoken": false,
       "book": 2,
@@ -28551,7 +28625,7 @@
     {
       "id": "e1917",
       "fi": "jono",
-      "en": "queue; line",
+      "en": "line",
       "pos": "N",
       "spoken": false,
       "book": 2,
@@ -28564,7 +28638,7 @@
     {
       "id": "e1918",
       "fi": "jonottaa",
-      "en": "to queue; to wait in line",
+      "en": "to wait in line",
       "pos": "V1",
       "spoken": false,
       "book": 2,
@@ -28590,7 +28664,7 @@
     {
       "id": "e1920",
       "fi": "vuoronumero",
-      "en": "queue number; ticket number",
+      "en": "ticket number",
       "pos": "N",
       "spoken": false,
       "book": 2,
@@ -29448,28 +29522,31 @@
     {
       "id": "e1968",
       "fi": "ikävä",
-      "en": "unpleasant; sad; regrettable",
-      "pos": "A",
+      "en": "unpleasant; sad; regrettable (adjective); longing; missing someone (noun)",
+      "pos": "A+N",
       "spoken": false,
       "book": 2,
       "chapter": "sm2-6",
       "section": "sm2-c6-main",
       "notes": "",
       "placement": "inherited",
-      "originalSection": "s97"
-    },
-    {
-      "id": "e1969",
-      "fi": "ikävä",
-      "en": "longing; missing someone",
-      "pos": "N",
-      "spoken": false,
-      "book": 2,
-      "chapter": "sm2-6",
-      "section": "sm2-c6-main",
-      "notes": "",
-      "placement": "inherited",
-      "originalSection": "s97"
+      "originalSection": "s97",
+      "sourceEntryIds": [
+        "e1968",
+        "e1969"
+      ],
+      "senses": [
+        {
+          "fi": "ikävä",
+          "pos": "A",
+          "en": "unpleasant; sad; regrettable"
+        },
+        {
+          "fi": "ikävä",
+          "pos": "N",
+          "en": "longing; missing someone"
+        }
+      ]
     },
     {
       "id": "e1970",
@@ -34402,7 +34479,7 @@
     }
   ],
   "sourceNotes": "Topics follow chapter order and consolidate the books’ vocabulary sections. All 2,385 entries belong to a chapter and topic. The 259 previously unplaced entries were searched against both scanned textbooks using Finnish OCR and relevant pages were inspected. Source information distinguishes located wording, related or inflected book forms, and thematic placement where the supplied wording was not located. Thematic placement is not a claim that the word appears on a specific book page. Original definitions are retained; translations have not been exhaustively checked.",
-  "categoryRevision": 4,
+  "categoryRevision": 5,
   "sectionBookMap": {
     "extra-language": {
       "1": "sm1-extra-language",
@@ -42873,7 +42950,7 @@
     "e1658": {
       "book": 2,
       "chapter": "sm2-3",
-      "section": "s82"
+      "section": "sm2-c3-nature"
     },
     "e1659": {
       "book": 2,
@@ -46510,5 +46587,7138 @@
       "chapter": null,
       "section": "sm2-s60"
     }
-  }
+  },
+  "entryAliases": {
+    "e0021": "e0020",
+    "e0032": "e0031",
+    "e0116": "e0115",
+    "e0157": "e0156",
+    "e0159": "e0158",
+    "e0162": "e0161",
+    "e0165": "e0164",
+    "e0171": "e0170",
+    "e0275": "e0274",
+    "e0279": "e0278",
+    "e0295": "e0294",
+    "e0317": "e0316",
+    "e0319": "e0318",
+    "e0472": "e0471",
+    "e0524": "e0523",
+    "e0582": "e0581",
+    "e0589": "e0588",
+    "e0709": "e0708",
+    "e0894": "e0893",
+    "e1040": "e1039",
+    "e1116": "e1115",
+    "e1308": "e1307",
+    "e1531": "e1530",
+    "e1669": "e1668",
+    "e1840": "e1839",
+    "e1841": "e1839",
+    "e1969": "e1968"
+  },
+  "legacyProgressKeys": {
+    "e0001": [
+      "hei|IN|hi; hello"
+    ],
+    "e0002": [
+      "ja|CO|and"
+    ],
+    "e0003": [
+      "tervetuloa|IN|welcome"
+    ],
+    "e0004": [
+      "anteeksi|IN|sorry; excuse me"
+    ],
+    "e0005": [
+      "onko|PA|is it?; is there? (question form of olla)"
+    ],
+    "e0006": [
+      "täällä|AV|here (in this place); here (at this place); here"
+    ],
+    "e0007": [
+      "joo|IN|yeah; yes"
+    ],
+    "e0008": [
+      "olla|V3|to be"
+    ],
+    "e0009": [
+      "tämä|PR|this"
+    ],
+    "e0010": [
+      "paikka|N|place; seat; spot"
+    ],
+    "e0011": [
+      "vapaa|A|free; available; vacant"
+    ],
+    "e0012": [
+      "kiva|A|nice; pleasant; fun"
+    ],
+    "e0013": [
+      "minä|PR|I"
+    ],
+    "e0014": [
+      "kuka|PR|who"
+    ],
+    "e0015": [
+      "sinä|PR|you (singular)"
+    ],
+    "e0016": [
+      "hauska tutustua|PH|nice to meet you"
+    ],
+    "e0017": [
+      "moi|IN|hi; bye"
+    ],
+    "e0018": [
+      "mitä|Q|what (partitive question form)"
+    ],
+    "e0019": [
+      "mitä kuuluu|PH|how are you?; how is it going?"
+    ],
+    "e0020": [
+      "terve|A|healthy; well",
+      "terve|IN|hello; hi"
+    ],
+    "e0022": [
+      "kiitos|IN|thank you; thanks"
+    ],
+    "e0023": [
+      "kiitos samoin|PH|thank you, likewise"
+    ],
+    "e0024": [
+      "minulle kuuluu hyvää|PH|I'm doing well"
+    ],
+    "e0025": [
+      "entä sinulle|PH|and you?; how about you?"
+    ],
+    "e0026": [
+      "ihan|AV|quite; completely; really; totally"
+    ],
+    "e0027": [
+      "ihan hyvää, kiitos|PH|pretty good, thanks"
+    ],
+    "e0028": [
+      "tässä|AV|here; in this spot; at this spot"
+    ],
+    "e0029": [
+      "nimi|N|name"
+    ],
+    "e0030": [
+      "miten|Q|how"
+    ],
+    "e0031": [
+      "se|PR|he; she; it (colloquial for person)",
+      "se|PR|it; he/she (in casual speech)"
+    ],
+    "e0033": [
+      "etunimi|N|first name; given name"
+    ],
+    "e0034": [
+      "sukunimi|N|surname; last name"
+    ],
+    "e0035": [
+      "okei|IN|okay"
+    ],
+    "e0036": [
+      "kurssipäivä|N|course day; class day"
+    ],
+    "e0037": [
+      "kello|N|clock; time; o'clock"
+    ],
+    "e0038": [
+      "kukaan|PR|anyone; nobody (with negation)"
+    ],
+    "e0039": [
+      "sanasto|N|vocabulary; glossary"
+    ],
+    "e0040": [
+      "heippa|IN|bye; hi"
+    ],
+    "e0041": [
+      "näkemiin|IN|goodbye"
+    ],
+    "e0042": [
+      "nuku hyvin|PH|sleep well"
+    ],
+    "e0043": [
+      "hyvää huomenta|PH|good morning"
+    ],
+    "e0044": [
+      "hyvää päivänjatkoa|PH|have a nice rest of the day"
+    ],
+    "e0045": [
+      "hyvää ruokahalua|PH|enjoy your meal"
+    ],
+    "e0046": [
+      "kiitos ruoasta|PH|thanks for the meal"
+    ],
+    "e0047": [
+      "kiitos, oli hyvää|PH|thanks, it was delicious"
+    ],
+    "e0048": [
+      "kippis|IN|cheers"
+    ],
+    "e0049": [
+      "skool|IN|cheers"
+    ],
+    "e0050": [
+      "ei kestä|PH|don't mention it; you're welcome"
+    ],
+    "e0051": [
+      "hauskaa viikonloppua|PH|have a nice weekend"
+    ],
+    "e0052": [
+      "kappale|N|chapter; section; piece"
+    ],
+    "e0053": [
+      "mikä|Q|what; which"
+    ],
+    "e0054": [
+      "milloin|Q|when"
+    ],
+    "e0055": [
+      "tänään|AV|today"
+    ],
+    "e0056": [
+      "maanantai|N|Monday"
+    ],
+    "e0057": [
+      "tiistai|N|Tuesday"
+    ],
+    "e0058": [
+      "keskiviikko|N|Wednesday"
+    ],
+    "e0059": [
+      "torstai|N|Thursday"
+    ],
+    "e0060": [
+      "perjantai|N|Friday"
+    ],
+    "e0061": [
+      "lauantai|N|Saturday"
+    ],
+    "e0062": [
+      "sunnuntai|N|Sunday"
+    ],
+    "e0063": [
+      "viikonloppu|N|weekend"
+    ],
+    "e0064": [
+      "toissapäivänä|AV|day before yesterday"
+    ],
+    "e0065": [
+      "eilen|AV|yesterday"
+    ],
+    "e0066": [
+      "huomenna|AV|tomorrow"
+    ],
+    "e0067": [
+      "ylihuomenna|AV|day after tomorrow"
+    ],
+    "e0097": [
+      "verbi|N|verb"
+    ],
+    "e0098": [
+      "ääntäminen|N|pronunciation"
+    ],
+    "e0099": [
+      "sana|N|word"
+    ],
+    "e0100": [
+      "tuli|N|fire"
+    ],
+    "e0101": [
+      "kielioppi|N|grammar"
+    ],
+    "e0102": [
+      "vokaaliharmonia|N|vowel harmony"
+    ],
+    "e0103": [
+      "harjoitus|N|exercise; training; practice"
+    ],
+    "e0104": [
+      "lyhyt|A|short"
+    ],
+    "e0105": [
+      "vokaali|N|vowel"
+    ],
+    "e0106": [
+      "tapa|N|way; manner; custom"
+    ],
+    "e0107": [
+      "työ|N|work; job"
+    ],
+    "e0108": [
+      "ala|N|field; sector; area"
+    ],
+    "e0109": [
+      "tulli|N|customs"
+    ],
+    "e0110": [
+      "malli|N|model; design; example"
+    ],
+    "e0111": [
+      "historia|N|history"
+    ],
+    "e0112": [
+      "musiikki|N|music"
+    ],
+    "e0113": [
+      "persoonapronomini|N|personal pronoun"
+    ],
+    "e0114": [
+      "lukujärjestys|N|timetable; class schedule"
+    ],
+    "e1165": [
+      "aakkoset|N|alphabet"
+    ],
+    "e1290": [
+      "ääntämisharjoitus|N|pronunciation exercise"
+    ],
+    "e0068": [
+      "nolla|N|zero"
+    ],
+    "e0069": [
+      "yksi|NU|one"
+    ],
+    "e0070": [
+      "kolme|NU|three"
+    ],
+    "e0071": [
+      "neljä|NU|four"
+    ],
+    "e0072": [
+      "kolmekymmentä|NU|thirty"
+    ],
+    "e0073": [
+      "viisi|NU|five"
+    ],
+    "e0074": [
+      "neljäkymmentä|NU|forty"
+    ],
+    "e0075": [
+      "viisikymmentä|NU|fifty"
+    ],
+    "e0076": [
+      "seitsemän|NU|seven"
+    ],
+    "e0077": [
+      "kuusikymmentä|NU|sixty"
+    ],
+    "e0078": [
+      "kahdeksan|NU|eight"
+    ],
+    "e0079": [
+      "seitsemänkymmentä|NU|seventy"
+    ],
+    "e0080": [
+      "kahdeksankymmentä|NU|eighty"
+    ],
+    "e0081": [
+      "kymmenen|NU|ten"
+    ],
+    "e0082": [
+      "yhdeksänkymmentä|NU|ninety"
+    ],
+    "e0083": [
+      "yksitoista|NU|eleven"
+    ],
+    "e0084": [
+      "sata|NU|one hundred"
+    ],
+    "e0085": [
+      "kaksitoista|NU|twelve"
+    ],
+    "e0086": [
+      "kolmetoista|NU|thirteen"
+    ],
+    "e0087": [
+      "neljätoista|NU|fourteen"
+    ],
+    "e0088": [
+      "viisitoista|NU|fifteen"
+    ],
+    "e0089": [
+      "tuhat|NU|one thousand"
+    ],
+    "e0090": [
+      "kuusitoista|NU|sixteen"
+    ],
+    "e0091": [
+      "kahdeksantoista|NU|eighteen"
+    ],
+    "e0092": [
+      "yhdeksäntoista|NU|nineteen"
+    ],
+    "e0093": [
+      "miljoona|NU|one million"
+    ],
+    "e0094": [
+      "kaksikymmentä|NU|twenty"
+    ],
+    "e0095": [
+      "miljardi|NU|one billion"
+    ],
+    "e0096": [
+      "kuinka|Q|how; how much"
+    ],
+    "e1252": [
+      "seitsemäntoista|NU|seventeen"
+    ],
+    "e0115": [
+      "muu|A|other; another",
+      "muu|PR|other; someone else"
+    ],
+    "e0117": [
+      "mennä|V3|to go"
+    ],
+    "e0118": [
+      "koti|N|home"
+    ],
+    "e0119": [
+      "mutta|CO|but"
+    ],
+    "e0120": [
+      "euro|N|euro"
+    ],
+    "e0121": [
+      "nauraa|V1|to laugh"
+    ],
+    "e0122": [
+      "mistä|Q|where from; from what; from where"
+    ],
+    "e0123": [
+      "kotoisin|AV|originally from; born/from (a place)"
+    ],
+    "e0124": [
+      "koska|CO|because"
+    ],
+    "e0125": [
+      "sitten|AV|then; afterward; after that"
+    ],
+    "e0126": [
+      "Etelä-Afrikka|PN|South Africa"
+    ],
+    "e0127": [
+      "ai jaa|IN|oh, I see"
+    ],
+    "e0128": [
+      "kieli|N|language; tongue"
+    ],
+    "e0129": [
+      "äidinkieli|N|mother tongue; native language"
+    ],
+    "e0130": [
+      "englanti|N|English (language)"
+    ],
+    "e0131": [
+      "myös|AV|also; too"
+    ],
+    "e0132": [
+      "vähän|AV|a little; a few; not much"
+    ],
+    "e0133": [
+      "espanja|N|Spanish (language)"
+    ],
+    "e0134": [
+      "Brasilia|PN|Brazil"
+    ],
+    "e0135": [
+      "portugali|N|Portuguese (language)"
+    ],
+    "e0136": [
+      "totta|A|true; correct"
+    ],
+    "e0137": [
+      "ajaa|V1|to drive; to ride"
+    ],
+    "e0138": [
+      "missä|Q|where (location); where"
+    ],
+    "e0139": [
+      "asua|V1|to live; to reside"
+    ],
+    "e0140": [
+      "ei|IN|no; not"
+    ],
+    "e0141": [
+      "vaan|CO|but rather; only; just"
+    ],
+    "e0142": [
+      "ensin|AV|first; at first"
+    ],
+    "e0143": [
+      "nyt|AV|now"
+    ],
+    "e0144": [
+      "tulla|V3|to come"
+    ],
+    "e0145": [
+      "kotiin|AV|home; to home"
+    ],
+    "e0146": [
+      "hän|PR|he; she"
+    ],
+    "e0147": [
+      "säästää|V1|to save (money); to conserve"
+    ],
+    "e0148": [
+      "he|PR|they"
+    ],
+    "e0149": [
+      "koskaan|AV|ever; never (with negation)"
+    ],
+    "e0238": [
+      "porras|N|stair; step"
+    ],
+    "e0239": [
+      "k-p-t-vaihtelu|N|k-p-t consonant gradation"
+    ],
+    "e0240": [
+      "pääte|N|ending; suffix"
+    ],
+    "e0241": [
+      "vahva|A|strong"
+    ],
+    "e0242": [
+      "heikko|A|weak"
+    ],
+    "e0243": [
+      "rumpu|N|drum"
+    ],
+    "e0244": [
+      "parta|N|beard"
+    ],
+    "e0245": [
+      "lopussa|AV|at the end"
+    ],
+    "e0246": [
+      "negatiivinen|A|negative"
+    ],
+    "e0247": [
+      "lause|N|sentence"
+    ],
+    "e0248": [
+      "miksi|Q|why"
+    ],
+    "e0249": [
+      "konsonantti|N|consonant"
+    ],
+    "e0250": [
+      "verkko|N|network; internet; net"
+    ],
+    "e0251": [
+      "tuki|N|support; financial assistance"
+    ],
+    "e0252": [
+      "sattua|V1|to hurt; to happen"
+    ],
+    "e0253": [
+      "istua|V1|to sit"
+    ],
+    "e0254": [
+      "maksaja|N|payer"
+    ],
+    "e0255": [
+      "kerta|N|time; occasion"
+    ],
+    "e0256": [
+      "tasku|N|pocket"
+    ],
+    "e0257": [
+      "aalto|N|wave"
+    ],
+    "e0258": [
+      "ikä|N|age"
+    ],
+    "e0259": [
+      "osoite|N|address"
+    ],
+    "e0260": [
+      "hyvää päivää|PH|good afternoon; good day"
+    ],
+    "e0261": [
+      "kielitaito|N|language skills; language proficiency"
+    ],
+    "e0262": [
+      "oikea|A|right; correct"
+    ],
+    "e0263": [
+      "loppu|N|end; ending; remainder"
+    ],
+    "e0264": [
+      "tanssia|V1|to dance"
+    ],
+    "e0265": [
+      "muistaa|V1|to remember"
+    ],
+    "e0266": [
+      "hyvää iltaa|PH|good evening"
+    ],
+    "e0267": [
+      "iltaa|IN|evening! (greeting)"
+    ],
+    "e0268": [
+      "positiivinen|A|positive"
+    ],
+    "e1166": [
+      "nähdään huomenna|PH|see you tomorrow"
+    ],
+    "e1167": [
+      "moikka|IN|hi; bye"
+    ],
+    "e1183": [
+      "astevaihtelu|N|consonant gradation"
+    ],
+    "e0150": [
+      "brasilialainen|A|Brazilian"
+    ],
+    "e0151": [
+      "eteläafrikkalainen|A|South African; a South African person"
+    ],
+    "e0152": [
+      "maa|N|country; land; ground"
+    ],
+    "e0153": [
+      "kansalaisuus|N|nationality; citizenship"
+    ],
+    "e0154": [
+      "puhua|V1|to speak; to talk"
+    ],
+    "e0155": [
+      "venäläinen|A|Russian"
+    ],
+    "e0156": [
+      "suomi|N|Finnish (language)",
+      "Suomi|PN|Finland"
+    ],
+    "e0158": [
+      "ranska|N|French (language)",
+      "Ranska|PN|France"
+    ],
+    "e0160": [
+      "ranskalainen|A|French; a French person"
+    ],
+    "e0161": [
+      "kreikka|N|Greek (language)",
+      "Kreikka|PN|Greece"
+    ],
+    "e0163": [
+      "kreikkalainen|A|Greek; a Greek person"
+    ],
+    "e0164": [
+      "islanti|N|Icelandic (language)",
+      "Islanti|PN|Iceland"
+    ],
+    "e0166": [
+      "islantilainen|A|Icelandic; an Icelander"
+    ],
+    "e0167": [
+      "Egypti|PN|Egypt"
+    ],
+    "e0168": [
+      "egyptiläinen|A|Egyptian; an Egyptian"
+    ],
+    "e0169": [
+      "arabia|N|Arabic (language)"
+    ],
+    "e0170": [
+      "venäjä|N|Russian (language)",
+      "Venäjä|PN|Russia"
+    ],
+    "e0172": [
+      "Pakistan|PN|Pakistan"
+    ],
+    "e0173": [
+      "urdu|N|Urdu (language)"
+    ],
+    "e0174": [
+      "suomalainen|A|Finnish; a Finn"
+    ],
+    "e0175": [
+      "pakistanilainen|A|Pakistani; a Pakistani person"
+    ],
+    "e0176": [
+      "pohjoinen|N|north; northern"
+    ],
+    "e0177": [
+      "Aasia|PN|Asia"
+    ],
+    "e0178": [
+      "Eurooppa|PN|Europe"
+    ],
+    "e0179": [
+      "Afrikka|PN|Africa"
+    ],
+    "e0180": [
+      "Australia|PN|Australia"
+    ],
+    "e0181": [
+      "Pohjois-Amerikka|PN|North America"
+    ],
+    "e0182": [
+      "Etelä-Amerikka|PN|South America"
+    ],
+    "e0183": [
+      "Norja|PN|Norway"
+    ],
+    "e0184": [
+      "Ruotsi|PN|Sweden"
+    ],
+    "e0185": [
+      "Viro|PN|Estonia"
+    ],
+    "e0186": [
+      "Latvia|PN|Latvia"
+    ],
+    "e0187": [
+      "Liettua|PN|Lithuania"
+    ],
+    "e0188": [
+      "Puola|PN|Poland"
+    ],
+    "e0189": [
+      "Saksa|PN|Germany"
+    ],
+    "e0190": [
+      "Tanska|PN|Denmark"
+    ],
+    "e0191": [
+      "etelä|N|south"
+    ],
+    "e0192": [
+      "itä|N|east"
+    ],
+    "e0193": [
+      "länsi|N|west"
+    ],
+    "e0194": [
+      "hei hei|IN|bye-bye"
+    ],
+    "e0195": [
+      "jätski|N|ice cream (spoken)"
+    ],
+    "e0196": [
+      "yks|NU|one (spoken)"
+    ],
+    "e0197": [
+      "pallo|N|ball; scoop (of ice cream)"
+    ],
+    "e0198": [
+      "kaks|NU|two (spoken)"
+    ],
+    "e0199": [
+      "mä|PR|I (spoken)"
+    ],
+    "e0200": [
+      "sit|AV|then (spoken)"
+    ],
+    "e0201": [
+      "sulle|PR|to you (spoken)"
+    ],
+    "e0202": [
+      "tuleeks|IN|is coming?; is there? (spoken question)"
+    ],
+    "e0203": [
+      "nää|PR|these (spoken)"
+    ],
+    "e0204": [
+      "tarviitko|IN|do you need? (spoken)"
+    ],
+    "e0205": [
+      "kiitti|IN|thanks (spoken)"
+    ],
+    "e0206": [
+      "moi moi|IN|bye-bye"
+    ],
+    "e0207": [
+      "kiska|N|kiosk (spoken)"
+    ],
+    "e0208": [
+      "kortti|N|card"
+    ],
+    "e0209": [
+      "vanilja|N|vanilla"
+    ],
+    "e0210": [
+      "puhekieli|N|spoken language; colloquial Finnish"
+    ],
+    "e0211": [
+      "muutama|PR|a few; several"
+    ],
+    "e0212": [
+      "viiskyt|NU|fifty (spoken)"
+    ],
+    "e0213": [
+      "käteinen|N|cash"
+    ],
+    "e0214": [
+      "kolikko|N|coin"
+    ],
+    "e0215": [
+      "vai|CO|or (in a choice question)"
+    ],
+    "e0216": [
+      "ykstoist|NU|eleven (spoken)"
+    ],
+    "e0217": [
+      "kakstoist|NU|twelve (spoken)"
+    ],
+    "e0218": [
+      "kolmetoist|NU|thirteen (spoken)"
+    ],
+    "e0219": [
+      "nelkyt|NU|forty (spoken)"
+    ],
+    "e0220": [
+      "neljätoist|NU|fourteen (spoken)"
+    ],
+    "e0221": [
+      "viis|NU|five (spoken)"
+    ],
+    "e0222": [
+      "viistoist|NU|fifteen (spoken)"
+    ],
+    "e0223": [
+      "kuuskyt|NU|sixty (spoken)"
+    ],
+    "e0224": [
+      "kuus|NU|six (spoken)"
+    ],
+    "e0225": [
+      "kuustoist|NU|sixteen (spoken)"
+    ],
+    "e0226": [
+      "seiskyt|NU|seventy (spoken)"
+    ],
+    "e0227": [
+      "seittemän|NU|seven (spoken)"
+    ],
+    "e0228": [
+      "seittemäntoist|NU|seventeen (spoken)"
+    ],
+    "e0229": [
+      "kaheksankyt|NU|eighty (spoken)"
+    ],
+    "e0230": [
+      "kaheksan|NU|eight (spoken)"
+    ],
+    "e0231": [
+      "kaheksantoist|NU|eighteen (spoken)"
+    ],
+    "e0232": [
+      "yheksänkyt|NU|ninety (spoken)"
+    ],
+    "e0233": [
+      "yheksän|NU|nine (spoken)"
+    ],
+    "e0234": [
+      "yheksäntoist|NU|nineteen (spoken)"
+    ],
+    "e0235": [
+      "kakskyt|NU|twenty (spoken)"
+    ],
+    "e0236": [
+      "kolkyt|NU|thirty (spoken)"
+    ],
+    "e0237": [
+      "sentti|N|cent"
+    ],
+    "e1248": [
+      "raha|N|money"
+    ],
+    "e1253": [
+      "seteli|N|banknote; bill"
+    ],
+    "e0269": [
+      "ystävä|N|friend"
+    ],
+    "e0270": [
+      "videopuhelu|N|video call"
+    ],
+    "e0271": [
+      "ai niin|IN|oh right; that's right"
+    ],
+    "e0272": [
+      "jo|AV|already"
+    ],
+    "e0273": [
+      "vielä|AV|still; yet"
+    ],
+    "e0274": [
+      "vasta|AV|only; not until; just now",
+      "vasta|N|birch whisk (sauna; regional synonym)"
+    ],
+    "e0276": [
+      "puoli|NU|half"
+    ],
+    "e0277": [
+      "sää|N|weather"
+    ],
+    "e0278": [
+      "aika|AV|quite; rather",
+      "aika|N|time; period; appointment"
+    ],
+    "e0280": [
+      "aijaa|IN|oh really; I see"
+    ],
+    "e0281": [
+      "aurinko|N|sun"
+    ],
+    "e0282": [
+      "paistaa|V1|to shine; to fry; to roast"
+    ],
+    "e0283": [
+      "tosi|AV|really; very"
+    ],
+    "e0284": [
+      "lämmin|A|warm"
+    ],
+    "e0285": [
+      "valoisa|A|light; bright (of a room/day)"
+    ],
+    "e0286": [
+      "pimeä|A|dark"
+    ],
+    "e0287": [
+      "kuulemma|AV|apparently; I hear"
+    ],
+    "e0288": [
+      "niin|AV|so; like that; thus"
+    ],
+    "e0289": [
+      "etsiä|V1|to look for; to search"
+    ],
+    "e0290": [
+      "hieno|A|fine; nice; splendid"
+    ],
+    "e0291": [
+      "hieno juttu|PH|great; that's good news"
+    ],
+    "e0292": [
+      "millainen|Q|what kind of; what sort of"
+    ],
+    "e0293": [
+      "mukava|A|nice; pleasant; comfortable"
+    ],
+    "e0294": [
+      "sama|A|same",
+      "sama|PR|same"
+    ],
+    "e0296": [
+      "ohhoh|IN|wow; oh my!"
+    ],
+    "e0297": [
+      "hyvin|AV|well; very"
+    ],
+    "e0298": [
+      "kuin|CO|than; like; as"
+    ],
+    "e0299": [
+      "varmaan|AV|probably; surely"
+    ],
+    "e0300": [
+      "opiskelija-asunto|N|student apartment; student housing"
+    ],
+    "e0301": [
+      "muuttaa|V1|to move (home); to change"
+    ],
+    "e0302": [
+      "syyskuu|N|September"
+    ],
+    "e0303": [
+      "vastata|V4|to answer; to respond"
+    ],
+    "e0304": [
+      "yhtään|AV|at all; any (often with negation)"
+    ],
+    "e0305": [
+      "asunto|N|apartment; dwelling; residence"
+    ],
+    "e0306": [
+      "uusi|A|new"
+    ],
+    "e0307": [
+      "että|CO|that; so that; that (subordinating conjunction)"
+    ],
+    "e0308": [
+      "nukkua|V1|to sleep"
+    ],
+    "e0309": [
+      "lähteä|V1|to leave; to depart"
+    ],
+    "e0310": [
+      "nauttia|V1|to enjoy"
+    ],
+    "e0311": [
+      "kertoa|V1|to tell; to narrate"
+    ],
+    "e0312": [
+      "marraskuu|N|November"
+    ],
+    "e0313": [
+      "tuolla|AV|over there"
+    ],
+    "e0314": [
+      "siellä|AV|there"
+    ],
+    "e0315": [
+      "kohta|AV|soon"
+    ],
+    "e0316": [
+      "kyllä|AV|yes; indeed; certainly",
+      "kyllä|IN|yes"
+    ],
+    "e0318": [
+      "koko|AV|whole; entire",
+      "koko|N|size; extent; whole"
+    ],
+    "e0320": [
+      "koko ajan|AV|all the time; constantly"
+    ],
+    "e0321": [
+      "kuulostaa|V1|to sound; to seem"
+    ],
+    "e0322": [
+      "kuulostaa hyvältä|PH|sounds good"
+    ],
+    "e1168": [
+      "samalla|AV|at the same time"
+    ],
+    "e1197": [
+      "jompikumpi|PR|either one"
+    ],
+    "e1206": [
+      "kirjakieli|N|standard written language"
+    ],
+    "e1229": [
+      "molemmat|PR|both"
+    ],
+    "e1230": [
+      "monikko|N|plural"
+    ],
+    "e1267": [
+      "terveiset|N|greetings; regards"
+    ],
+    "e1272": [
+      "täytyä|V1|to have to; to be necessary"
+    ],
+    "e1275": [
+      "useampi|PR|more than one; several"
+    ],
+    "e1286": [
+      "väärin|AV|incorrectly; wrongly"
+    ],
+    "e1288": [
+      "yksikkö|N|singular"
+    ],
+    "e0323": [
+      "vanha|A|old"
+    ],
+    "e0324": [
+      "nuori|A|young"
+    ],
+    "e0325": [
+      "vaikea|A|difficult; hard"
+    ],
+    "e0326": [
+      "helppo|A|easy"
+    ],
+    "e0327": [
+      "hyvä|IN|good; okay (interjection)"
+    ],
+    "e0328": [
+      "huono|A|bad; poor"
+    ],
+    "e0329": [
+      "kaunis|A|beautiful; pretty"
+    ],
+    "e0330": [
+      "iloinen|A|happy; cheerful"
+    ],
+    "e0331": [
+      "surullinen|A|sad"
+    ],
+    "e1259": [
+      "suuri|A|large; big; great"
+    ],
+    "e0332": [
+      "ilma|N|weather; air"
+    ],
+    "e0333": [
+      "ulkona|AV|outside; outdoors"
+    ],
+    "e0334": [
+      "kuuma|A|hot"
+    ],
+    "e0335": [
+      "viileä|A|cool; chilly"
+    ],
+    "e0336": [
+      "kylmä|A|cold"
+    ],
+    "e0337": [
+      "myrsky|N|storm"
+    ],
+    "e0338": [
+      "kamala|A|terrible; awful"
+    ],
+    "e0339": [
+      "aurinkoinen|A|sunny"
+    ],
+    "e0340": [
+      "pilvinen|A|cloudy"
+    ],
+    "e0341": [
+      "sataa|V1|to rain; to snow (precipitate)"
+    ],
+    "e0342": [
+      "lumi|N|snow"
+    ],
+    "e0343": [
+      "tuuli|N|wind"
+    ],
+    "e0344": [
+      "tuulinen|A|windy"
+    ],
+    "e0345": [
+      "aste|N|degree"
+    ],
+    "e0346": [
+      "helle|N|hot weather; heat wave"
+    ],
+    "e0347": [
+      "ukkonen|N|thunderstorm; thunder"
+    ],
+    "e0348": [
+      "montako|Q|how many"
+    ],
+    "e0349": [
+      "räntä|N|sleet"
+    ],
+    "e0350": [
+      "tammikuu|N|January"
+    ],
+    "e0351": [
+      "helmikuu|N|February"
+    ],
+    "e0352": [
+      "maaliskuu|N|March"
+    ],
+    "e0353": [
+      "huhtikuu|N|April"
+    ],
+    "e0354": [
+      "toukokuu|N|May"
+    ],
+    "e0355": [
+      "kesäkuu|N|June"
+    ],
+    "e0356": [
+      "heinäkuu|N|July"
+    ],
+    "e0357": [
+      "elokuu|N|August"
+    ],
+    "e0358": [
+      "lokakuu|N|October"
+    ],
+    "e0359": [
+      "joulukuu|N|December"
+    ],
+    "e0360": [
+      "syntymäpäivä|N|birthday"
+    ],
+    "e0361": [
+      "kevät|N|spring"
+    ],
+    "e0362": [
+      "kesä|N|summer"
+    ],
+    "e0363": [
+      "syksy|N|autumn; fall"
+    ],
+    "e0364": [
+      "talvi|N|winter"
+    ],
+    "e0365": [
+      "vuodenaika|N|season"
+    ],
+    "e0366": [
+      "vuorokausi|N|24-hour period; day and night"
+    ],
+    "e0367": [
+      "aamu|N|morning"
+    ],
+    "e0368": [
+      "aamupäivä|N|forenoon; late morning"
+    ],
+    "e0369": [
+      "päivä|N|day"
+    ],
+    "e0370": [
+      "iltapäivä|N|afternoon"
+    ],
+    "e0371": [
+      "ilta|N|evening"
+    ],
+    "e0372": [
+      "yö|N|night"
+    ],
+    "e0373": [
+      "aamuyö|N|early hours of the morning"
+    ],
+    "e1236": [
+      "pakkanen|N|frost; freezing temperature"
+    ],
+    "e1244": [
+      "puolipilvinen|A|partly cloudy"
+    ],
+    "e1251": [
+      "sateinen|A|rainy"
+    ],
+    "e0374": [
+      "ilmoittautua|V1|to register; to enroll"
+    ],
+    "e0375": [
+      "seuraava|A|next; following"
+    ],
+    "e0376": [
+      "tarkistaa|V1|to check; to verify"
+    ],
+    "e0377": [
+      "auttaa|V1|to help"
+    ],
+    "e0378": [
+      "sun|PR|your; of you (spoken)"
+    ],
+    "e0379": [
+      "tarkoittaa|V1|to mean; to signify"
+    ],
+    "e0380": [
+      "kaupunki|N|city; town"
+    ],
+    "e0381": [
+      "siis|AV|so; therefore; that is"
+    ],
+    "e0382": [
+      "ensi|AV|next (before a time word)"
+    ],
+    "e0383": [
+      "sähköposti|N|email"
+    ],
+    "e0384": [
+      "sähkö|N|electricity"
+    ],
+    "e1169": [
+      "tää|PR|this (spoken)"
+    ],
+    "e1194": [
+      "iltakurssi|N|evening course"
+    ],
+    "e0385": [
+      "naimisissa|AV|married"
+    ],
+    "e0386": [
+      "kanssa|PO|with; together with"
+    ],
+    "e0387": [
+      "rakastaa|V1|to love"
+    ],
+    "e0388": [
+      "söpö|A|cute; adorable"
+    ],
+    "e0389": [
+      "hoikka|A|slim; slender"
+    ],
+    "e0390": [
+      "pitää|V1|to like; to hold; to keep"
+    ],
+    "e0391": [
+      "urheilu|N|sport; exercise"
+    ],
+    "e0392": [
+      "rauhallinen|A|calm; peaceful; quiet"
+    ],
+    "e0393": [
+      "ehkä|AV|perhaps; maybe"
+    ],
+    "e0394": [
+      "ujo|A|shy"
+    ],
+    "e0395": [
+      "eronnut|A|divorced; separated"
+    ],
+    "e0396": [
+      "sinkku|A|single (unmarried person)"
+    ],
+    "e0397": [
+      "onnellinen|A|happy; content"
+    ],
+    "e0398": [
+      "vihainen|A|angry"
+    ],
+    "e0399": [
+      "suku|N|extended family; relatives; lineage"
+    ],
+    "e0400": [
+      "helsinkiläinen|A|from Helsinki; a Helsinki resident"
+    ],
+    "e0401": [
+      "talo|N|house; building"
+    ],
+    "e0402": [
+      "kerros|N|floor; story (of building); layer"
+    ],
+    "e0403": [
+      "huone|N|room"
+    ],
+    "e0404": [
+      "puhelias|A|talkative; chatty"
+    ],
+    "e0405": [
+      "kihara|A|curly"
+    ],
+    "e0406": [
+      "tumma|A|dark (color); dark-haired"
+    ],
+    "e0407": [
+      "vuotias|A|aged; years old"
+    ],
+    "e0408": [
+      "minkänäköinen|A|what-looking; what someone looks like"
+    ],
+    "e0409": [
+      "minkävärinen|Q|what color; what-colored"
+    ],
+    "e0410": [
+      "kalju|A|bald"
+    ],
+    "e0411": [
+      "komea|A|handsome; good-looking"
+    ],
+    "e0412": [
+      "hyvännäköinen|A|good-looking"
+    ],
+    "e0413": [
+      "silmälasit|N|eyeglasses; glasses"
+    ],
+    "e0414": [
+      "vaalea|A|light-colored; blond"
+    ],
+    "e0415": [
+      "viiksi|N|mustache; whisker"
+    ],
+    "e0416": [
+      "nätti|A|pretty"
+    ],
+    "e0417": [
+      "valkoinen|A|white"
+    ],
+    "e0418": [
+      "punainen|A|red"
+    ],
+    "e0419": [
+      "sininen|A|blue"
+    ],
+    "e0420": [
+      "keltainen|A|yellow"
+    ],
+    "e0421": [
+      "vihreä|A|green"
+    ],
+    "e0422": [
+      "musta|A|black"
+    ],
+    "e0423": [
+      "ruskea|A|brown"
+    ],
+    "e0424": [
+      "harmaa|A|gray; grey"
+    ],
+    "e0425": [
+      "oranssi|A|orange"
+    ],
+    "e0426": [
+      "pinkki|A|pink"
+    ],
+    "e0427": [
+      "liila|A|purple; lilac"
+    ],
+    "e0428": [
+      "beige|A|beige"
+    ],
+    "e0429": [
+      "vaaleanpunainen|A|pink; pale pink"
+    ],
+    "e0430": [
+      "vaaleansininen|A|light blue"
+    ],
+    "e0431": [
+      "tummansininen|A|dark blue"
+    ],
+    "e0432": [
+      "tummanpunainen|A|dark red"
+    ],
+    "e1285": [
+      "väri|N|color"
+    ],
+    "e2343": [
+      "suloinen|A|sweet; adorable"
+    ],
+    "e2359": [
+      "tukeva|A|stout; sturdy"
+    ],
+    "e0433": [
+      "eläkkeellä|AV|retired"
+    ],
+    "e0434": [
+      "leski|N|widow; widower"
+    ],
+    "e0435": [
+      "yksinhuoltaja|N|single parent"
+    ],
+    "e0436": [
+      "uusperhe|N|blended family; stepfamily"
+    ],
+    "e0437": [
+      "lemmikki|N|pet"
+    ],
+    "e0438": [
+      "nominatiivi|N|nominative case"
+    ],
+    "e0439": [
+      "partitiivi|N|partitive case"
+    ],
+    "e0440": [
+      "genetiivi|N|genitive case"
+    ],
+    "e0441": [
+      "isoäiti|N|grandmother"
+    ],
+    "e0442": [
+      "isoisä|N|grandfather"
+    ],
+    "e0443": [
+      "ukki|N|grandpa"
+    ],
+    "e0444": [
+      "mummi|N|grandma; granny"
+    ],
+    "e0445": [
+      "mummo|N|grandmother; grandma"
+    ],
+    "e0446": [
+      "vaari|N|grandpa; grandfather"
+    ],
+    "e0447": [
+      "vaimo|N|wife"
+    ],
+    "e0448": [
+      "mies|N|man; husband"
+    ],
+    "e0449": [
+      "äiti|N|mother"
+    ],
+    "e0450": [
+      "lapsi|N|child"
+    ],
+    "e0451": [
+      "perhe|N|family"
+    ],
+    "e0452": [
+      "isovanhempi|N|grandparent"
+    ],
+    "e0453": [
+      "vanhempi|N|parent"
+    ],
+    "e0454": [
+      "isä|N|father"
+    ],
+    "e0455": [
+      "sisko|N|sister"
+    ],
+    "e0456": [
+      "pikkusisko|N|little sister; younger sister"
+    ],
+    "e0457": [
+      "isosisko|N|big sister; older sister"
+    ],
+    "e0458": [
+      "pikkuveli|N|little brother; younger brother"
+    ],
+    "e0459": [
+      "isoveli|N|big brother; older brother"
+    ],
+    "e0460": [
+      "setä|N|paternal uncle"
+    ],
+    "e0461": [
+      "eno|N|maternal uncle"
+    ],
+    "e0462": [
+      "täti|N|aunt"
+    ],
+    "e0463": [
+      "serkku|N|cousin"
+    ],
+    "e0464": [
+      "tyttö|N|girl"
+    ],
+    "e0465": [
+      "puoliso|N|spouse; partner"
+    ],
+    "e0466": [
+      "poika|N|boy; son"
+    ],
+    "e0467": [
+      "veli|N|brother"
+    ],
+    "e1189": [
+      "eikä|IN|no way!; really?"
+    ],
+    "e1209": [
+      "koti-isä|N|stay-at-home father"
+    ],
+    "e1271": [
+      "tytär|N|daughter"
+    ],
+    "e0468": [
+      "rauhassa|AV|peacefully; without hurry"
+    ],
+    "e0469": [
+      "ole hyvä|PH|here you are; you're welcome"
+    ],
+    "e0470": [
+      "valitettavasti|AV|unfortunately"
+    ],
+    "e0471": [
+      "tota|IN|um; well (spoken filler)",
+      "tota|PH|well; um (spoken filler)"
+    ],
+    "e0473": [
+      "sovituskoppi|N|fitting room"
+    ],
+    "e0474": [
+      "takana|AV|behind"
+    ],
+    "e0475": [
+      "klubikortti|N|club card; loyalty card"
+    ],
+    "e0476": [
+      "mulla|PR|I have; on me (spoken form of minulla)"
+    ],
+    "e0477": [
+      "näin|AV|like this; so; in this way"
+    ],
+    "e0478": [
+      "farkkutakki|N|denim jacket"
+    ],
+    "e0479": [
+      "muovipussi|N|plastic bag"
+    ],
+    "e0480": [
+      "prosentti|N|percent"
+    ],
+    "e0481": [
+      "vaatekauppa|N|clothing store"
+    ],
+    "e0482": [
+      "päällä|AV|on top; above"
+    ],
+    "e0483": [
+      "villapusero|N|wool sweater"
+    ],
+    "e0484": [
+      "takki|N|jacket; coat"
+    ],
+    "e0485": [
+      "housut|N|trousers; pants"
+    ],
+    "e0486": [
+      "farkut|N|jeans"
+    ],
+    "e0487": [
+      "uimapuku|N|swimsuit"
+    ],
+    "e0488": [
+      "uimahousut|N|swim trunks"
+    ],
+    "e0489": [
+      "rintaliivit|N|bra"
+    ],
+    "e0490": [
+      "aluspaita|N|undershirt"
+    ],
+    "e0491": [
+      "alushousut|N|underpants"
+    ],
+    "e0492": [
+      "t-paita|N|T-shirt"
+    ],
+    "e0493": [
+      "paita|N|shirt"
+    ],
+    "e0494": [
+      "hame|N|skirt"
+    ],
+    "e0495": [
+      "mekko|N|dress"
+    ],
+    "e0496": [
+      "puku|N|suit"
+    ],
+    "e0497": [
+      "shortsit|N|shorts"
+    ],
+    "e0498": [
+      "alushame|N|slip; underskirt"
+    ],
+    "e0499": [
+      "hattu|N|hat"
+    ],
+    "e0500": [
+      "vyö|N|belt"
+    ],
+    "e0501": [
+      "solmio|N|tie"
+    ],
+    "e0502": [
+      "sukka|N|sock"
+    ],
+    "e0503": [
+      "saapas|N|boot"
+    ],
+    "e0504": [
+      "lenkkari|N|sneaker; trainer"
+    ],
+    "e0505": [
+      "alusvaate|N|underwear; undergarment"
+    ],
+    "e0506": [
+      "käsine|N|glove"
+    ],
+    "e0507": [
+      "pipo|N|beanie; knitted hat"
+    ],
+    "e0508": [
+      "sateenvarjo|N|umbrella"
+    ],
+    "e0509": [
+      "kaulaliina|N|scarf"
+    ],
+    "e0510": [
+      "lenkki|N|exercise walk; jog; circuit"
+    ],
+    "e1177": [
+      "asiakas|N|customer; client"
+    ],
+    "e1260": [
+      "syntymäpäiväjuhla|N|birthday party"
+    ],
+    "e0511": [
+      "herätä|V4|to wake up"
+    ],
+    "e0512": [
+      "kirjata|V4|to record; to enter; to register"
+    ],
+    "e0513": [
+      "sandaali|N|sandal"
+    ],
+    "e0514": [
+      "herätyskello|N|alarm clock"
+    ],
+    "e0515": [
+      "soida|V2|to ring; to play (make a sound)"
+    ],
+    "e0516": [
+      "kaksi|NU|two"
+    ],
+    "e0517": [
+      "käydä|V2|to visit; to go; to attend"
+    ],
+    "e0518": [
+      "kaveri|N|friend; buddy"
+    ],
+    "e0519": [
+      "pukea|V1|to dress; to put clothes on"
+    ],
+    "e0520": [
+      "päälle|AV|on top; onto; on (clothing)"
+    ],
+    "e0521": [
+      "pelata|V4|to play (a game or sport)"
+    ],
+    "e0522": [
+      "sen jälkeen|AV|after that"
+    ],
+    "e0523": [
+      "jälkeen|AV|after; afterwards",
+      "jälkeen|PO|after"
+    ],
+    "e0525": [
+      "tehdä|V2|to do; to make"
+    ],
+    "e0526": [
+      "iltaisin|AV|in the evenings"
+    ],
+    "e0527": [
+      "usein|AV|often"
+    ],
+    "e0528": [
+      "lukea|V1|to read"
+    ],
+    "e0529": [
+      "jotain|PR|something; anything (colloquial variant)"
+    ],
+    "e0530": [
+      "lehti|N|newspaper; leaf; magazine"
+    ],
+    "e0531": [
+      "uimahalli|N|indoor swimming pool"
+    ],
+    "e0532": [
+      "yhdessä|AV|together"
+    ],
+    "e0533": [
+      "syödä|V2|to eat"
+    ],
+    "e0534": [
+      "tunti|N|hour; lesson"
+    ],
+    "e0535": [
+      "yleensä|AV|usually; generally"
+    ],
+    "e0536": [
+      "kenkä|N|shoe"
+    ],
+    "e0537": [
+      "tarvita|V5|to need"
+    ],
+    "e0538": [
+      "valita|V5|to choose; to select"
+    ],
+    "e0539": [
+      "juoda|V2|to drink"
+    ],
+    "e0540": [
+      "haluta|V4|to want"
+    ],
+    "e0541": [
+      "vain|AV|only; just"
+    ],
+    "e0542": [
+      "katsoa|V1|to watch; to look at"
+    ],
+    "e0543": [
+      "väsynyt|A|tired"
+    ],
+    "e0544": [
+      "lounasravintola|N|lunch restaurant"
+    ],
+    "e0545": [
+      "kirja|N|book"
+    ],
+    "e0546": [
+      "yhdeksän|NU|nine"
+    ],
+    "e0547": [
+      "työkaveri|N|colleague; coworker"
+    ],
+    "e0548": [
+      "pestä|V3|to wash; to brush (teeth)"
+    ],
+    "e0549": [
+      "kävellä|V3|to walk"
+    ],
+    "e0550": [
+      "sanoa|V1|to say; to tell"
+    ],
+    "e0551": [
+      "päiväkoti|N|daycare center; kindergarten"
+    ],
+    "e0552": [
+      "kun|CO|when; as; since"
+    ],
+    "e0553": [
+      "me|PR|we"
+    ],
+    "e1170": [
+      "tavallinen|A|ordinary; usual"
+    ],
+    "e1171": [
+      "hyvää yötä|PH|good night"
+    ],
+    "e1175": [
+      "mukaan|AV|along; with; according to"
+    ],
+    "e1212": [
+      "kulua|V1|to pass (time); to be consumed"
+    ],
+    "e1215": [
+      "käydä suihkussa|PH|to take a shower"
+    ],
+    "e1225": [
+      "mennä nukkumaan|PH|to go to bed"
+    ],
+    "e1238": [
+      "pestä hampaat|PH|to brush one's teeth"
+    ],
+    "e1265": [
+      "tavallisesti|AV|usually; ordinarily"
+    ],
+    "e1276": [
+      "useimmiten|AV|most often; usually"
+    ],
+    "e1281": [
+      "vauva|N|baby"
+    ],
+    "e0554": [
+      "hiihtää|V1|to ski (cross-country)"
+    ],
+    "e0555": [
+      "kirjoittaa|V1|to write"
+    ],
+    "e0556": [
+      "lentää|V1|to fly"
+    ],
+    "e0579": [
+      "me mennään|PH|we go; we are going (spoken)"
+    ],
+    "e0580": [
+      "me tullaan|PH|we come; we are coming (spoken)"
+    ],
+    "e0581": [
+      "ne|PR|they (spoken for people)",
+      "ne|PR|they; those"
+    ],
+    "e0583": [
+      "kysymys|N|question"
+    ],
+    "e0584": [
+      "vastaus|N|answer; response"
+    ],
+    "e0585": [
+      "mulle|PR|to me (spoken)"
+    ],
+    "e0586": [
+      "tai|CO|or"
+    ],
+    "e0587": [
+      "sori|IN|sorry (spoken)"
+    ],
+    "e0588": [
+      "mut|CO|but (spoken)",
+      "mut|PR|me (object, spoken)"
+    ],
+    "e1234": [
+      "osata|V4|to know how to; to be able to"
+    ],
+    "e1256": [
+      "siivota|V4|to clean; to tidy"
+    ],
+    "e1268": [
+      "tiskata|V4|to wash dishes"
+    ],
+    "e1273": [
+      "uida|V2|to swim"
+    ],
+    "e0557": [
+      "yli|AV|past; over; more than"
+    ],
+    "e0558": [
+      "vaille|AV|to; short of (time)"
+    ],
+    "e0559": [
+      "sekunti|N|second (time)"
+    ],
+    "e0560": [
+      "minuutti|N|minute"
+    ],
+    "e0561": [
+      "vartti|NU|quarter (fifteen minutes)"
+    ],
+    "e0562": [
+      "monelta|PH|at what time? (spoken variant also standard)"
+    ],
+    "e1264": [
+      "tasan|AV|exactly; on the dot"
+    ],
+    "e0563": [
+      "huomenta|IN|morning! (greeting)"
+    ],
+    "e0564": [
+      "nukuiks sä hyvin|PH|did you sleep well? (spoken)"
+    ],
+    "e0565": [
+      "otaks sä|PH|will you have?; are you taking? (spoken)"
+    ],
+    "e0566": [
+      "tuuks sä|PH|are you coming? (spoken)"
+    ],
+    "e0567": [
+      "mun|PR|my; of me (spoken)"
+    ],
+    "e0568": [
+      "käyks|PH|does it work?; is it convenient? (spoken)"
+    ],
+    "e0569": [
+      "mä tuun|PH|I'm coming; I come (spoken)"
+    ],
+    "e0570": [
+      "öö|IN|uh; um (spoken filler)"
+    ],
+    "e0571": [
+      "mä meen|PH|I'm going; I go (spoken)"
+    ],
+    "e0572": [
+      "meen|PH|I'm going (spoken form of menen)"
+    ],
+    "e0573": [
+      "sopiiks|PH|does it suit?; does it work? (spoken)"
+    ],
+    "e0574": [
+      "me nähään|PH|we see each other; we'll meet (spoken)"
+    ],
+    "e0575": [
+      "ehtiä|V1|to have time; to make it in time"
+    ],
+    "e0576": [
+      "nähdään|IN|see you"
+    ],
+    "e0577": [
+      "sopia|V1|to suit; to agree; to fit"
+    ],
+    "e0578": [
+      "nähdä|V2|to see"
+    ],
+    "e1226": [
+      "mennä ostoksille|PH|to go shopping"
+    ],
+    "e0590": [
+      "asuntoilmoitus|N|housing advertisement; rental listing"
+    ],
+    "e0591": [
+      "vuokra|N|rent"
+    ],
+    "e0592": [
+      "antaa|V1|to give; to allow"
+    ],
+    "e0593": [
+      "neliömetri|N|square meter"
+    ],
+    "e0594": [
+      "kuukausi|N|month"
+    ],
+    "e0595": [
+      "vesimaksu|N|water fee; water charge"
+    ],
+    "e0596": [
+      "henkilö|N|person; individual"
+    ],
+    "e0597": [
+      "hyväkuntoinen|A|in good condition"
+    ],
+    "e0598": [
+      "kaksio|N|two-room apartment (living room + bedroom)"
+    ],
+    "e0599": [
+      "kerrostalo|N|apartment building"
+    ],
+    "e0600": [
+      "sijainti|N|location"
+    ],
+    "e0601": [
+      "viihtyisä|A|cozy; pleasant; comfortable"
+    ],
+    "e0602": [
+      "alue|N|area; district; region"
+    ],
+    "e0603": [
+      "hissi|N|elevator; lift"
+    ],
+    "e0604": [
+      "sauna|N|sauna"
+    ],
+    "e0605": [
+      "pesutupa|N|communal laundry room"
+    ],
+    "e0606": [
+      "kellari|N|cellar; basement"
+    ],
+    "e0607": [
+      "parkkipaikka|N|parking space; parking lot"
+    ],
+    "e0608": [
+      "etupiha|N|front yard"
+    ],
+    "e0609": [
+      "vuokratakuu|N|rental deposit; rental guarantee"
+    ],
+    "e0610": [
+      "yhteydenotto|N|contact; inquiry"
+    ],
+    "e0611": [
+      "sähköpostitse|AV|by email"
+    ],
+    "e0612": [
+      "vuokranantaja|N|landlord"
+    ],
+    "e0613": [
+      "näyttää|V1|to show; to look; to appear"
+    ],
+    "e0614": [
+      "neliö|N|square; square meter (colloquial housing context)"
+    ],
+    "e0615": [
+      "odottaa|V1|to wait for; to expect"
+    ],
+    "e0616": [
+      "hirveän|AV|terribly; extremely"
+    ],
+    "e0617": [
+      "kallis|A|expensive"
+    ],
+    "e0618": [
+      "mennään vaan|PH|let's just go (spoken)"
+    ],
+    "e0619": [
+      "silti|AV|still; nevertheless"
+    ],
+    "e0620": [
+      "näyttö|N|viewing; apartment showing; display"
+    ],
+    "e0621": [
+      "sähköpostiosoite|N|email address"
+    ],
+    "e0622": [
+      "muutto|N|move; relocation"
+    ],
+    "e0623": [
+      "ulos|AV|outside; out; outside (direction)"
+    ],
+    "e0624": [
+      "piha|N|yard; courtyard"
+    ],
+    "e0625": [
+      "nostaa|V1|to lift; to raise"
+    ],
+    "e0626": [
+      "nainen|N|woman"
+    ],
+    "e0627": [
+      "kantaa|V1|to carry"
+    ],
+    "e0628": [
+      "sisään|AV|inside; inward; inwards"
+    ],
+    "e0629": [
+      "tapahtua|V1|to happen; to take place"
+    ],
+    "e0630": [
+      "naapuri|N|neighbor"
+    ],
+    "e0631": [
+      "apu|N|help; assistance"
+    ],
+    "e0632": [
+      "viedä|V2|to take; to carry away; to steal; to bring away; to transport"
+    ],
+    "e0633": [
+      "vaikka|CO|although; even though"
+    ],
+    "e0634": [
+      "esimerkiksi|AV|for example"
+    ],
+    "e0635": [
+      "voida|V2|to be able; can"
+    ],
+    "e0636": [
+      "tuo|PR|that (there)"
+    ],
+    "e0637": [
+      "ottaa|V1|to take; to have (an item)"
+    ],
+    "e0638": [
+      "nämä|PR|these"
+    ],
+    "e0639": [
+      "ylös|AV|up; upward"
+    ],
+    "e0640": [
+      "auki|AV|open"
+    ],
+    "e0641": [
+      "alas|AV|down; downward"
+    ],
+    "e0642": [
+      "kiinni|AV|closed; shut; attached"
+    ],
+    "e0643": [
+      "siisti|A|tidy; neat; clean"
+    ],
+    "e0644": [
+      "rauhaton|A|restless; noisy"
+    ],
+    "e0645": [
+      "huonokuntoinen|A|in poor condition"
+    ],
+    "e0646": [
+      "adjektiivi|N|adjective"
+    ],
+    "e1172": [
+      "apua|IN|help!"
+    ],
+    "e1190": [
+      "elatiivi|N|elative case"
+    ],
+    "e1191": [
+      "hitaasti|AV|slowly"
+    ],
+    "e1193": [
+      "illatiivi|N|illative case"
+    ],
+    "e1195": [
+      "inessiivi|N|inessive case"
+    ],
+    "e1239": [
+      "pois|AV|away; off"
+    ],
+    "e1240": [
+      "polttaa|V1|to burn; to smoke (tobacco)"
+    ],
+    "e1258": [
+      "substantiivi|N|noun"
+    ],
+    "e1266": [
+      "tehdä ruokaa|PH|to cook; to prepare food"
+    ],
+    "e1278": [
+      "vaihtoehto|N|alternative; option"
+    ],
+    "e0647": [
+      "televisio|N|television"
+    ],
+    "e0648": [
+      "kirjahylly|N|bookshelf; bookcase"
+    ],
+    "e0649": [
+      "pesuallas|N|washbasin; sink"
+    ],
+    "e0650": [
+      "pakastin|N|freezer"
+    ],
+    "e0651": [
+      "kaukosäädin|N|remote control"
+    ],
+    "e0652": [
+      "wc|N|toilet; restroom"
+    ],
+    "e0653": [
+      "wc-pönttö|N|toilet bowl"
+    ],
+    "e0654": [
+      "hella|N|stove; cooker"
+    ],
+    "e0655": [
+      "uuni|N|oven"
+    ],
+    "e0656": [
+      "tv-taso|N|TV stand"
+    ],
+    "e0657": [
+      "peili|N|mirror"
+    ],
+    "e0658": [
+      "mikroaaltouuni|N|microwave oven"
+    ],
+    "e0659": [
+      "taulu|N|painting; picture; chart"
+    ],
+    "e0660": [
+      "pesukone|N|washing machine"
+    ],
+    "e0661": [
+      "kahvinkeitin|N|coffee maker"
+    ],
+    "e0662": [
+      "vedenkeitin|N|electric kettle"
+    ],
+    "e0663": [
+      "leivänpaahdin|N|toaster"
+    ],
+    "e0664": [
+      "yöpöytä|N|bedside table"
+    ],
+    "e0665": [
+      "naulakko|N|coat rack"
+    ],
+    "e0666": [
+      "parveke|N|balcony"
+    ],
+    "e0667": [
+      "keittiö|N|kitchen"
+    ],
+    "e0668": [
+      "olohuone|N|living room"
+    ],
+    "e0669": [
+      "työhuone|N|office; study; workroom"
+    ],
+    "e0670": [
+      "kylpyhuone|N|bathroom"
+    ],
+    "e0671": [
+      "lattia|N|floor"
+    ],
+    "e0672": [
+      "ruokapöytä|N|dining table"
+    ],
+    "e0673": [
+      "työtuoli|N|office chair"
+    ],
+    "e0674": [
+      "sohva|N|sofa; couch"
+    ],
+    "e0675": [
+      "vessa|N|toilet; restroom (informal)"
+    ],
+    "e0676": [
+      "katto|N|roof; ceiling"
+    ],
+    "e0677": [
+      "tuoli|N|chair"
+    ],
+    "e0678": [
+      "sohvapöytä|N|coffee table"
+    ],
+    "e0679": [
+      "työpöytä|N|desk"
+    ],
+    "e0680": [
+      "suihku|N|shower"
+    ],
+    "e0681": [
+      "seinä|N|wall"
+    ],
+    "e0682": [
+      "astianpesukone|N|dishwasher"
+    ],
+    "e0683": [
+      "nojatuoli|N|armchair"
+    ],
+    "e0684": [
+      "laatikko|N|box; drawer"
+    ],
+    "e0685": [
+      "kylpyamme|N|bathtub"
+    ],
+    "e0686": [
+      "ovi|N|door"
+    ],
+    "e0687": [
+      "jääkaappi|N|refrigerator; fridge"
+    ],
+    "e0688": [
+      "ikkuna|N|window"
+    ],
+    "e0689": [
+      "makuuhuone|N|bedroom"
+    ],
+    "e0690": [
+      "liesi|N|stove; cooker"
+    ],
+    "e0691": [
+      "sänky|N|bed"
+    ],
+    "e0692": [
+      "kaappi|N|cupboard; cabinet"
+    ],
+    "e0693": [
+      "matto|N|carpet; rug"
+    ],
+    "e0694": [
+      "lamppu|N|lamp; light"
+    ],
+    "e0695": [
+      "verho|N|curtain"
+    ],
+    "e0696": [
+      "asuminen|N|living; housing"
+    ],
+    "e0697": [
+      "rivitalo|N|row house; terraced house"
+    ],
+    "e0698": [
+      "omakotitalo|N|detached house; single-family home"
+    ],
+    "e0699": [
+      "yksiö|N|studio apartment"
+    ],
+    "e0700": [
+      "kolmio|N|three-room apartment"
+    ],
+    "e0701": [
+      "vuokra-asunto|N|rental apartment"
+    ],
+    "e0702": [
+      "omistusasunto|N|owner-occupied home"
+    ],
+    "e0703": [
+      "alakerta|N|lower floor; downstairs"
+    ],
+    "e0704": [
+      "asukas|N|resident; inhabitant"
+    ],
+    "e0705": [
+      "keittokomero|N|kitchenette"
+    ],
+    "e0706": [
+      "yläkerta|N|upstairs; upper floor"
+    ],
+    "e0707": [
+      "rappukäytävä|N|stairwell"
+    ],
+    "e0708": [
+      "rappu|N|stairwell; stairway (informal)",
+      "rappu|N|stairwell; entrance; stairs (spoken)"
+    ],
+    "e0710": [
+      "vuokrata|V4|to rent; to lease out; to let out"
+    ],
+    "e0711": [
+      "autotalli|N|garage"
+    ],
+    "e0712": [
+      "vaatehuone|N|walk-in closet; dressing room"
+    ],
+    "e0713": [
+      "vuokrasopimus|N|rental agreement; lease"
+    ],
+    "e0714": [
+      "kellarikomero|N|storage compartment in basement; basement storage unit"
+    ],
+    "e0715": [
+      "vinttikomero|N|attic storage space"
+    ],
+    "e0716": [
+      "vuokralainen|N|tenant"
+    ],
+    "e0717": [
+      "ulkoiluvälinevarasto|N|storage room for outdoor equipment"
+    ],
+    "e0718": [
+      "takuuvuokra|N|security deposit"
+    ],
+    "e0719": [
+      "pyörävarasto|N|bicycle storage"
+    ],
+    "e0720": [
+      "kotona|AV|at home"
+    ],
+    "e0721": [
+      "kotoa|AV|from home"
+    ],
+    "e0722": [
+      "ulkoa|AV|from outside"
+    ],
+    "e0723": [
+      "sisällä|AV|inside; indoors"
+    ],
+    "e0724": [
+      "sisältä|AV|from inside"
+    ],
+    "e0725": [
+      "vintti|N|attic"
+    ],
+    "e1184": [
+      "asuintalo|N|residential building"
+    ],
+    "e1192": [
+      "huonekalu|N|piece of furniture"
+    ],
+    "e1207": [
+      "kodikas|A|homelike; cozy"
+    ],
+    "e1213": [
+      "kummallinen|A|strange; odd"
+    ],
+    "e1216": [
+      "lastenhuone|N|children's room"
+    ],
+    "e1219": [
+      "likainen|A|dirty"
+    ],
+    "e1227": [
+      "mikro|N|microwave oven"
+    ],
+    "e1228": [
+      "moderni|A|modern"
+    ],
+    "e1243": [
+      "puhdas|A|clean"
+    ],
+    "e1261": [
+      "takapiha|N|backyard"
+    ],
+    "e0726": [
+      "huoltomies|N|maintenance man; caretaker"
+    ],
+    "e0727": [
+      "huoltoyhtiö|N|building maintenance company"
+    ],
+    "e0728": [
+      "mä haluaisin|PH|I would like (spoken)"
+    ],
+    "e0729": [
+      "varata|V4|to reserve; to book"
+    ],
+    "e0730": [
+      "teiän|PH|your (plural, spoken)"
+    ],
+    "e0731": [
+      "numero|N|number"
+    ],
+    "e0732": [
+      "varattu|A|reserved; occupied"
+    ],
+    "e0733": [
+      "mä luulen|PH|I think; I suppose (spoken)"
+    ],
+    "e0734": [
+      "me otetaan|PH|we'll take; we take (spoken)"
+    ],
+    "e0735": [
+      "paljon|AV|a lot; much"
+    ],
+    "e0736": [
+      "luulla|V3|to think; to suppose"
+    ],
+    "e0737": [
+      "posti|N|mail; post"
+    ],
+    "e0738": [
+      "saunavuoro|N|reserved sauna time"
+    ],
+    "e0739": [
+      "niin onkin|PH|that's right; it really is"
+    ],
+    "e0740": [
+      "kassi|N|bag; tote bag"
+    ],
+    "e0741": [
+      "tuliainen|N|souvenir; gift brought from a trip"
+    ],
+    "e0742": [
+      "tuore|A|fresh"
+    ],
+    "e0743": [
+      "tulkaa pöytään|PH|come to the table"
+    ],
+    "e0744": [
+      "matka|N|trip; journey; distance"
+    ],
+    "e0745": [
+      "imperfekti|N|simple past tense; imperfect"
+    ],
+    "e0746": [
+      "melkein|AV|almost"
+    ],
+    "e0747": [
+      "myöhässä|AV|late (behind schedule)"
+    ],
+    "e0748": [
+      "aikoa|V1|to intend; to plan to"
+    ],
+    "e0749": [
+      "kaikki|PR|all; everyone; everything"
+    ],
+    "e0750": [
+      "tärkeä|A|important"
+    ],
+    "e0751": [
+      "ensimmäinen|NU|first"
+    ],
+    "e0752": [
+      "ainakin|AV|at least; in any case"
+    ],
+    "e0753": [
+      "museokeskus|N|museum center"
+    ],
+    "e0754": [
+      "näkötorni|N|observation tower"
+    ],
+    "e0755": [
+      "hyvä idea|PH|good idea"
+    ],
+    "e0756": [
+      "sieltä|AV|from there"
+    ],
+    "e0757": [
+      "upea|A|wonderful; magnificent"
+    ],
+    "e0758": [
+      "näköala|N|view; scenery; panorama"
+    ],
+    "e0759": [
+      "herkullinen|A|delicious"
+    ],
+    "e0760": [
+      "munkki|N|doughnut; monk"
+    ],
+    "e0761": [
+      "jos|CO|if"
+    ],
+    "e0762": [
+      "jaksaa|V1|to have the energy; to manage"
+    ],
+    "e0763": [
+      "huvipuisto|N|amusement park"
+    ],
+    "e0764": [
+      "maistaa|V1|to taste; to try food"
+    ],
+    "e0765": [
+      "mustamakkara|N|black sausage; blood sausage (Tampere specialty)"
+    ],
+    "e0766": [
+      "tamperelainen|N|person from Tampere; Tampere-related"
+    ],
+    "e0767": [
+      "erikoisuus|N|specialty; distinctive feature"
+    ],
+    "e0768": [
+      "puolukkahillo|N|lingonberry jam"
+    ],
+    "e0769": [
+      "muuten|AV|otherwise; by the way"
+    ],
+    "e0770": [
+      "yöpyä|V1|to stay overnight"
+    ],
+    "e0771": [
+      "sehän on kiva|PH|that's nice"
+    ],
+    "e0772": [
+      "mökki|N|cottage; summer cabin"
+    ],
+    "e0773": [
+      "sinne|AV|to there; there"
+    ],
+    "e0774": [
+      "tykätä|V4|to like"
+    ],
+    "e0775": [
+      "saunoa|V1|to use a sauna; to take a sauna"
+    ],
+    "e0776": [
+      "tavata|V4|to meet"
+    ],
+    "e0777": [
+      "no varmasti|PH|surely; of course"
+    ],
+    "e0778": [
+      "varmasti|AV|certainly; surely"
+    ],
+    "e0779": [
+      "kiva nähdä pitkästä aikaa|PH|nice to see you after a long time"
+    ],
+    "e0780": [
+      "täältä|AV|from here"
+    ],
+    "e0781": [
+      "tänne|AV|to here; here"
+    ],
+    "e0782": [
+      "tuonne|AV|to over there; over there; to there"
+    ],
+    "e0783": [
+      "tuolta|AV|from over there"
+    ],
+    "e2319": [
+      "niemi|N|cape; peninsula"
+    ],
+    "e0784": [
+      "puisto|N|park"
+    ],
+    "e0785": [
+      "uimaranta|N|swimming beach"
+    ],
+    "e0786": [
+      "stadion|N|stadium"
+    ],
+    "e0787": [
+      "eläintarha|N|zoo"
+    ],
+    "e0788": [
+      "elokuvateatteri|N|movie theater; cinema"
+    ],
+    "e0789": [
+      "ooppera|N|opera"
+    ],
+    "e0790": [
+      "terveysasema|N|health clinic; health center"
+    ],
+    "e0791": [
+      "leikkipuisto|N|playground"
+    ],
+    "e0792": [
+      "linja-autoasema|N|bus station"
+    ],
+    "e0793": [
+      "lentoasema|N|airport"
+    ],
+    "e0794": [
+      "satama|N|harbor; port"
+    ],
+    "e0795": [
+      "pysäköinti|N|parking"
+    ],
+    "e0796": [
+      "parkkihalli|N|parking garage"
+    ],
+    "e0797": [
+      "kirkko|N|church"
+    ],
+    "e0798": [
+      "sairaala|N|hospital"
+    ],
+    "e0799": [
+      "linna|N|castle"
+    ],
+    "e0800": [
+      "apteekki|N|pharmacy"
+    ],
+    "e0801": [
+      "museo|N|museum"
+    ],
+    "e0802": [
+      "kirjasto|N|library"
+    ],
+    "e0803": [
+      "yliopisto|N|university"
+    ],
+    "e0804": [
+      "koulu|N|school"
+    ],
+    "e0805": [
+      "tori|N|market square; outdoor market"
+    ],
+    "e0806": [
+      "kauppahalli|N|market hall; covered food market"
+    ],
+    "e0807": [
+      "kauppakeskus|N|shopping center; mall"
+    ],
+    "e0808": [
+      "tavaratalo|N|department store"
+    ],
+    "e0809": [
+      "bussipysäkki|N|bus stop"
+    ],
+    "e0810": [
+      "rautatieasema|N|railway station"
+    ],
+    "e0811": [
+      "metroasema|N|metro station"
+    ],
+    "e0812": [
+      "kahvila|N|cafe"
+    ],
+    "e0813": [
+      "ravintola|N|restaurant"
+    ],
+    "e0814": [
+      "baari|N|bar"
+    ],
+    "e0815": [
+      "terveyskeskus|N|health center"
+    ],
+    "e0816": [
+      "poliisi|N|police officer; police"
+    ],
+    "e0817": [
+      "poliisiasema|N|police station"
+    ],
+    "e0818": [
+      "lentokenttä|N|airport"
+    ],
+    "e0819": [
+      "hotelli|N|hotel"
+    ],
+    "e0820": [
+      "huoltoasema|N|gas station; service station"
+    ],
+    "e0821": [
+      "kioski|N|kiosk"
+    ],
+    "e0822": [
+      "katu|N|street"
+    ],
+    "e0823": [
+      "keskusta|N|city center; downtown"
+    ],
+    "e1185": [
+      "aukioloaika|N|opening hours"
+    ],
+    "e1242": [
+      "pubi|N|pub"
+    ],
+    "e1257": [
+      "sisäänkäynti|N|entrance"
+    ],
+    "e0824": [
+      "matkailu|N|tourism; traveling"
+    ],
+    "e0825": [
+      "lippu|N|ticket; flag"
+    ],
+    "e0826": [
+      "pääsymaksu|N|admission fee"
+    ],
+    "e0827": [
+      "ilmainen|A|free of charge; free (of charge)"
+    ],
+    "e0828": [
+      "maksuton|A|free of charge"
+    ],
+    "e0829": [
+      "avoinna|AV|open (of a business)"
+    ],
+    "e0830": [
+      "suljettu|A|closed"
+    ],
+    "e0831": [
+      "pääsylippu|N|admission ticket"
+    ],
+    "e0832": [
+      "rekka|N|truck; lorry"
+    ],
+    "e0833": [
+      "matkustaa|V1|to travel"
+    ],
+    "e0834": [
+      "bussi|N|bus"
+    ],
+    "e0835": [
+      "pakettiauto|N|van; delivery van"
+    ],
+    "e0836": [
+      "rekka-auto|N|truck; lorry"
+    ],
+    "e0837": [
+      "auto|N|car"
+    ],
+    "e0838": [
+      "moottoripyörä|N|motorcycle"
+    ],
+    "e0839": [
+      "helikopteri|N|helicopter"
+    ],
+    "e0840": [
+      "lentokone|N|airplane"
+    ],
+    "e0841": [
+      "taksi|N|taxi"
+    ],
+    "e0842": [
+      "polkupyörä|N|bicycle"
+    ],
+    "e0843": [
+      "pyörä|N|bicycle; wheel"
+    ],
+    "e0844": [
+      "metro|N|metro; subway"
+    ],
+    "e0845": [
+      "juna|N|train"
+    ],
+    "e0846": [
+      "raitiovaunu|N|tram"
+    ],
+    "e0847": [
+      "ratikka|N|tram (spoken)"
+    ],
+    "e0848": [
+      "laiva|N|ship; ferry"
+    ],
+    "e0849": [
+      "kulkuväline|N|means of transportation; vehicle"
+    ],
+    "e0850": [
+      "varaus|N|reservation; booking"
+    ],
+    "e0851": [
+      "hotellivirkailija|N|hotel clerk; receptionist"
+    ],
+    "e0852": [
+      "just niin|PH|exactly; that's right (spoken)"
+    ],
+    "e0853": [
+      "tietysti|AV|of course"
+    ],
+    "e0854": [
+      "olkaa hyvä|PH|here you are; please (plural/polite)"
+    ],
+    "e0855": [
+      "luovuttaa|V1|to surrender; to hand over; to check out of (a room)"
+    ],
+    "e0856": [
+      "saunaosasto|N|sauna facilities; sauna section"
+    ],
+    "e0857": [
+      "hauskaa päivää|PH|have a nice day"
+    ],
+    "e0858": [
+      "päivää|IN|hello; good day"
+    ],
+    "e0859": [
+      "vastaanotto|N|reception; consultation; doctor's office"
+    ],
+    "e0860": [
+      "avainkortti|N|key card"
+    ],
+    "e0861": [
+      "lisävuode|N|extra bed"
+    ],
+    "e0862": [
+      "vuode|N|bed"
+    ],
+    "e0863": [
+      "vahvistus|N|confirmation"
+    ],
+    "e0864": [
+      "viipyä|V1|to stay; to spend time"
+    ],
+    "e0865": [
+      "katsella|V3|to look at; to watch; to browse"
+    ],
+    "e0866": [
+      "eteinen|N|entrance hall; hallway"
+    ],
+    "e0867": [
+      "te|PR|you (plural; polite singular)"
+    ],
+    "e0868": [
+      "avara|A|spacious; airy"
+    ],
+    "e0869": [
+      "ahaa|IN|aha; I see"
+    ],
+    "e0870": [
+      "ääressä|PO|at; beside; by"
+    ],
+    "e0871": [
+      "aina|AV|always"
+    ],
+    "e0872": [
+      "kotitehtävä|N|homework assignment"
+    ],
+    "e0873": [
+      "ostoslista|N|shopping list"
+    ],
+    "e0874": [
+      "oliivi|N|olive"
+    ],
+    "e0875": [
+      "jauho|N|flour"
+    ],
+    "e0876": [
+      "just|AV|just; exactly (spoken)"
+    ],
+    "e0877": [
+      "juuri|AV|just; exactly"
+    ],
+    "e0878": [
+      "sopiva|A|suitable; appropriate; fitting"
+    ],
+    "e0879": [
+      "toivottavasti|AV|hopefully"
+    ],
+    "e0880": [
+      "valmis|A|ready; finished"
+    ],
+    "e0881": [
+      "luomu|A|organic (product)"
+    ],
+    "e0882": [
+      "muna|N|egg"
+    ],
+    "e0883": [
+      "onni|N|luck; happiness"
+    ],
+    "e0884": [
+      "sama juttu|PH|same thing; same here"
+    ],
+    "e0885": [
+      "läppäri|N|laptop (spoken)"
+    ],
+    "e0886": [
+      "kannettava tietokone|N|laptop"
+    ],
+    "e0887": [
+      "tietokone|N|computer"
+    ],
+    "e0888": [
+      "imuroida|V3|to vacuum (clean)"
+    ],
+    "e0889": [
+      "seisoa|V1|to stand"
+    ],
+    "e0890": [
+      "sillä|CO|because; for"
+    ],
+    "e0891": [
+      "sillä aikaa|PH|meanwhile; during that time"
+    ],
+    "e0892": [
+      "sä|PR|you (singular, spoken)"
+    ],
+    "e0893": [
+      "vieressä|AV|beside; next to",
+      "vieressä|PO|next to; beside"
+    ],
+    "e0895": [
+      "keskustella|V3|to discuss; to chat"
+    ],
+    "e0896": [
+      "pastasalaatti|N|pasta salad"
+    ],
+    "e0897": [
+      "niin minustakin|PH|I think so too"
+    ],
+    "e0898": [
+      "lihapulla|N|meatball"
+    ],
+    "e0899": [
+      "tehdään vaan|PH|let's do it; let's just make it"
+    ],
+    "e0900": [
+      "chili|N|chili pepper"
+    ],
+    "e0901": [
+      "leipoa|V1|to bake"
+    ],
+    "e0902": [
+      "oy|N|limited liability company (abbreviation)"
+    ],
+    "e0903": [
+      "ihana|A|wonderful; lovely"
+    ],
+    "e0904": [
+      "sitruunakakku|N|lemon cake"
+    ],
+    "e0905": [
+      "maistua|V1|to taste (like something)"
+    ],
+    "e0906": [
+      "juotava|A|drinkable; beverage (something to drink)"
+    ],
+    "e0907": [
+      "tulinen|A|spicy; hot"
+    ],
+    "e0908": [
+      "vieras|N|guest; stranger"
+    ],
+    "e0909": [
+      "kai|AV|probably; I suppose"
+    ],
+    "e0910": [
+      "saapua|V1|to arrive"
+    ],
+    "e0911": [
+      "iso|A|big; large"
+    ],
+    "e0912": [
+      "pieni|A|small"
+    ],
+    "e0913": [
+      "siksi|AV|therefore; that's why"
+    ],
+    "e0914": [
+      "liian|AV|too; excessively"
+    ],
+    "e0915": [
+      "osanotto|N|condolence; participation"
+    ],
+    "e1178": [
+      "aha|IN|I see; aha"
+    ],
+    "e1180": [
+      "alla|AV|under; underneath"
+    ],
+    "e1208": [
+      "kolmas|NU|third"
+    ],
+    "e1222": [
+      "löytyä|V1|to be found; to turn up"
+    ],
+    "e1284": [
+      "välissä|AV|between; in the middle"
+    ],
+    "e1289": [
+      "ympärillä|AV|around; surrounding"
+    ],
+    "e0916": [
+      "paljon onnea|PH|congratulations; happy birthday"
+    ],
+    "e0917": [
+      "nimipäivä|N|name day"
+    ],
+    "e0918": [
+      "hautajaiset|N|funeral"
+    ],
+    "e0919": [
+      "lämmin osanottoni|PH|my deepest condolences"
+    ],
+    "e0920": [
+      "onnea uuteen kotiin|PH|congratulations on your new home"
+    ],
+    "e0921": [
+      "valmistujaiset|N|graduation party"
+    ],
+    "e1174": [
+      "hyvää nimipäivää|PH|happy name day"
+    ],
+    "e1277": [
+      "uudenvuodenaatto|N|New Year's Eve"
+    ],
+    "e0922": [
+      "ruoka|N|food; meal"
+    ],
+    "e0923": [
+      "juoma|N|drink; beverage"
+    ],
+    "e0924": [
+      "ananas|N|pineapple"
+    ],
+    "e0925": [
+      "sitruuna|N|lemon"
+    ],
+    "e0926": [
+      "viinirypäle|N|grape"
+    ],
+    "e0927": [
+      "banaani|N|banana"
+    ],
+    "e0928": [
+      "appelsiini|N|orange (fruit)"
+    ],
+    "e0929": [
+      "päärynä|N|pear"
+    ],
+    "e0930": [
+      "omena|N|apple"
+    ],
+    "e0931": [
+      "persikka|N|peach"
+    ],
+    "e0932": [
+      "meloni|N|melon"
+    ],
+    "e0933": [
+      "luumu|N|plum"
+    ],
+    "e0934": [
+      "kiivi|N|kiwi fruit"
+    ],
+    "e0935": [
+      "hedelmä|N|fruit"
+    ],
+    "e0936": [
+      "tomaatti|N|tomato"
+    ],
+    "e0937": [
+      "kurkku|N|throat; cucumber"
+    ],
+    "e0938": [
+      "herne|N|pea"
+    ],
+    "e0939": [
+      "kesäkurpitsa|N|zucchini; courgette"
+    ],
+    "e0940": [
+      "paprika|N|bell pepper; paprika"
+    ],
+    "e0941": [
+      "porkkana|N|carrot"
+    ],
+    "e0942": [
+      "kukkakaali|N|cauliflower"
+    ],
+    "e0943": [
+      "kaali|N|cabbage"
+    ],
+    "e0944": [
+      "salaatti|N|salad; lettuce"
+    ],
+    "e0945": [
+      "sipuli|N|onion"
+    ],
+    "e0946": [
+      "valkosipuli|N|garlic"
+    ],
+    "e0947": [
+      "papu|N|bean"
+    ],
+    "e0948": [
+      "sieni|N|mushroom"
+    ],
+    "e0949": [
+      "munakoiso|N|eggplant; aubergine"
+    ],
+    "e0950": [
+      "maissi|N|corn; maize"
+    ],
+    "e0951": [
+      "peruna|N|potato"
+    ],
+    "e0952": [
+      "mustikka|N|blueberry; bilberry"
+    ],
+    "e0953": [
+      "puolukka|N|lingonberry"
+    ],
+    "e0954": [
+      "vadelma|N|raspberry"
+    ],
+    "e0955": [
+      "mansikka|N|strawberry"
+    ],
+    "e0956": [
+      "viinimarja|N|currant"
+    ],
+    "e0957": [
+      "kirsikka|N|cherry"
+    ],
+    "e0958": [
+      "lakka|N|cloudberry"
+    ],
+    "e0959": [
+      "liha|N|meat; flesh"
+    ],
+    "e0960": [
+      "naudanliha|N|beef"
+    ],
+    "e0961": [
+      "porsaanliha|N|pork"
+    ],
+    "e0962": [
+      "kana|N|chicken; hen"
+    ],
+    "e0963": [
+      "kala|N|fish"
+    ],
+    "e0964": [
+      "lohi|N|salmon"
+    ],
+    "e0965": [
+      "nakki|N|frankfurter; hot dog sausage"
+    ],
+    "e0966": [
+      "makkara|N|sausage"
+    ],
+    "e0967": [
+      "katkarapu|N|shrimp; prawn"
+    ],
+    "e0968": [
+      "riisi|N|rice"
+    ],
+    "e0969": [
+      "keitto|N|soup"
+    ],
+    "e0970": [
+      "pasta|N|pasta"
+    ],
+    "e0971": [
+      "pizza|N|pizza"
+    ],
+    "e0972": [
+      "hampurilainen|N|hamburger"
+    ],
+    "e0973": [
+      "kasvis|N|vegetable; plant"
+    ],
+    "e0974": [
+      "makaronilaatikko|N|macaroni casserole"
+    ],
+    "e0975": [
+      "leipä|N|bread"
+    ],
+    "e0976": [
+      "pihvi|N|steak; cutlet"
+    ],
+    "e0977": [
+      "korvapuusti|N|cinnamon bun"
+    ],
+    "e0978": [
+      "jäätelö|N|ice cream"
+    ],
+    "e0979": [
+      "kakku|N|cake"
+    ],
+    "e0980": [
+      "pulla|N|sweet bun; Finnish sweet bread"
+    ],
+    "e0981": [
+      "suklaa|N|chocolate"
+    ],
+    "e0982": [
+      "keksi|N|cookie; biscuit"
+    ],
+    "e0983": [
+      "karkki|N|candy; sweet"
+    ],
+    "e0984": [
+      "piirakka|N|pie; pastry"
+    ],
+    "e0985": [
+      "mauste|N|spice; seasoning"
+    ],
+    "e0986": [
+      "ketsuppi|N|ketchup"
+    ],
+    "e0987": [
+      "pippuri|N|pepper"
+    ],
+    "e0988": [
+      "etikka|N|vinegar"
+    ],
+    "e0989": [
+      "sokeri|N|sugar"
+    ],
+    "e0990": [
+      "suola|N|salt"
+    ],
+    "e0991": [
+      "soija|N|soy; soy sauce"
+    ],
+    "e0992": [
+      "sinappi|N|mustard"
+    ],
+    "e0993": [
+      "öljy|N|oil"
+    ],
+    "e0994": [
+      "paistinpannu|N|frying pan; skillet"
+    ],
+    "e0995": [
+      "lautanen|N|plate"
+    ],
+    "e0996": [
+      "lautasliina|N|napkin"
+    ],
+    "e0997": [
+      "lasi|N|glass; drinking glass"
+    ],
+    "e0998": [
+      "pullo|N|bottle"
+    ],
+    "e0999": [
+      "kannu|N|jug; pitcher; pot"
+    ],
+    "e1000": [
+      "tarjotin|N|tray"
+    ],
+    "e1001": [
+      "lusikka|N|spoon"
+    ],
+    "e1002": [
+      "kuppi|N|cup"
+    ],
+    "e1003": [
+      "kattila|N|cooking pot; saucepan"
+    ],
+    "e1004": [
+      "haarukka|N|fork"
+    ],
+    "e1005": [
+      "muki|N|mug"
+    ],
+    "e1006": [
+      "veitsi|N|knife"
+    ],
+    "e1007": [
+      "kulho|N|bowl"
+    ],
+    "e1008": [
+      "vesi|N|water"
+    ],
+    "e1009": [
+      "kivennäisvesi|N|mineral water"
+    ],
+    "e1010": [
+      "vissy|N|mineral water; sparkling water (informal)"
+    ],
+    "e1011": [
+      "maito|N|milk"
+    ],
+    "e1012": [
+      "piimä|N|buttermilk"
+    ],
+    "e1013": [
+      "mehu|N|juice"
+    ],
+    "e1014": [
+      "viini|N|wine"
+    ],
+    "e1015": [
+      "kahvi|N|coffee"
+    ],
+    "e1016": [
+      "tee|N|tea"
+    ],
+    "e1017": [
+      "kaakao|N|cocoa; hot chocolate"
+    ],
+    "e1018": [
+      "kauramaito|N|oat milk"
+    ],
+    "e1019": [
+      "limonadi|N|lemonade; soft drink"
+    ],
+    "e1020": [
+      "siideri|N|cider"
+    ],
+    "e1021": [
+      "olut|N|beer"
+    ],
+    "e1022": [
+      "muro|N|breakfast cereal; cereal flake"
+    ],
+    "e1023": [
+      "sämpylä|N|bread roll"
+    ],
+    "e1024": [
+      "karjalanpiirakka|N|Karelian pastry"
+    ],
+    "e1025": [
+      "juusto|N|cheese"
+    ],
+    "e1026": [
+      "voi|N|butter"
+    ],
+    "e1027": [
+      "jogurtti|N|yogurt"
+    ],
+    "e1028": [
+      "halpa|A|cheap; inexpensive"
+    ],
+    "e1029": [
+      "edullinen|A|affordable; favorable; inexpensive"
+    ],
+    "e1030": [
+      "aamupala|N|breakfast"
+    ],
+    "e1031": [
+      "aamiainen|N|breakfast"
+    ],
+    "e1032": [
+      "lounas|N|lunch"
+    ],
+    "e1033": [
+      "välipala|N|snack; light meal"
+    ],
+    "e1034": [
+      "päivällinen|N|dinner; main meal"
+    ],
+    "e1035": [
+      "illallinen|N|dinner; evening meal"
+    ],
+    "e1036": [
+      "iltapala|N|evening snack; supper"
+    ],
+    "e1037": [
+      "ateria|N|meal"
+    ],
+    "e1173": [
+      "tulkaa ottamaan|PH|come and get some"
+    ],
+    "e1176": [
+      "jälkiruoka|N|dessert"
+    ],
+    "e1186": [
+      "avokado|N|avocado"
+    ],
+    "e1200": [
+      "kananmuna|N|egg; chicken egg"
+    ],
+    "e1201": [
+      "kastike|N|sauce; gravy"
+    ],
+    "e1205": [
+      "kerma|N|cream"
+    ],
+    "e1220": [
+      "limsa|N|soda; soft drink"
+    ],
+    "e1237": [
+      "parsakaali|N|broccoli"
+    ],
+    "e1247": [
+      "pöytäliina|N|tablecloth"
+    ],
+    "e1249": [
+      "rahka|N|quark; curd cheese"
+    ],
+    "e1255": [
+      "sianliha|N|pork"
+    ],
+    "e1263": [
+      "tarjota|V4|to offer; to serve"
+    ],
+    "e1282": [
+      "vesimeloni|N|watermelon"
+    ],
+    "e1283": [
+      "vihannes|N|vegetable"
+    ],
+    "e1038": [
+      "lähellä|AV|near; nearby"
+    ],
+    "e1039": [
+      "noin|AV|approximately; about",
+      "noin|IN|there; like that; okay"
+    ],
+    "e1041": [
+      "löytää|V1|to find"
+    ],
+    "e1042": [
+      "pitkä|A|long; tall"
+    ],
+    "e1043": [
+      "kaukana|AV|far away"
+    ],
+    "e1044": [
+      "liikenne|N|traffic; transport"
+    ],
+    "e1045": [
+      "suoja|N|protection; shelter"
+    ],
+    "e1046": [
+      "työpäivä|N|workday"
+    ],
+    "e1047": [
+      "osakeyhtiö|N|limited liability company"
+    ],
+    "e1048": [
+      "hermostunut|A|nervous; anxious"
+    ],
+    "e1049": [
+      "pomo|N|boss"
+    ],
+    "e1050": [
+      "yritys|N|company; business; enterprise"
+    ],
+    "e1051": [
+      "pääovi|N|main entrance; front door"
+    ],
+    "e1052": [
+      "kulkukortti|N|access card; entry badge"
+    ],
+    "e1053": [
+      "toinen|NU|second; another"
+    ],
+    "e1054": [
+      "toimisto|N|office"
+    ],
+    "e1055": [
+      "työpiste|N|workstation; work area"
+    ],
+    "e1056": [
+      "laittaa|V1|to put; to place; to prepare"
+    ],
+    "e1057": [
+      "tavara|N|thing; item; belongings"
+    ],
+    "e1058": [
+      "avain|N|key"
+    ],
+    "e1059": [
+      "koodilukko|N|code lock; keypad lock"
+    ],
+    "e1060": [
+      "hyvä juttu|PH|great; that's good"
+    ],
+    "e1061": [
+      "hyvä tietää|PH|good to know"
+    ],
+    "e1062": [
+      "esitellä|V3|to introduce; to present"
+    ],
+    "e1063": [
+      "myöhemmin|AV|later"
+    ],
+    "e1064": [
+      "tiimi|N|team"
+    ],
+    "e1065": [
+      "työntekijä|N|employee; worker"
+    ],
+    "e1066": [
+      "kuulua|V1|to belong; to be included; to be heard"
+    ],
+    "e1067": [
+      "yhteensä|AV|in total; altogether"
+    ],
+    "e1068": [
+      "paitsi|AV|except; besides"
+    ],
+    "e1069": [
+      "palaveri|N|meeting; work meeting"
+    ],
+    "e1070": [
+      "kokous|N|meeting; assembly"
+    ],
+    "e1071": [
+      "projekti|N|project"
+    ],
+    "e1072": [
+      "selvä|IN|okay; clear; understood"
+    ],
+    "e1073": [
+      "jatkaa|V1|to continue"
+    ],
+    "e1074": [
+      "it-osasto|N|IT department"
+    ],
+    "e1075": [
+      "informaatioteknologia|N|information technology"
+    ],
+    "e1076": [
+      "kysyä|V1|to ask"
+    ],
+    "e1077": [
+      "neuvoa|V1|to advise; to instruct"
+    ],
+    "e1078": [
+      "jokin|PR|something; some"
+    ],
+    "e1079": [
+      "ongelma|N|problem"
+    ],
+    "e1080": [
+      "saada|V2|to get; to receive; may; to be allowed"
+    ],
+    "e1081": [
+      "käyttäjätunnus|N|username; user ID"
+    ],
+    "e1082": [
+      "salasana|N|password"
+    ],
+    "e1083": [
+      "käytävä|N|hallway; corridor"
+    ],
+    "e1084": [
+      "neuvotteluhuone|N|meeting room"
+    ],
+    "e1085": [
+      "kahviautomaatti|N|coffee machine; vending machine"
+    ],
+    "e1086": [
+      "oma|PR|one's own"
+    ],
+    "e1087": [
+      "olla mukana|PH|to be involved; to be along"
+    ],
+    "e1088": [
+      "mukana|AV|along; with; accompanying; with (someone)"
+    ],
+    "e1089": [
+      "oho|IN|oh!; whoa!"
+    ],
+    "e1090": [
+      "suoraan|AV|directly; straight"
+    ],
+    "e1091": [
+      "neukkari|N|meeting room (spoken)"
+    ],
+    "e1092": [
+      "hakea|V1|to fetch; to pick up; to apply for; to seek"
+    ],
+    "e1093": [
+      "nopeasti|AV|quickly"
+    ],
+    "e1094": [
+      "esite|N|brochure; leaflet"
+    ],
+    "e1095": [
+      "neuvo|N|advice; tip"
+    ],
+    "e1096": [
+      "suora|A|straight; direct"
+    ],
+    "e1097": [
+      "mihin|Q|where to"
+    ],
+    "e1270": [
+      "tuoda|V2|to bring"
+    ],
+    "e1279": [
+      "valkoviini|N|white wine"
+    ],
+    "e1098": [
+      "työsopimus|N|employment contract"
+    ],
+    "e1099": [
+      "firma|N|company; firm (informal)"
+    ],
+    "e1100": [
+      "työaika|N|working hours"
+    ],
+    "e1101": [
+      "palkka|N|salary; wages"
+    ],
+    "e1102": [
+      "työvuoro|N|work shift"
+    ],
+    "e1103": [
+      "iltalisä|N|evening shift supplement"
+    ],
+    "e1104": [
+      "ylityö|N|overtime"
+    ],
+    "e1105": [
+      "verokortti|N|tax card"
+    ],
+    "e1106": [
+      "etätyö|N|remote work"
+    ],
+    "e1107": [
+      "sairausloma|N|sick leave"
+    ],
+    "e1108": [
+      "osa-aikatyö|N|part-time work"
+    ],
+    "e1109": [
+      "loma|N|holiday; vacation; leave"
+    ],
+    "e1110": [
+      "neuvottelu|N|negotiation; meeting"
+    ],
+    "e1111": [
+      "neuvotella|V3|to negotiate"
+    ],
+    "e1112": [
+      "työnantaja|N|employer"
+    ],
+    "e1113": [
+      "kollega|N|colleague"
+    ],
+    "e1114": [
+      "esimies|N|supervisor; manager"
+    ],
+    "e1115": [
+      "läpi|AV|through; across",
+      "läpi|PO|through; across"
+    ],
+    "e1117": [
+      "aikataulu|N|schedule; timetable"
+    ],
+    "e1118": [
+      "kiire|N|hurry; rush"
+    ],
+    "e1119": [
+      "stressi|N|stress"
+    ],
+    "e1120": [
+      "tulostin|N|printer"
+    ],
+    "e1121": [
+      "printteri|N|printer (informal)"
+    ],
+    "e1122": [
+      "tulostaa|V1|to print"
+    ],
+    "e1123": [
+      "printata|V4|to print (spoken)"
+    ],
+    "e1124": [
+      "kopiokone|N|photocopier"
+    ],
+    "e1125": [
+      "kopioida|V2|to copy; to photocopy"
+    ],
+    "e1126": [
+      "skannata|V4|to scan"
+    ],
+    "e1127": [
+      "puhelin|N|telephone; phone"
+    ],
+    "e1128": [
+      "kännykkä|N|mobile phone; cell phone (spoken/informal)"
+    ],
+    "e1129": [
+      "älypuhelin|N|smartphone"
+    ],
+    "e1130": [
+      "sähkömies|N|electrician"
+    ],
+    "e1131": [
+      "putkimies|N|plumber (colloquial)"
+    ],
+    "e1132": [
+      "maalari|N|painter (tradesperson)"
+    ],
+    "e1133": [
+      "postinjakaja|N|mail carrier; postman"
+    ],
+    "e1134": [
+      "lääkäri|N|doctor; physician"
+    ],
+    "e1135": [
+      "sairaanhoitaja|N|nurse"
+    ],
+    "e1136": [
+      "hammaslääkäri|N|dentist"
+    ],
+    "e1137": [
+      "linja-autonkuljettaja|N|bus driver"
+    ],
+    "e1138": [
+      "arkkitehti|N|architect"
+    ],
+    "e1139": [
+      "rakennusmies|N|construction worker"
+    ],
+    "e1140": [
+      "bussikuski|N|bus driver"
+    ],
+    "e1141": [
+      "opettaja|N|teacher"
+    ],
+    "e1142": [
+      "kampaaja|N|hairdresser"
+    ],
+    "e1143": [
+      "kiinteistövälittäjä|N|real estate agent"
+    ],
+    "e1144": [
+      "kirjanpitäjä|N|bookkeeper; accountant"
+    ],
+    "e1145": [
+      "kokki|N|cook; chef"
+    ],
+    "e1146": [
+      "tarjoilija|N|waiter; waitress; server"
+    ],
+    "e1147": [
+      "automekaanikko|N|auto mechanic"
+    ],
+    "e1148": [
+      "myyjä|N|salesperson; shop assistant"
+    ],
+    "e1149": [
+      "putkiasentaja|N|plumber"
+    ],
+    "e1150": [
+      "sähköasentaja|N|electrician"
+    ],
+    "e1151": [
+      "vahtimestari|N|caretaker; janitor; attendant"
+    ],
+    "e1152": [
+      "sihteeri|N|secretary"
+    ],
+    "e1153": [
+      "assistentti|N|assistant"
+    ],
+    "e1154": [
+      "siivooja|N|cleaner"
+    ],
+    "e1155": [
+      "insinööri|N|engineer"
+    ],
+    "e1156": [
+      "toimittaja|N|journalist; editor"
+    ],
+    "e1157": [
+      "kirjailija|N|writer; author"
+    ],
+    "e1158": [
+      "palomies|N|firefighter"
+    ],
+    "e1159": [
+      "parturi|N|barber"
+    ],
+    "e1160": [
+      "tutkija|N|researcher"
+    ],
+    "e1161": [
+      "ompelija|N|seamstress; tailor"
+    ],
+    "e1162": [
+      "tulkki|N|interpreter"
+    ],
+    "e1163": [
+      "poliitikko|N|politician"
+    ],
+    "e1164": [
+      "nuoriso-ohjaaja|N|youth worker; youth counselor"
+    ],
+    "e1204": [
+      "keittiöapulainen|N|kitchen assistant"
+    ],
+    "e1210": [
+      "kotiäiti|N|stay-at-home mother"
+    ],
+    "e1214": [
+      "kuski|N|driver"
+    ],
+    "e1217": [
+      "laulaja|N|singer"
+    ],
+    "e1223": [
+      "maanviljelijä|N|farmer"
+    ],
+    "e1250": [
+      "rekkakuski|N|truck driver (colloquial)"
+    ],
+    "e1262": [
+      "taksikuski|N|taxi driver"
+    ],
+    "e1280": [
+      "valokuvaaja|N|photographer"
+    ],
+    "e2281": [
+      "henkilöstöpäällikkö|N|HR manager; personnel manager"
+    ],
+    "e2296": [
+      "kosmetologi|N|beautician; cosmetologist"
+    ],
+    "e2306": [
+      "lastenhoitaja|N|childcare worker; childminder"
+    ],
+    "e2307": [
+      "lastentarhanopettaja|N|kindergarten teacher"
+    ],
+    "e2358": [
+      "toimitusjohtaja|N|chief executive officer; managing director"
+    ],
+    "e1241": [
+      "preesens|N|present tense"
+    ],
+    "e1291": [
+      "viikonloppureissu|N|weekend trip"
+    ],
+    "e1292": [
+      "laivamatka|N|sea voyage; ferry journey"
+    ],
+    "e1293": [
+      "ympäri|AV|around; all around"
+    ],
+    "e1294": [
+      "hostelli|N|hostel"
+    ],
+    "e1295": [
+      "eli|CO|or; in other words"
+    ],
+    "e1296": [
+      "ratikkamatka|N|tram ride"
+    ],
+    "e1297": [
+      "reissu|N|trip; journey"
+    ],
+    "e1298": [
+      "kuulla|V3|to hear"
+    ],
+    "e1299": [
+      "innostua|V1|to get excited; to become enthusiastic"
+    ],
+    "e1300": [
+      "tehtävä|N|assignment; task; exercise"
+    ],
+    "e1301": [
+      "autokyyti|N|car ride; lift by car"
+    ],
+    "e1302": [
+      "majoitus|N|accommodation; lodging"
+    ],
+    "e1303": [
+      "jostain|AV|from somewhere"
+    ],
+    "e1304": [
+      "kelvata|V4|to be acceptable; to do; to suit"
+    ],
+    "e1305": [
+      "päästä|V3|to get to; to be allowed; to be able to"
+    ],
+    "e1306": [
+      "helposti|AV|easily"
+    ],
+    "e1307": [
+      "joka|AV|every; each",
+      "joka|PR|which; who; that (relative pronoun)"
+    ],
+    "e1309": [
+      "joka tapauksessa|AV|in any case; anyway"
+    ],
+    "e1310": [
+      "hoitaa|V1|to handle; to take care of"
+    ],
+    "e1311": [
+      "äsken|AV|a moment ago; just now"
+    ],
+    "e1312": [
+      "netti|N|internet (spoken)"
+    ],
+    "e1313": [
+      "internet|N|internet"
+    ],
+    "e1314": [
+      "aikaisin|AV|early"
+    ],
+    "e1315": [
+      "takaisin|AV|back; again; back again"
+    ],
+    "e1316": [
+      "heti|AV|immediately; right away"
+    ],
+    "e1317": [
+      "mielellään|AV|gladly; willingly"
+    ],
+    "e1318": [
+      "kuitenkin|AV|however; nevertheless"
+    ],
+    "e1319": [
+      "heittää|V1|to throw; to drop off (someone)"
+    ],
+    "e1320": [
+      "kestää|V1|to last; to endure"
+    ],
+    "e1321": [
+      "perillä|AV|at the destination; arrived"
+    ],
+    "e1322": [
+      "meiät|PR|us (object, spoken)"
+    ],
+    "e1323": [
+      "kyyti|N|ride; lift"
+    ],
+    "e1324": [
+      "punaviini|N|red wine"
+    ],
+    "e2253": [
+      "vuosi|N|year"
+    ],
+    "e2254": [
+      "ajoissa|AV|on time"
+    ],
+    "e2263": [
+      "ablatiivi|N|ablative case"
+    ],
+    "e2264": [
+      "adessiivi|N|adessive case"
+    ],
+    "e2267": [
+      "allatiivi|N|allative case"
+    ],
+    "e2337": [
+      "sanatyyppi|N|word type"
+    ],
+    "e2338": [
+      "sanavartalo|N|word stem"
+    ],
+    "e2373": [
+      "vartalo|N|stem; body; trunk"
+    ],
+    "e1325": [
+      "raide|N|railway track; platform track"
+    ],
+    "e1326": [
+      "laituri|N|platform; pier"
+    ],
+    "e1327": [
+      "vaunu|N|railway car; carriage"
+    ],
+    "e1328": [
+      "hytti|N|cabin (on ship/train)"
+    ],
+    "e1329": [
+      "makuuhytti|N|sleeping cabin; sleeper compartment"
+    ],
+    "e1330": [
+      "matkustaminen|N|traveling"
+    ],
+    "e1331": [
+      "pääteasema|N|terminal station"
+    ],
+    "e1332": [
+      "matkalippu|N|travel ticket"
+    ],
+    "e1333": [
+      "meno|N|departure; going"
+    ],
+    "e1334": [
+      "paluu|N|return; coming back"
+    ],
+    "e1335": [
+      "meno-paluu|N|round trip; return ticket"
+    ],
+    "e1336": [
+      "vaihto|N|change; transfer"
+    ],
+    "e1337": [
+      "lento|N|flight"
+    ],
+    "e1338": [
+      "paikkavaraus|N|seat reservation"
+    ],
+    "e1339": [
+      "lentolippu|N|airline ticket"
+    ],
+    "e1340": [
+      "käsimatkatavara|N|hand luggage; carry-on baggage"
+    ],
+    "e1341": [
+      "perua|V1|to cancel"
+    ],
+    "e1342": [
+      "turvatarkastus|N|security check"
+    ],
+    "e1343": [
+      "lähtöportti|N|departure gate"
+    ],
+    "e1344": [
+      "viisumi|N|visa"
+    ],
+    "e1345": [
+      "laskeutua|V1|to land; to descend"
+    ],
+    "e1346": [
+      "matkavakuutus|N|travel insurance"
+    ],
+    "e1347": [
+      "terminaali|N|terminal"
+    ],
+    "e1348": [
+      "kansi|N|deck; cover; lid"
+    ],
+    "e1349": [
+      "turisti|N|tourist"
+    ],
+    "e1350": [
+      "nähtävyys|N|sight; tourist attraction"
+    ],
+    "e1351": [
+      "kiertoajelu|N|sightseeing tour"
+    ],
+    "e1352": [
+      "retki|N|excursion; trip"
+    ],
+    "e1353": [
+      "kauas|AV|far away; a long way"
+    ],
+    "e1354": [
+      "kaukaa|AV|from far away"
+    ],
+    "e1355": [
+      "lähelle|AV|near; to nearby"
+    ],
+    "e1356": [
+      "läheltä|AV|from nearby"
+    ],
+    "e1357": [
+      "junalippu|N|train ticket"
+    ],
+    "e1358": [
+      "laivalippu|N|ferry ticket; ship ticket"
+    ],
+    "e1359": [
+      "matkatavara|N|luggage; baggage"
+    ],
+    "e1360": [
+      "julkinen liikenne|N|public transport"
+    ],
+    "e1361": [
+      "matkailija|N|traveler; tourist"
+    ],
+    "e2276": [
+      "eväs|N|packed lunch; snack brought along"
+    ],
+    "e1362": [
+      "viimeksi|AV|last time; most recently"
+    ],
+    "e1363": [
+      "junamatkailu|N|train travel"
+    ],
+    "e1364": [
+      "vaihtaa|V1|to change; to exchange; to switch"
+    ],
+    "e1365": [
+      "pienentää|V1|to reduce; to make smaller"
+    ],
+    "e1366": [
+      "kätevästi|AV|conveniently"
+    ],
+    "e1367": [
+      "keskellä|AV|in the middle; in the center"
+    ],
+    "e1368": [
+      "jaloitella|V3|to stretch one's legs; to walk around"
+    ],
+    "e1369": [
+      "rentoutua|V1|to relax"
+    ],
+    "e1370": [
+      "syy|N|reason; cause"
+    ],
+    "e1371": [
+      "erinomainen|A|excellent; outstanding"
+    ],
+    "e1372": [
+      "palvelu|N|service"
+    ],
+    "e1373": [
+      "ympäristöystävällinen|A|environmentally friendly"
+    ],
+    "e1374": [
+      "ravintolavaunu|N|dining car"
+    ],
+    "e1375": [
+      "hiilijalanjälki|N|carbon footprint"
+    ],
+    "e1376": [
+      "kokea|V1|to experience; to feel"
+    ],
+    "e1377": [
+      "kiireetön|A|unhurried; leisurely"
+    ],
+    "e1378": [
+      "paikallinen|A|local"
+    ],
+    "e1379": [
+      "maisema|N|scenery; landscape"
+    ],
+    "e1380": [
+      "maailma|N|world"
+    ],
+    "e1381": [
+      "junamatka|N|train journey"
+    ],
+    "e1382": [
+      "yöjuna|N|night train"
+    ],
+    "e1383": [
+      "olo|N|feeling; state of health"
+    ],
+    "e1384": [
+      "laahustaa|V1|to shuffle along; to drag one's feet"
+    ],
+    "e1385": [
+      "kokeilla|V3|to try; to test"
+    ],
+    "e1386": [
+      "tulikuuma|A|burning hot; extremely hot"
+    ],
+    "e1387": [
+      "kuume|N|fever"
+    ],
+    "e1388": [
+      "keittää|V1|to cook; to boil"
+    ],
+    "e1389": [
+      "kuumemittari|N|thermometer"
+    ],
+    "e1390": [
+      "lopulta|AV|finally; eventually"
+    ],
+    "e1391": [
+      "ajanvaraus|N|appointment booking; appointment"
+    ],
+    "e1392": [
+      "käy istumaan|PH|have a seat"
+    ],
+    "e1393": [
+      "hirvee|A|awful; horrible (spoken)"
+    ],
+    "e1394": [
+      "hirveä|A|awful; horrible"
+    ],
+    "e1395": [
+      "hirveen|AV|terribly; very (spoken)"
+    ],
+    "e1396": [
+      "todella|AV|really; truly"
+    ],
+    "e1397": [
+      "kipeä|A|sore; painful; ill"
+    ],
+    "e1398": [
+      "kipee|A|sick; sore; painful (spoken)"
+    ],
+    "e1399": [
+      "päänsärky|N|headache"
+    ],
+    "e1400": [
+      "oire|N|symptom"
+    ],
+    "e1401": [
+      "kurkkukipu|N|sore throat"
+    ],
+    "e1402": [
+      "hengittää|V1|to breathe"
+    ],
+    "e1403": [
+      "tosiaan|AV|indeed; actually"
+    ],
+    "e1404": [
+      "turvonnut|A|swollen"
+    ],
+    "e1405": [
+      "vasen|A|left"
+    ],
+    "e1406": [
+      "virustauti|N|viral illness"
+    ],
+    "e1407": [
+      "itsestään|AV|by itself; on its own"
+    ],
+    "e1408": [
+      "parantua|V1|to recover; to get better; to improve"
+    ],
+    "e1409": [
+      "särkylääke|N|painkiller"
+    ],
+    "e1410": [
+      "alentaa|V1|to lower; to reduce"
+    ],
+    "e1411": [
+      "lähete|N|referral"
+    ],
+    "e1412": [
+      "labra|N|lab; laboratory (spoken)"
+    ],
+    "e1413": [
+      "laboratorio|N|laboratory"
+    ],
+    "e1414": [
+      "bakteeritulehdus|N|bacterial infection"
+    ],
+    "e1415": [
+      "antibioottikuuri|N|course of antibiotics"
+    ],
+    "e1416": [
+      "saman tien|AV|right away; immediately"
+    ],
+    "e1417": [
+      "mee vaan|PH|just go ahead (spoken)"
+    ],
+    "e1418": [
+      "tulos|N|result"
+    ],
+    "e1419": [
+      "lääkärintodistus|N|medical certificate; doctor's note"
+    ],
+    "e1420": [
+      "varten|PO|for; for the sake of"
+    ],
+    "e1421": [
+      "puhelu|N|phone call"
+    ],
+    "e1422": [
+      "olla kunnossa|PH|to be okay; to be in good condition"
+    ],
+    "e1423": [
+      "olla kuumeessa|PH|to have a fever"
+    ],
+    "e1424": [
+      "poissa|AV|away; absent"
+    ],
+    "e1425": [
+      "sairaus|N|illness; disease"
+    ],
+    "e1426": [
+      "vuoksi|PO|because of; due to"
+    ],
+    "e1427": [
+      "eiku|IN|no, I mean; rather (spoken)"
+    ],
+    "e1428": [
+      "ei mitään kiirettä|PH|no hurry; there's no rush"
+    ],
+    "e1429": [
+      "yrittää|V1|to try; to attempt"
+    ],
+    "e1430": [
+      "järjestää|V1|to arrange; to organize"
+    ],
+    "e1431": [
+      "sijainen|N|substitute; stand-in"
+    ],
+    "e1432": [
+      "pikaista paranemista|PH|get well soon"
+    ],
+    "e1433": [
+      "esihenkilö|N|supervisor; manager"
+    ],
+    "e1434": [
+      "verkkosivu|N|webpage"
+    ],
+    "e2255": [
+      "onks sulla hetki aikaa|PH|have you got a moment? (spoken)"
+    ],
+    "e2384": [
+      "ymmärtää|V1|to understand"
+    ],
+    "e1435": [
+      "takapuoli|N|bottom; backside"
+    ],
+    "e1436": [
+      "hiukset|N|hair (plural)"
+    ],
+    "e1437": [
+      "tukka|N|hair (head hair)"
+    ],
+    "e1438": [
+      "naama|N|face (spoken)"
+    ],
+    "e1439": [
+      "kasvot|N|face"
+    ],
+    "e1440": [
+      "käsivarsi|N|arm"
+    ],
+    "e1441": [
+      "käsi|N|hand; arm"
+    ],
+    "e1442": [
+      "rinta|N|chest; breast"
+    ],
+    "e1443": [
+      "maha|N|belly; stomach (informal)"
+    ],
+    "e1444": [
+      "vatsa|N|stomach; belly"
+    ],
+    "e1445": [
+      "kyynärpää|N|elbow"
+    ],
+    "e1446": [
+      "nilkka|N|ankle"
+    ],
+    "e1447": [
+      "varvas|N|toe"
+    ],
+    "e1448": [
+      "pää|N|head"
+    ],
+    "e1449": [
+      "silmä|N|eye"
+    ],
+    "e1450": [
+      "korva|N|ear"
+    ],
+    "e1451": [
+      "nenä|N|nose"
+    ],
+    "e1452": [
+      "suu|N|mouth"
+    ],
+    "e1453": [
+      "hammas|N|tooth"
+    ],
+    "e1454": [
+      "huuli|N|lip"
+    ],
+    "e1455": [
+      "poski|N|cheek"
+    ],
+    "e1456": [
+      "otsa|N|forehead"
+    ],
+    "e1457": [
+      "kaula|N|neck"
+    ],
+    "e1458": [
+      "niska|N|nape; back of neck"
+    ],
+    "e1459": [
+      "hartia|N|shoulder"
+    ],
+    "e1460": [
+      "ranne|N|wrist"
+    ],
+    "e1461": [
+      "selkä|N|back"
+    ],
+    "e1462": [
+      "alapää|N|genital area; private parts"
+    ],
+    "e1463": [
+      "jalka|N|leg; foot"
+    ],
+    "e1464": [
+      "polvi|N|knee"
+    ],
+    "e1465": [
+      "iho|N|skin"
+    ],
+    "e1466": [
+      "lihas|N|muscle"
+    ],
+    "e1467": [
+      "luu|N|bone"
+    ],
+    "e1468": [
+      "sydän|N|heart"
+    ],
+    "e1469": [
+      "keuhko|N|lung"
+    ],
+    "e1470": [
+      "munuainen|N|kidney"
+    ],
+    "e1471": [
+      "aivot|N|brain"
+    ],
+    "e1472": [
+      "maksa|N|liver"
+    ],
+    "e1473": [
+      "ruumiinosa|N|body part"
+    ],
+    "e2308": [
+      "leuka|N|chin; jaw"
+    ],
+    "e2342": [
+      "sukuelin|N|genital; reproductive organ"
+    ],
+    "e1474": [
+      "flunssa|N|cold; flu-like illness"
+    ],
+    "e1475": [
+      "vilustunut|A|chilled; having caught a cold"
+    ],
+    "e1476": [
+      "yskä|N|cough"
+    ],
+    "e1477": [
+      "nuha|N|runny nose; cold"
+    ],
+    "e1478": [
+      "uupunut|A|exhausted; burned out"
+    ],
+    "e1479": [
+      "ahdistunut|A|anxious; distressed"
+    ],
+    "e1480": [
+      "masentunut|A|depressed; feeling down"
+    ],
+    "e1481": [
+      "sairas|A|sick; ill"
+    ],
+    "e1482": [
+      "kalpea|A|pale"
+    ],
+    "e1483": [
+      "terveys|N|health"
+    ],
+    "e1484": [
+      "ensiapu|N|first aid"
+    ],
+    "e1485": [
+      "hätänumero|N|emergency number"
+    ],
+    "e1486": [
+      "ambulanssi|N|ambulance"
+    ],
+    "e1487": [
+      "neuvola|N|maternal and child health clinic"
+    ],
+    "e1488": [
+      "päivystys|N|emergency service; urgent care"
+    ],
+    "e1489": [
+      "potilas|N|patient"
+    ],
+    "e1490": [
+      "terveydenhoitaja|N|public health nurse"
+    ],
+    "e1491": [
+      "kätilö|N|midwife"
+    ],
+    "e1492": [
+      "psykologi|N|psychologist"
+    ],
+    "e1493": [
+      "verikoe|N|blood test"
+    ],
+    "e1494": [
+      "näyte|N|sample; specimen"
+    ],
+    "e1495": [
+      "rokotus|N|vaccination"
+    ],
+    "e1496": [
+      "bakteeri|N|bacterium"
+    ],
+    "e1497": [
+      "virus|N|virus"
+    ],
+    "e1498": [
+      "tauti|N|disease; illness"
+    ],
+    "e1499": [
+      "tulehdus|N|inflammation; infection"
+    ],
+    "e1500": [
+      "korvatulehdus|N|ear infection"
+    ],
+    "e1501": [
+      "silmätulehdus|N|eye infection"
+    ],
+    "e1502": [
+      "vatsatauti|N|stomach bug; gastrointestinal illness"
+    ],
+    "e1503": [
+      "oksennus|N|vomit; vomiting"
+    ],
+    "e1504": [
+      "ripuli|N|diarrhea"
+    ],
+    "e1505": [
+      "allergia|N|allergy"
+    ],
+    "e1506": [
+      "ihottuma|N|rash; skin eruption"
+    ],
+    "e1507": [
+      "verenpaine|N|blood pressure"
+    ],
+    "e1508": [
+      "sydäninfarkti|N|heart attack; myocardial infarction"
+    ],
+    "e1509": [
+      "sydänkohtaus|N|heart attack"
+    ],
+    "e1510": [
+      "syöpä|N|cancer"
+    ],
+    "e1511": [
+      "mielenterveys|N|mental health"
+    ],
+    "e1512": [
+      "masennus|N|depression"
+    ],
+    "e1513": [
+      "ahdistus|N|anxiety; distress"
+    ],
+    "e1514": [
+      "uupumus|N|exhaustion; burnout"
+    ],
+    "e1515": [
+      "hoito|N|treatment; care"
+    ],
+    "e1516": [
+      "resepti|N|prescription; recipe"
+    ],
+    "e1517": [
+      "lääkekuuri|N|course of medication"
+    ],
+    "e1518": [
+      "levätä|V4|to rest"
+    ],
+    "e1519": [
+      "lepo|N|rest"
+    ],
+    "e1520": [
+      "lääke|N|medicine; medication"
+    ],
+    "e2339": [
+      "selkäkipu|N|backache"
+    ],
+    "e2364": [
+      "työuupumus|N|work-related burnout"
+    ],
+    "e2375": [
+      "vatsakipu|N|stomachache"
+    ],
+    "e1521": [
+      "elämä|N|life"
+    ],
+    "e1522": [
+      "säännöllisesti|AV|regularly"
+    ],
+    "e1523": [
+      "lisätä|V4|to add; to increase"
+    ],
+    "e1524": [
+      "sekä|CO|and; as well as"
+    ],
+    "e1525": [
+      "käyttö|N|use; usage"
+    ],
+    "e1526": [
+      "jotta|CO|so that; in order that"
+    ],
+    "e1527": [
+      "marja|N|berry"
+    ],
+    "e1528": [
+      "työtön|A|unemployed"
+    ],
+    "e1529": [
+      "yllätys|N|surprise"
+    ],
+    "e1530": [
+      "asti|AV|until; as far as",
+      "asti|PO|until; up to"
+    ],
+    "e1532": [
+      "sulla ei oo|PH|you don't have (spoken)"
+    ],
+    "e1533": [
+      "mökkinaapuri|N|cottage neighbor"
+    ],
+    "e1534": [
+      "astia|N|dish; container; vessel"
+    ],
+    "e1535": [
+      "kalastaa|V1|to fish"
+    ],
+    "e1536": [
+      "vihdoin|AV|finally; at last"
+    ],
+    "e1537": [
+      "työjuttu|N|work thing; work matter (spoken)"
+    ],
+    "e1538": [
+      "työasia|N|work matter; work-related thing"
+    ],
+    "e1539": [
+      "haitata|V4|to bother; to matter; to hinder"
+    ],
+    "e1540": [
+      "pääasia|N|main thing; most important thing"
+    ],
+    "e1541": [
+      "kohti|PO|toward; towards"
+    ],
+    "e1542": [
+      "pysähtyä|V1|to stop (moving)"
+    ],
+    "e1543": [
+      "ladata|V4|to charge; to load; to download"
+    ],
+    "e1544": [
+      "toisaalta|AV|on the other hand"
+    ],
+    "e1545": [
+      "mikään|PR|anything; nothing (with negation)"
+    ],
+    "e1546": [
+      "puolivälissä|AV|halfway; midway"
+    ],
+    "e1547": [
+      "lataus|N|charging; loading"
+    ],
+    "e1548": [
+      "me ajettiin|PH|we drove (spoken)"
+    ],
+    "e1549": [
+      "vara-avain|N|spare key"
+    ],
+    "e1550": [
+      "taitaa|V1|to seem; to be likely; to know how to"
+    ],
+    "e1551": [
+      "olla myöhässä|PH|to be late"
+    ],
+    "e1552": [
+      "olla paikalla|PH|to be present; to be at the site"
+    ],
+    "e1553": [
+      "hakata|V4|to chop; to strike; to hammer"
+    ],
+    "e1554": [
+      "vihta|N|birch whisk used in sauna"
+    ],
+    "e1555": [
+      "lämmetä|V6|to warm up; to become warmer"
+    ],
+    "e1556": [
+      "sytyttää|V1|to light; to ignite"
+    ],
+    "e1557": [
+      "syttyä|V1|to catch fire; to ignite"
+    ],
+    "e1558": [
+      "onneksi|AV|fortunately; luckily"
+    ],
+    "e1559": [
+      "kuiva|A|dry"
+    ],
+    "e1560": [
+      "grillata|V4|to grill; to barbecue"
+    ],
+    "e1561": [
+      "välillä|AV|sometimes; in between"
+    ],
+    "e1562": [
+      "vilvoitella|V3|to cool off (after sauna)"
+    ],
+    "e1563": [
+      "viiletä|V6|to cool down; to get colder"
+    ],
+    "e1564": [
+      "tarjeta|V6|to be warm enough; to manage in the cold"
+    ],
+    "e1565": [
+      "valvoa|V1|to stay awake; to watch over"
+    ],
+    "e1566": [
+      "myöhään|AV|late"
+    ],
+    "e1567": [
+      "ainoa|A|only; sole"
+    ],
+    "e1568": [
+      "uskaltaa|V1|to dare"
+    ],
+    "e1569": [
+      "korjata|V4|to repair; to fix; to collect"
+    ],
+    "e1570": [
+      "porukka|N|group; crowd; bunch of people"
+    ],
+    "e1571": [
+      "homma|N|job; task; thing (colloquial)"
+    ],
+    "e1572": [
+      "kaataa|V1|to knock over; to fell (a tree); to pour"
+    ],
+    "e1573": [
+      "noi|PR|those (spoken)"
+    ],
+    "e1574": [
+      "nuo|PR|those"
+    ],
+    "e1575": [
+      "kaatua|V1|to fall over; to topple"
+    ],
+    "e1576": [
+      "polttopuu|N|firewood"
+    ],
+    "e1577": [
+      "pyytää|V1|to ask; to request; to catch (fish)"
+    ],
+    "e1578": [
+      "lämmittää|V1|to heat; to warm up"
+    ],
+    "e1579": [
+      "kotiinlähtö|N|departure for home"
+    ],
+    "e1580": [
+      "rantakallio|N|rocky shore; shoreline rock"
+    ],
+    "e1581": [
+      "pitkään|AV|for a long time"
+    ],
+    "e1582": [
+      "riippumatto|N|hammock"
+    ],
+    "e1583": [
+      "sanaristikko|N|crossword puzzle"
+    ],
+    "e1584": [
+      "grilli|N|grill; barbecue"
+    ],
+    "e1585": [
+      "tikka|N|dart"
+    ],
+    "e1598": [
+      "tuossa|AV|there; in that spot; at that spot"
+    ],
+    "e1599": [
+      "siinä|AV|there; in it; at that point"
+    ],
+    "e1600": [
+      "tääl|PH|here (spoken)"
+    ],
+    "e1601": [
+      "täs|PH|here (spoken)"
+    ],
+    "e1602": [
+      "tuol|PH|over there (spoken)"
+    ],
+    "e1603": [
+      "tossa|PH|there; in that spot (spoken)"
+    ],
+    "e1604": [
+      "siel|PH|there (spoken)"
+    ],
+    "e1605": [
+      "siin|PH|there; in it (spoken)"
+    ],
+    "e2256": [
+      "pensas|N|bush; shrub"
+    ],
+    "e2271": [
+      "automaattisesti|AV|automatically"
+    ],
+    "e2288": [
+      "jatkua|V1|to continue"
+    ],
+    "e2356": [
+      "todennäköisesti|AV|probably; most likely"
+    ],
+    "e2374": [
+      "vartija|N|security guard"
+    ],
+    "e1221": [
+      "lopuksi|AV|finally; in conclusion"
+    ],
+    "e1586": [
+      "lämpömittari|N|thermometer"
+    ],
+    "e1587": [
+      "laudeliina|N|sauna bench towel"
+    ],
+    "e1588": [
+      "pefletti|N|sauna seat cover (spoken)"
+    ],
+    "e1589": [
+      "löyly|N|sauna steam; steam from water thrown on stones"
+    ],
+    "e1590": [
+      "sähkösauna|N|electric sauna"
+    ],
+    "e1591": [
+      "laude|N|sauna bench"
+    ],
+    "e1592": [
+      "lauteet|N|sauna benches"
+    ],
+    "e1593": [
+      "vihtoa|V1|to whisk oneself or another with birch twigs (sauna)"
+    ],
+    "e1594": [
+      "vastoa|V1|to whisk with birch twigs (sauna)"
+    ],
+    "e1595": [
+      "puusauna|N|wood-heated sauna"
+    ],
+    "e1596": [
+      "löylykauha|N|sauna ladle"
+    ],
+    "e1597": [
+      "löylykiulu|N|sauna bucket"
+    ],
+    "e1606": [
+      "luonto|N|nature"
+    ],
+    "e1607": [
+      "tunturi|N|fell; high rounded treeless hill"
+    ],
+    "e1608": [
+      "metsä|N|forest"
+    ],
+    "e1609": [
+      "mäki|N|hill"
+    ],
+    "e1610": [
+      "saari|N|island"
+    ],
+    "e1611": [
+      "suo|N|bog; swamp"
+    ],
+    "e1612": [
+      "vuori|N|mountain"
+    ],
+    "e1613": [
+      "rannikko|N|coast; coastline"
+    ],
+    "e1614": [
+      "meri|N|sea"
+    ],
+    "e1615": [
+      "salmi|N|strait"
+    ],
+    "e1616": [
+      "lahti|N|bay"
+    ],
+    "e1617": [
+      "pelto|N|field (agricultural)"
+    ],
+    "e1618": [
+      "järvi|N|lake"
+    ],
+    "e1619": [
+      "joki|N|river"
+    ],
+    "e1620": [
+      "kallio|N|rock; bedrock; cliff"
+    ],
+    "e1621": [
+      "kivi|N|stone; rock"
+    ],
+    "e1622": [
+      "ranta|N|shore; beach"
+    ],
+    "e1623": [
+      "hauki|N|pike (fish)"
+    ],
+    "e1624": [
+      "ahven|N|perch (fish)"
+    ],
+    "e1625": [
+      "silakka|N|Baltic herring"
+    ],
+    "e1626": [
+      "poro|N|reindeer"
+    ],
+    "e1627": [
+      "karhu|N|bear"
+    ],
+    "e1628": [
+      "hirvi|N|moose"
+    ],
+    "e1629": [
+      "susi|N|wolf"
+    ],
+    "e1630": [
+      "kettu|N|fox"
+    ],
+    "e1631": [
+      "siili|N|hedgehog"
+    ],
+    "e1632": [
+      "jänis|N|hare"
+    ],
+    "e1633": [
+      "orava|N|squirrel"
+    ],
+    "e1634": [
+      "hiiri|N|mouse; computer mouse; mouse (animal)"
+    ],
+    "e1635": [
+      "käärme|N|snake"
+    ],
+    "e1636": [
+      "sammakko|N|frog"
+    ],
+    "e1637": [
+      "etana|N|snail; slug"
+    ],
+    "e1638": [
+      "mato|N|worm"
+    ],
+    "e1639": [
+      "lokki|N|seagull"
+    ],
+    "e1640": [
+      "varis|N|crow"
+    ],
+    "e1641": [
+      "pöllö|N|owl"
+    ],
+    "e1642": [
+      "sorsa|N|duck"
+    ],
+    "e1643": [
+      "hanhi|N|goose"
+    ],
+    "e1644": [
+      "pulu|N|pigeon"
+    ],
+    "e1645": [
+      "haukka|N|hawk"
+    ],
+    "e1646": [
+      "kotka|N|eagle"
+    ],
+    "e1647": [
+      "joutsen|N|swan"
+    ],
+    "e1648": [
+      "hyttynen|N|mosquito"
+    ],
+    "e1649": [
+      "perhonen|N|butterfly"
+    ],
+    "e1650": [
+      "kärpänen|N|fly (insect)"
+    ],
+    "e1651": [
+      "mehiläinen|N|bee"
+    ],
+    "e1652": [
+      "punkki|N|tick"
+    ],
+    "e1653": [
+      "hämähäkki|N|spider"
+    ],
+    "e1654": [
+      "muurahainen|N|ant"
+    ],
+    "e1655": [
+      "puutyö|N|woodwork"
+    ],
+    "e1656": [
+      "mänty|N|pine tree"
+    ],
+    "e1657": [
+      "kuusi|N|spruce tree"
+    ],
+    "e1658": [
+      "kuusi|NU|six"
+    ],
+    "e1659": [
+      "koivu|N|birch"
+    ],
+    "e1660": [
+      "lehmus|N|linden; lime tree"
+    ],
+    "e1661": [
+      "vaahtera|N|maple tree"
+    ],
+    "e1662": [
+      "pihlaja|N|rowan; mountain ash"
+    ],
+    "e1663": [
+      "tammi|N|oak tree"
+    ],
+    "e1664": [
+      "pyöräillä|V3|to cycle; to ride a bicycle"
+    ],
+    "e1665": [
+      "telttailla|V3|to camp"
+    ],
+    "e1666": [
+      "poimia|V1|to pick (berries, flowers); to gather"
+    ],
+    "e1667": [
+      "häiritä|V5|to disturb; to interrupt"
+    ],
+    "e1668": [
+      "ilman|PO|without",
+      "ilman|PE|without"
+    ],
+    "e1670": [
+      "jokainen|PR|each; everyone; every"
+    ],
+    "e1671": [
+      "lupa|N|permission; permit"
+    ],
+    "e1187": [
+      "ei enää|PH|no longer; not anymore"
+    ],
+    "e1672": [
+      "joukkue|N|team"
+    ],
+    "e1673": [
+      "keskittyä|V1|to concentrate; to focus"
+    ],
+    "e1674": [
+      "harrastus|N|hobby"
+    ],
+    "e1675": [
+      "joukkuelaji|N|team sport"
+    ],
+    "e1676": [
+      "ratkaisu|N|solution; answer"
+    ],
+    "e1677": [
+      "perustaa|V1|to establish; to found"
+    ],
+    "e1678": [
+      "jääkiekko-ottelu|N|ice hockey match"
+    ],
+    "e1679": [
+      "opinto|N|study; course (singular)"
+    ],
+    "e1680": [
+      "läheinen|A|close; nearby; intimate"
+    ],
+    "e1681": [
+      "liikuntasali|N|gymnasium; sports hall"
+    ],
+    "e1682": [
+      "aiemmin|AV|earlier; previously"
+    ],
+    "e1683": [
+      "enemmän|AV|more"
+    ],
+    "e1684": [
+      "oikeastaan|AV|actually; in fact"
+    ],
+    "e1685": [
+      "tosin|AV|though; admittedly"
+    ],
+    "e1686": [
+      "rento|A|relaxed; laid-back"
+    ],
+    "e1687": [
+      "aktiivisesti|AV|actively"
+    ],
+    "e1688": [
+      "kaikenlainen|A|all kinds of"
+    ],
+    "e1689": [
+      "nykyään|AV|nowadays; currently"
+    ],
+    "e1690": [
+      "makoilla|V3|to lounge; to lie around"
+    ],
+    "e1691": [
+      "tietokirja|N|nonfiction book; reference book"
+    ],
+    "e1692": [
+      "olla kiinnostunut|PH|to be interested in"
+    ],
+    "e1693": [
+      "kiinnostunut|A|interested"
+    ],
+    "e1694": [
+      "varsinkin|AV|especially; particularly"
+    ],
+    "e1695": [
+      "aluksi|AV|at first; initially; to begin with"
+    ],
+    "e1696": [
+      "viime|AV|last; previous (before a time word)"
+    ],
+    "e1697": [
+      "liikkua|V1|to move; to be physically active"
+    ],
+    "e1698": [
+      "ulkoilla|V3|to spend time outdoors; to exercise outdoors"
+    ],
+    "e1699": [
+      "talviuinti|N|winter swimming"
+    ],
+    "e1700": [
+      "rohkea|A|brave; courageous"
+    ],
+    "e1701": [
+      "itse|AV|oneself; personally"
+    ],
+    "e1702": [
+      "kuoro|N|choir"
+    ],
+    "e1703": [
+      "innokas|A|enthusiastic; eager"
+    ],
+    "e1704": [
+      "penkkiurheilija|N|sports spectator; fan; spectator; sports fan"
+    ],
+    "e1705": [
+      "kannustaa|V1|to encourage; to cheer for"
+    ],
+    "e1706": [
+      "huutaa|V1|to shout; to yell"
+    ],
+    "e1707": [
+      "harrastaa|V1|to do as a hobby; to practice"
+    ],
+    "e1708": [
+      "edes|AV|even"
+    ],
+    "e1709": [
+      "edessä|AV|in front"
+    ],
+    "e2257": [
+      "mitä mieltä|PH|what do you think?; what opinion?"
+    ],
+    "e2258": [
+      "mun mielestä|PH|in my opinion (spoken)"
+    ],
+    "e2265": [
+      "adverbi|N|adverb"
+    ],
+    "e2273": [
+      "ei edes|PH|not even"
+    ],
+    "e2320": [
+      "nousta|V3|to rise; to get up; to board"
+    ],
+    "e2322": [
+      "olla eri mieltä|PH|to disagree; to have a different opinion"
+    ],
+    "e2324": [
+      "olla samaa mieltä|PH|to agree; to have the same opinion"
+    ],
+    "e1181": [
+      "aloittaa|V1|to start; to begin"
+    ],
+    "e1188": [
+      "ei koskaan|AV|never"
+    ],
+    "e1710": [
+      "vapaa-aika|N|free time; leisure time"
+    ],
+    "e1711": [
+      "jalkapallo|N|football; soccer"
+    ],
+    "e1712": [
+      "urheilulaji|N|type of sport; sport"
+    ],
+    "e1713": [
+      "futis|N|football; soccer (spoken)"
+    ],
+    "e1714": [
+      "urheilija|N|athlete; sportsperson"
+    ],
+    "e1715": [
+      "peli|N|game; match"
+    ],
+    "e1716": [
+      "sulkapallo|N|badminton"
+    ],
+    "e1717": [
+      "sulkis|N|badminton (spoken)"
+    ],
+    "e1718": [
+      "kenttä|N|field; area"
+    ],
+    "e1719": [
+      "koripallo|N|basketball"
+    ],
+    "e1720": [
+      "ottelu|N|match; game"
+    ],
+    "e1721": [
+      "koris|N|basketball (spoken)"
+    ],
+    "e1722": [
+      "golf|N|golf"
+    ],
+    "e1723": [
+      "juosta|V3|to run"
+    ],
+    "e1724": [
+      "salibandy|N|floorball"
+    ],
+    "e1725": [
+      "lasketella|V3|to ski downhill"
+    ],
+    "e1726": [
+      "lentopallo|N|volleyball"
+    ],
+    "e1727": [
+      "jääkiekko|N|ice hockey"
+    ],
+    "e1728": [
+      "luistella|V3|to skate"
+    ],
+    "e1729": [
+      "ratsastaa|V1|to ride a horse"
+    ],
+    "e1730": [
+      "uinti|N|swimming"
+    ],
+    "e1731": [
+      "purjehtia|V1|to sail"
+    ],
+    "e1732": [
+      "lautapeli|N|board game"
+    ],
+    "e1733": [
+      "juoksu|N|running"
+    ],
+    "e1734": [
+      "telttailu|N|camping"
+    ],
+    "e1735": [
+      "kävely|N|walking"
+    ],
+    "e1736": [
+      "hiihto|N|cross-country skiing; skiing"
+    ],
+    "e1737": [
+      "laskettelu|N|downhill skiing"
+    ],
+    "e1738": [
+      "luistelu|N|ice skating"
+    ],
+    "e1739": [
+      "jumppa|N|exercise class; workout"
+    ],
+    "e1740": [
+      "jooga|N|yoga"
+    ],
+    "e1741": [
+      "tanssi|N|dance; dancing"
+    ],
+    "e1742": [
+      "leffa|N|movie; film (spoken)"
+    ],
+    "e1743": [
+      "konsertti|N|concert"
+    ],
+    "e1744": [
+      "keikka|N|gig; concert (spoken)"
+    ],
+    "e1745": [
+      "teatteri|N|theater; theatre"
+    ],
+    "e1746": [
+      "kuntosali|N|gym; fitness center"
+    ],
+    "e1747": [
+      "retkeily|N|hiking; trekking"
+    ],
+    "e1748": [
+      "kalastus|N|fishing"
+    ],
+    "e1749": [
+      "lentis|N|volleyball (spoken)"
+    ],
+    "e1750": [
+      "lätkä|N|ice hockey (spoken)"
+    ],
+    "e1751": [
+      "pesis|N|Finnish baseball (spoken)"
+    ],
+    "e1752": [
+      "keilaus|N|bowling"
+    ],
+    "e1753": [
+      "penkkiurheilu|N|watching sports as a spectator"
+    ],
+    "e1754": [
+      "pesäpallo|N|Finnish baseball"
+    ],
+    "e1755": [
+      "purjehdus|N|sailing"
+    ],
+    "e1756": [
+      "pyöräily|N|cycling"
+    ],
+    "e1757": [
+      "ratsastus|N|horse riding"
+    ],
+    "e1758": [
+      "sauvakävely|N|Nordic walking"
+    ],
+    "e1759": [
+      "shakki|N|chess"
+    ],
+    "e1760": [
+      "sähly|N|floorball (informal term)"
+    ],
+    "e1761": [
+      "taidenäyttely|N|art exhibition"
+    ],
+    "e1762": [
+      "tennis|N|tennis"
+    ],
+    "e1763": [
+      "kerran|AV|once; one time"
+    ],
+    "e1764": [
+      "arkisin|AV|on weekdays"
+    ],
+    "e1765": [
+      "viikonloppuisin|AV|on weekends"
+    ],
+    "e1766": [
+      "joskus|AV|sometimes"
+    ],
+    "e1767": [
+      "silloin tällöin|AV|now and then; occasionally"
+    ],
+    "e1768": [
+      "soittaa|V1|to play (an instrument); to call; to ring; to play an instrument; to play (instrument)"
+    ],
+    "e1769": [
+      "piano|N|piano"
+    ],
+    "e1770": [
+      "viulu|N|violin"
+    ],
+    "e1771": [
+      "kitara|N|guitar"
+    ],
+    "e1772": [
+      "basso|N|bass; bass guitar"
+    ],
+    "e1773": [
+      "huilu|N|flute"
+    ],
+    "e1774": [
+      "kuunnella|V3|to listen"
+    ],
+    "e1775": [
+      "laulaa|V1|to sing"
+    ],
+    "e1776": [
+      "piirtää|V1|to draw"
+    ],
+    "e1777": [
+      "maalata|V4|to paint"
+    ],
+    "e1778": [
+      "käsityö|N|handicraft; craft"
+    ],
+    "e1779": [
+      "bändi|N|band; musical group"
+    ],
+    "e1780": [
+      "orkesteri|N|orchestra"
+    ],
+    "e1781": [
+      "trumpetti|N|trumpet"
+    ],
+    "e1782": [
+      "valokuvaus|N|photography"
+    ],
+    "e2278": [
+      "grillaaminen|N|grilling"
+    ],
+    "e2294": [
+      "keilata|V4|to bowl"
+    ],
+    "e2310": [
+      "maalaaminen|N|painting"
+    ],
+    "e2311": [
+      "marjastus|N|berry picking"
+    ],
+    "e2330": [
+      "piirtäminen|N|drawing"
+    ],
+    "e2336": [
+      "sali|N|gym (spoken short form)"
+    ],
+    "e2341": [
+      "sienestys|N|mushroom picking"
+    ],
+    "e2353": [
+      "tietokonepeli|N|computer game"
+    ],
+    "e1203": [
+      "kaupunkilainen|N|city dweller"
+    ],
+    "e1224": [
+      "maaseutu|N|countryside; rural area"
+    ],
+    "e1235": [
+      "paikkakunta|N|locality; town"
+    ],
+    "e1783": [
+      "lähes|AV|almost; nearly"
+    ],
+    "e1784": [
+      "tärkeys|N|importance"
+    ],
+    "e1785": [
+      "melko|AV|rather; quite; fairly"
+    ],
+    "e1786": [
+      "lainkaan|AV|at all"
+    ],
+    "e1787": [
+      "lähde|N|source; spring"
+    ],
+    "e1788": [
+      "Tilastokeskus|PN|Statistics Finland"
+    ],
+    "e1789": [
+      "vapaa-aikatutkimus|N|leisure time study"
+    ],
+    "e1790": [
+      "käyttäminen|N|use; using"
+    ],
+    "e1791": [
+      "kesäisin|AV|in the summers"
+    ],
+    "e1792": [
+      "jotakin|PR|something; anything (partitive lexicalized form)"
+    ],
+    "e1793": [
+      "vaikkapa|AV|for example; say; even"
+    ],
+    "e1794": [
+      "mahdollisuus|N|possibility; opportunity"
+    ],
+    "e1795": [
+      "metsästys|N|hunting"
+    ],
+    "e1796": [
+      "suunnistaa|V1|to navigate; to orientate"
+    ],
+    "e1797": [
+      "veneillä|V3|to go boating"
+    ],
+    "e1798": [
+      "kansalaisopisto|N|adult education center; community college"
+    ],
+    "e1799": [
+      "kesämökki|N|summer cottage"
+    ],
+    "e1800": [
+      "kulttuuri|N|culture"
+    ],
+    "e1801": [
+      "ruoanlaitto|N|cooking; food preparation"
+    ],
+    "e1802": [
+      "soitin|N|musical instrument"
+    ],
+    "e1803": [
+      "suosittu|A|popular"
+    ],
+    "e1804": [
+      "tilasto|N|statistic"
+    ],
+    "e1805": [
+      "työväenopisto|N|adult education institute"
+    ],
+    "e1806": [
+      "ulkoilu|N|outdoor activity; exercising outdoors"
+    ],
+    "e1807": [
+      "urheiluseura|N|sports club"
+    ],
+    "e2266": [
+      "aktiivinen|A|active"
+    ],
+    "e2268": [
+      "arvo|N|value; worth"
+    ],
+    "e2269": [
+      "arvostaa|V1|to appreciate; to value; to respect"
+    ],
+    "e2277": [
+      "festivaali|N|festival"
+    ],
+    "e2290": [
+      "jäsen|N|member"
+    ],
+    "e2299": [
+      "kulttuuritapahtuma|N|cultural event"
+    ],
+    "e2344": [
+      "suosio|N|popularity"
+    ],
+    "e2347": [
+      "suunnistus|N|orienteering; navigation"
+    ],
+    "e2362": [
+      "tutkimus|N|research; study"
+    ],
+    "e2376": [
+      "veneily|N|boating"
+    ],
+    "e2379": [
+      "yhdistys|N|association; organization"
+    ],
+    "e2382": [
+      "yleinen|A|common; general"
+    ],
+    "e1808": [
+      "tuulla|V3|to be windy; to blow (of wind)"
+    ],
+    "e1809": [
+      "tuuri|N|luck"
+    ],
+    "e1810": [
+      "tekijä|N|perpetrator; doer; maker"
+    ],
+    "e1811": [
+      "teltta|N|tent"
+    ],
+    "e1812": [
+      "kahvikuppi|N|coffee cup"
+    ],
+    "e1813": [
+      "murtovaras|N|burglar"
+    ],
+    "e1814": [
+      "rikkoa|V1|to break; to damage"
+    ],
+    "e1815": [
+      "kadota|V4|to disappear; to vanish"
+    ],
+    "e1816": [
+      "ompelukone|N|sewing machine"
+    ],
+    "e1817": [
+      "kulunut|A|worn; used up"
+    ],
+    "e1818": [
+      "talvirengas|N|winter tire"
+    ],
+    "e1819": [
+      "päätös|N|decision"
+    ],
+    "e1820": [
+      "vakuutusyhtiö|N|insurance company"
+    ],
+    "e1821": [
+      "omavastuu|N|deductible; excess; self-payment portion"
+    ],
+    "e1822": [
+      "hyöty|N|benefit; advantage"
+    ],
+    "e1823": [
+      "murto|N|break-in; burglary"
+    ],
+    "e1824": [
+      "selittää|V1|to explain"
+    ],
+    "e1825": [
+      "varkaus|N|theft; burglary"
+    ],
+    "e1826": [
+      "sen sijaan|AV|instead; on the other hand"
+    ],
+    "e1827": [
+      "eräs|A|a certain; some"
+    ],
+    "e1828": [
+      "samaan aikaan|AV|at the same time"
+    ],
+    "e1829": [
+      "voi hitto|PH|oh damn!"
+    ],
+    "e1830": [
+      "hitto|IN|damn! (mild swear word)"
+    ],
+    "e1831": [
+      "jäädä|V2|to remain; to stay; to be left"
+    ],
+    "e1832": [
+      "yhtäkkiä|AV|suddenly"
+    ],
+    "e1833": [
+      "keskeyttää|V1|to interrupt"
+    ],
+    "e1834": [
+      "kannattaa|V1|to be worth it; should"
+    ],
+    "e1835": [
+      "toi|PR|that (spoken)"
+    ],
+    "e1836": [
+      "säilyttää|V1|to store; to keep; to preserve"
+    ],
+    "e1837": [
+      "ihme juttu|PH|how strange!; weird thing"
+    ],
+    "e1838": [
+      "arvokas|A|valuable"
+    ],
+    "e1839": [
+      "ennen|AV|before; previously",
+      "ennen|PO|before",
+      "ennen|PE|before"
+    ],
+    "e1842": [
+      "ennen kuin|CO|before"
+    ],
+    "e1843": [
+      "lukko|N|lock"
+    ],
+    "e1844": [
+      "rikki|AV|broken"
+    ],
+    "e1845": [
+      "kilpapyörä|N|racing bicycle"
+    ],
+    "e1846": [
+      "sotku|N|mess; disorder"
+    ],
+    "e1847": [
+      "ajoitus|N|timing"
+    ],
+    "e1848": [
+      "moni|PR|many; a lot of"
+    ],
+    "e1849": [
+      "kotivakuutus|N|home insurance; household insurance"
+    ],
+    "e1850": [
+      "sikin sokin|AV|higgledy-piggledy; in a mess"
+    ],
+    "e1851": [
+      "joku|PR|someone; somebody"
+    ],
+    "e1852": [
+      "turhaan|AV|in vain; unnecessarily"
+    ],
+    "e1853": [
+      "murtautua|V1|to break in"
+    ],
+    "e1854": [
+      "selvittää|V1|to investigate; to clarify"
+    ],
+    "e1855": [
+      "selvitä|V4|to become clear; to survive; to get through"
+    ],
+    "e1856": [
+      "rikosilmoitus|N|police report; crime report"
+    ],
+    "e1857": [
+      "ilmoittaa|V1|to announce; to report; to notify"
+    ],
+    "e1858": [
+      "yllättää|V1|to surprise; to catch off guard"
+    ],
+    "e1859": [
+      "varas|N|thief"
+    ],
+    "e1860": [
+      "kautta|PO|via; through"
+    ],
+    "e1861": [
+      "voi olla|PH|could be; it may be"
+    ],
+    "e1862": [
+      "harvoin|AV|rarely"
+    ],
+    "e1863": [
+      "varastaa|V1|to steal"
+    ],
+    "e1864": [
+      "hävitä|V4|to disappear; to lose"
+    ],
+    "e1865": [
+      "korvaushakemus|N|claim for compensation; insurance claim"
+    ],
+    "e1866": [
+      "lojua|V1|to lie around; to be lying (somewhere)"
+    ],
+    "e1867": [
+      "huomata|V4|to notice"
+    ],
+    "e2259": [
+      "ettei|CO|that not; so that not"
+    ],
+    "e2261": [
+      "vitsi|N|joke"
+    ],
+    "e2291": [
+      "jäädä kiinni|PH|to get caught; to be stuck"
+    ],
+    "e2302": [
+      "käydä huono tuuri|PH|to be unlucky; to have bad luck"
+    ],
+    "e2314": [
+      "mennä rikki|PH|to break; to become broken"
+    ],
+    "e2328": [
+      "perfekti|N|present perfect tense"
+    ],
+    "e2333": [
+      "rengas|N|tire; ring"
+    ],
+    "e2350": [
+      "tehdä rikosilmoitus|PH|to file a police report"
+    ],
+    "e2366": [
+      "uutinen|N|news item; piece of news"
+    ],
+    "e2367": [
+      "vaatia|V1|to demand; to require"
+    ],
+    "e1868": [
+      "asiointi|N|dealing with services; handling an official matter"
+    ],
+    "e1869": [
+      "sähköinen|A|electronic; electric"
+    ],
+    "e1870": [
+      "viimeistään|AV|at the latest; no later than"
+    ],
+    "e1871": [
+      "mennessä|PO|by; before (deadline)"
+    ],
+    "e1872": [
+      "lomake|N|form (document)"
+    ],
+    "e1873": [
+      "täyttää|V1|to fill (in); to complete; to turn (a certain age); to fill"
+    ],
+    "e1874": [
+      "täyttää lomake|PH|to fill in a form"
+    ],
+    "e1875": [
+      "palauttaa|V1|to return; to hand in; to give back"
+    ],
+    "e1876": [
+      "palauttaa lomake|PH|to return; to submit a form"
+    ],
+    "e1877": [
+      "ilmoitus|N|notice; notification; declaration"
+    ],
+    "e1878": [
+      "veroilmoitus|N|tax return; tax declaration"
+    ],
+    "e1879": [
+      "muuttoilmoitus|N|notification of address change"
+    ],
+    "e1880": [
+      "hakemus|N|application"
+    ],
+    "e1881": [
+      "valitus|N|complaint; appeal"
+    ],
+    "e1882": [
+      "todistus|N|certificate; proof"
+    ],
+    "e1883": [
+      "liite|N|attachment; appendix"
+    ],
+    "e1884": [
+      "allekirjoitus|N|signature"
+    ],
+    "e1885": [
+      "päiväys|N|date; dating of a document"
+    ],
+    "e1886": [
+      "henkilötieto|N|personal detail; personal information"
+    ],
+    "e1887": [
+      "henkilötunnus|N|personal identity code (Finland)"
+    ],
+    "e1888": [
+      "asiakirja|N|document; official record"
+    ],
+    "e1889": [
+      "virasto|N|government office; agency"
+    ],
+    "e1890": [
+      "tunnistautua|V1|to authenticate oneself; to identify oneself"
+    ],
+    "e1891": [
+      "maksu|N|payment; fee"
+    ],
+    "e1892": [
+      "lasku|N|bill; invoice; calculation"
+    ],
+    "e1893": [
+      "eräpäivä|N|due date"
+    ],
+    "e1894": [
+      "maksaa|V1|to cost; to pay"
+    ],
+    "e1895": [
+      "kuitti|N|receipt"
+    ],
+    "e1896": [
+      "vakuutus|N|insurance"
+    ],
+    "e1897": [
+      "korvaus|N|compensation; reimbursement"
+    ],
+    "e1898": [
+      "korvata|V4|to replace; to compensate"
+    ],
+    "e1899": [
+      "pankkitili|N|bank account"
+    ],
+    "e1900": [
+      "pankkitunnus|N|online banking credential"
+    ],
+    "e1901": [
+      "luottokortti|N|credit card"
+    ],
+    "e1902": [
+      "henkilöllisyystodistus|N|identity document; proof of identity"
+    ],
+    "e1903": [
+      "henkkari|N|ID card (spoken)"
+    ],
+    "e1904": [
+      "passi|N|passport"
+    ],
+    "e1905": [
+      "henkilökortti|N|identity card; ID card"
+    ],
+    "e1906": [
+      "ajokortti|N|driver's license"
+    ],
+    "e1907": [
+      "Kela-kortti|N|Finnish Social Insurance Institution card"
+    ],
+    "e1908": [
+      "työlupa|N|work permit"
+    ],
+    "e1909": [
+      "oleskelulupa|N|residence permit"
+    ],
+    "e1910": [
+      "asiakaspalvelu|N|customer service"
+    ],
+    "e1911": [
+      "olla jonossa|PH|to be in a queue"
+    ],
+    "e1912": [
+      "toimipiste|N|branch office; location of service"
+    ],
+    "e1913": [
+      "neuvonta|N|information service; guidance"
+    ],
+    "e1914": [
+      "virkailija|N|clerk; official"
+    ],
+    "e1915": [
+      "palvelupiste|N|service desk; service point"
+    ],
+    "e1916": [
+      "tiski|N|counter; service desk (spoken)"
+    ],
+    "e1917": [
+      "jono|N|queue; line"
+    ],
+    "e1918": [
+      "jonottaa|V1|to queue; to wait in line"
+    ],
+    "e1919": [
+      "vuoro|N|shift; turn"
+    ],
+    "e1920": [
+      "vuoronumero|N|queue number; ticket number"
+    ],
+    "e1921": [
+      "Kela|PN|Social Insurance Institution of Finland"
+    ],
+    "e1922": [
+      "verotoimisto|N|tax office"
+    ],
+    "e1923": [
+      "Kansaneläkelaitos|PN|Social Insurance Institution of Finland"
+    ],
+    "e1924": [
+      "Digi- ja väestötietovirasto|PN|Digital and Population Data Services Agency"
+    ],
+    "e1925": [
+      "TE-toimisto|PN|Employment and Economic Development Office"
+    ],
+    "e1926": [
+      "työkkäri|N|employment office; job center (spoken)"
+    ],
+    "e1927": [
+      "Maahanmuuttovirasto|PN|Finnish Immigration Service"
+    ],
+    "e1928": [
+      "Migri|N|Finnish Immigration Service (informal name)"
+    ],
+    "e1929": [
+      "nettipalvelu|N|online service"
+    ],
+    "e2325": [
+      "opiskelija-alennus|N|student discount"
+    ],
+    "e2260": [
+      "vakuutusmaksu|N|insurance premium"
+    ],
+    "e2286": [
+      "irtaimisto|N|movable property; personal possessions"
+    ],
+    "e2287": [
+      "irtaimistovahinko|N|damage to personal property"
+    ],
+    "e2293": [
+      "kattaa|V1|to cover; to encompass"
+    ],
+    "e2305": [
+      "laaja|A|extensive; broad"
+    ],
+    "e2329": [
+      "perusturva|N|basic coverage; basic protection"
+    ],
+    "e2345": [
+      "suppea|A|limited; narrow"
+    ],
+    "e2361": [
+      "turva|N|security; protection; insurance coverage"
+    ],
+    "e2370": [
+      "vakuuttaa|V1|to insure; to assure"
+    ],
+    "e2371": [
+      "vakuutusmyyjä|N|insurance salesperson"
+    ],
+    "e1274": [
+      "ulkopuolella|AV|outside of"
+    ],
+    "e1287": [
+      "yhteinen|A|common; shared; joint"
+    ],
+    "e1930": [
+      "jutella|V3|to chat; to converse"
+    ],
+    "e1931": [
+      "kauniisti|AV|beautifully"
+    ],
+    "e1932": [
+      "ohjelma|N|program; entertainment"
+    ],
+    "e1933": [
+      "jännittää|V1|to be nervous; to worry; to excite"
+    ],
+    "e1934": [
+      "suostua|V1|to agree; to consent"
+    ],
+    "e1935": [
+      "ensimmäiseksi|AV|first of all; to begin with"
+    ],
+    "e1936": [
+      "päättää|V1|to decide; to finish"
+    ],
+    "e1937": [
+      "viimeinen|A|last; final"
+    ],
+    "e1938": [
+      "kaaso|N|bridesmaid; maid of honor"
+    ],
+    "e1939": [
+      "kutsua|V1|to invite; to call; to name"
+    ],
+    "e1940": [
+      "ruokailu|N|meal; dining"
+    ],
+    "e1941": [
+      "puhe|N|speech; language; speaking"
+    ],
+    "e1942": [
+      "tulkata|V4|to interpret (speech)"
+    ],
+    "e1943": [
+      "valmistella|V3|to prepare; to make preparations"
+    ],
+    "e1944": [
+      "taas|AV|again"
+    ],
+    "e1945": [
+      "lisäksi|AV|in addition; also"
+    ],
+    "e1946": [
+      "häävalssi|N|wedding waltz"
+    ],
+    "e1947": [
+      "etenkin|AV|especially; above all"
+    ],
+    "e1948": [
+      "ilo|N|joy; happiness"
+    ],
+    "e1949": [
+      "yhdistää|V1|to unite; to combine; to connect"
+    ],
+    "e1950": [
+      "täynnä|AV|full (of something)"
+    ],
+    "e1951": [
+      "osallistua|V1|to participate; to take part"
+    ],
+    "e1952": [
+      "pappi|N|priest; pastor"
+    ],
+    "e1953": [
+      "kierros|N|round; tour; circuit"
+    ],
+    "e1954": [
+      "rakkaus|N|love"
+    ],
+    "e1955": [
+      "opas|N|guide"
+    ],
+    "e1956": [
+      "ystävyys|N|friendship"
+    ],
+    "e1957": [
+      "lapsuus|N|childhood"
+    ],
+    "e1958": [
+      "uusivuosi|N|New Year"
+    ],
+    "e1959": [
+      "suunnitella|V3|to plan"
+    ],
+    "e1960": [
+      "ommella|V3|to sew"
+    ],
+    "e1961": [
+      "kauan|AV|for a long time"
+    ],
+    "e1962": [
+      "kesken|AV|in the middle of; unfinished"
+    ],
+    "e1963": [
+      "siirtyä|V1|to move; to transfer; to proceed"
+    ],
+    "e1964": [
+      "ilotulitus|N|fireworks display"
+    ],
+    "e1965": [
+      "koristella|V3|to decorate"
+    ],
+    "e1966": [
+      "onnitella|V3|to congratulate"
+    ],
+    "e1967": [
+      "bestman|N|best man"
+    ],
+    "e1968": [
+      "ikävä|A|unpleasant; sad; regrettable",
+      "ikävä|N|longing; missing someone"
+    ],
+    "e1970": [
+      "kutsu|N|invitation"
+    ],
+    "e1971": [
+      "kova|A|hard; strong; tough"
+    ],
+    "e1972": [
+      "lähettää|V1|to send"
+    ],
+    "e1973": [
+      "erityisesti|AV|especially; particularly"
+    ],
+    "e1974": [
+      "sukulainen|N|relative; family member"
+    ],
+    "e1975": [
+      "tuntua|V1|to feel; to seem"
+    ],
+    "e2285": [
+      "ihmeellinen|A|amazing; wonderful; strange"
+    ],
+    "e2316": [
+      "miellyttävä|A|pleasant; agreeable"
+    ],
+    "e2331": [
+      "pluskvamperfekti|N|past perfect tense"
+    ],
+    "e1976": [
+      "olla ihastunut|PH|to have a crush; to be infatuated"
+    ],
+    "e1977": [
+      "olla kihloissa|PH|to be engaged"
+    ],
+    "e1978": [
+      "olla rakastunut|PH|to be in love"
+    ],
+    "e1979": [
+      "olla naimisissa|PH|to be married"
+    ],
+    "e1980": [
+      "rekisteröity parisuhde|N|registered partnership"
+    ],
+    "e1981": [
+      "liitto|N|union; marriage; alliance"
+    ],
+    "e1982": [
+      "juhlakalenteri|N|holiday calendar"
+    ],
+    "e1983": [
+      "ystävänpäivä|N|Valentine's Day; Friends' Day in Finland"
+    ],
+    "e1984": [
+      "laskiainen|N|Shrovetide; Finnish winter carnival"
+    ],
+    "e1985": [
+      "pääsiäinen|N|Easter"
+    ],
+    "e1986": [
+      "itsenäisyyspäivä|N|Independence Day"
+    ],
+    "e1987": [
+      "jouluaatto|N|Christmas Eve"
+    ],
+    "e1988": [
+      "parisuhde|N|romantic relationship; partnership"
+    ],
+    "e1989": [
+      "poikaystävä|N|boyfriend"
+    ],
+    "e1990": [
+      "avoliitto|N|cohabitation; common-law union"
+    ],
+    "e1991": [
+      "tyttöystävä|N|girlfriend"
+    ],
+    "e1992": [
+      "kumppani|N|partner; companion"
+    ],
+    "e1993": [
+      "miesystävä|N|boyfriend; male partner"
+    ],
+    "e1994": [
+      "naisystävä|N|girlfriend; female partner"
+    ],
+    "e1995": [
+      "avopuoliso|N|cohabiting partner"
+    ],
+    "e1996": [
+      "avomies|N|unmarried male partner; cohabiting man"
+    ],
+    "e1997": [
+      "avovaimo|N|unmarried female partner"
+    ],
+    "e1998": [
+      "ihastua|V1|to develop a crush; to fall for"
+    ],
+    "e1999": [
+      "kihlaus|N|engagement"
+    ],
+    "e2000": [
+      "rakastua|V1|to fall in love"
+    ],
+    "e2001": [
+      "kihloissa|AV|engaged"
+    ],
+    "e2002": [
+      "avioliitto|N|marriage"
+    ],
+    "e2003": [
+      "seurustella|V3|to date; to be in a relationship"
+    ],
+    "e2004": [
+      "ero|N|separation; divorce"
+    ],
+    "e2005": [
+      "erota|V4|to separate; to divorce; to resign"
+    ],
+    "e2006": [
+      "aviomies|N|husband"
+    ],
+    "e2007": [
+      "aviovaimo|N|wife"
+    ],
+    "e2008": [
+      "aviopuoliso|N|spouse"
+    ],
+    "e2009": [
+      "mennä naimisiin|PH|to get married"
+    ],
+    "e2010": [
+      "pikkujoulu|N|pre-Christmas party"
+    ],
+    "e2313": [
+      "mennä kihloihin|PH|to get engaged"
+    ],
+    "e2340": [
+      "seurustelu|N|dating; relationship"
+    ],
+    "e2360": [
+      "tulla toimeen|PH|to get along; to manage"
+    ],
+    "e2011": [
+      "konfirmaatio|N|religious confirmation"
+    ],
+    "e2012": [
+      "viettää|V1|to spend (time); to celebrate"
+    ],
+    "e2013": [
+      "ylioppilaslakki|N|Finnish graduation cap"
+    ],
+    "e2014": [
+      "juhlia|V1|to celebrate; to party"
+    ],
+    "e2015": [
+      "kihlajaiset|N|engagement party"
+    ],
+    "e2016": [
+      "kihlasormus|N|engagement ring"
+    ],
+    "e2017": [
+      "kosia|V1|to propose marriage"
+    ],
+    "e2018": [
+      "vihkisormus|N|wedding ring"
+    ],
+    "e2019": [
+      "maistraatti|N|local register office; magistrate (historical Finnish administrative term)"
+    ],
+    "e2020": [
+      "vihkiä|V1|to marry (a couple); to consecrate"
+    ],
+    "e2021": [
+      "synttärit|N|birthday party; birthday (spoken)"
+    ],
+    "e2022": [
+      "kummitäti|N|godmother"
+    ],
+    "e2023": [
+      "kummisetä|N|godfather"
+    ],
+    "e2024": [
+      "kummi|N|godparent"
+    ],
+    "e2025": [
+      "tupaantuliaiset|N|housewarming party"
+    ],
+    "e2026": [
+      "tuparit|N|housewarming party (spoken)"
+    ],
+    "e2027": [
+      "läksiäiset|N|farewell party; leaving do"
+    ],
+    "e2028": [
+      "häät|N|wedding"
+    ],
+    "e2029": [
+      "ristiäiset|N|christening"
+    ],
+    "e2030": [
+      "nimiäiset|N|naming celebration"
+    ],
+    "e2031": [
+      "hääpari|N|wedding couple; newlyweds"
+    ],
+    "e2032": [
+      "hääpuku|N|wedding dress; wedding gown"
+    ],
+    "e2033": [
+      "hääpäivä|N|wedding day; wedding anniversary"
+    ],
+    "e2034": [
+      "juhla|N|party; celebration"
+    ],
+    "e2035": [
+      "juhlavieras|N|celebration guest; wedding guest"
+    ],
+    "e2036": [
+      "juhlapaikka|N|party venue; celebration location"
+    ],
+    "e2037": [
+      "joulu|N|Christmas"
+    ],
+    "e2038": [
+      "juhannus|N|Midsummer"
+    ],
+    "e2039": [
+      "rippijuhla|N|confirmation celebration"
+    ],
+    "e2040": [
+      "ylioppilasjuhla|N|graduation party after upper secondary school"
+    ],
+    "e1179": [
+      "aivan|AV|quite; absolutely; completely; exactly"
+    ],
+    "e1196": [
+      "jep|IN|yep (spoken)"
+    ],
+    "e1198": [
+      "jopa|AV|even"
+    ],
+    "e1211": [
+      "kovasti|AV|a lot; very much; hard"
+    ],
+    "e1218": [
+      "laulu|N|song; singing"
+    ],
+    "e1231": [
+      "naurattaa|V1|to make someone laugh"
+    ],
+    "e1246": [
+      "pyytää anteeksi|PH|to apologize"
+    ],
+    "e1269": [
+      "tunnelma|N|atmosphere; mood"
+    ],
+    "e2262": [
+      "vitsillä|AV|as a joke; jokingly"
+    ],
+    "e2272": [
+      "biisi|N|song; track (spoken)"
+    ],
+    "e2282": [
+      "hiljentyä|V1|to become quiet; to fall silent"
+    ],
+    "e2284": [
+      "hävetä|V4|to feel embarrassed; to be ashamed"
+    ],
+    "e2312": [
+      "meininki|N|vibe; atmosphere; goings-on (spoken)"
+    ],
+    "e2315": [
+      "mieletön|A|incredible; insane; amazing"
+    ],
+    "e2318": [
+      "ne pyytää|PH|they ask (spoken)"
+    ],
+    "e2323": [
+      "olla pahoillaan|PH|to be sorry"
+    ],
+    "e2327": [
+      "paholainen|N|devil"
+    ],
+    "e2335": [
+      "ruveta|V4|to begin; to start"
+    ],
+    "e2348": [
+      "tajuta|V4|to understand; to realize (spoken)"
+    ],
+    "e2368": [
+      "vahingossa|AV|accidentally; by accident"
+    ],
+    "e2377": [
+      "vieläkin|AV|still; even now"
+    ],
+    "e1199": [
+      "jäätelöannos|N|ice cream portion"
+    ],
+    "e1202": [
+      "kaupunkikierros|N|city tour"
+    ],
+    "e2041": [
+      "ammatti|N|profession; occupation"
+    ],
+    "e2042": [
+      "yksin|AV|alone"
+    ],
+    "e2043": [
+      "salibandyjoukkue|N|floorball team"
+    ],
+    "e2044": [
+      "mahtava|A|awesome; excellent; magnificent"
+    ],
+    "e2045": [
+      "valmistua|V1|to graduate; to be completed"
+    ],
+    "e2046": [
+      "tos|PH|there (spoken)"
+    ],
+    "e2047": [
+      "olla pakko|PH|to have to; to be necessary"
+    ],
+    "e2048": [
+      "olla vuorossa|PH|to be one's turn; to be on duty"
+    ],
+    "e2049": [
+      "ehdottomasti|AV|absolutely; definitely"
+    ],
+    "e2050": [
+      "haastattelu|N|interview"
+    ],
+    "e2051": [
+      "minne|Q|where to"
+    ],
+    "e2052": [
+      "pelimatka|N|away-game trip; game trip"
+    ],
+    "e2053": [
+      "perus|A|basic; fundamental"
+    ],
+    "e2054": [
+      "autokorjaamo|N|auto repair shop; garage"
+    ],
+    "e2055": [
+      "pian|AV|soon"
+    ],
+    "e2056": [
+      "ilmestyä|V1|to appear; to be published"
+    ],
+    "e2057": [
+      "pyrkiä|V1|to strive; to apply (for study)"
+    ],
+    "e2058": [
+      "uutiset|N|news"
+    ],
+    "e2059": [
+      "tieto|N|information; knowledge; fact"
+    ],
+    "e2060": [
+      "sarja|N|series; sequence"
+    ],
+    "e2061": [
+      "nykyinen|A|current; present"
+    ],
+    "e2062": [
+      "vaihteleva|A|varied; changing"
+    ],
+    "e2063": [
+      "opiskelijavaihto|N|student exchange"
+    ],
+    "e2064": [
+      "viihtyä|V1|to enjoy oneself; to feel comfortable"
+    ],
+    "e2065": [
+      "työskennellä|V3|to work"
+    ],
+    "e2066": [
+      "luotettava|A|reliable; trustworthy"
+    ],
+    "e2067": [
+      "projektipäällikkö|N|project manager"
+    ],
+    "e2068": [
+      "intensiivikurssi|N|intensive course"
+    ],
+    "e2069": [
+      "kielteinen|A|negative; unfavorable"
+    ],
+    "e2070": [
+      "erilainen|A|different; diverse; various; distinct"
+    ],
+    "e2071": [
+      "keksiä|V1|to come up with; to invent; to realize"
+    ],
+    "e2072": [
+      "käyttää|V1|to use"
+    ],
+    "e2073": [
+      "opiskelukaveri|N|fellow student; study buddy"
+    ],
+    "e2074": [
+      "kansainvälinen|A|international"
+    ],
+    "e2075": [
+      "kontakti|N|contact; connection"
+    ],
+    "e2076": [
+      "mahdollisimman paljon|AV|as much as possible"
+    ],
+    "e2077": [
+      "koulutus|N|education; training"
+    ],
+    "e2292": [
+      "kansainvälinen projekti|N|international project"
+    ],
+    "e2352": [
+      "tieto- ja viestintätekniikka|N|information and communication technology"
+    ],
+    "e2354": [
+      "tietotekniikka|N|information technology; computing"
+    ],
+    "e2355": [
+      "tiimi-ilta|N|team evening; team social gathering"
+    ],
+    "e2363": [
+      "työnjohtaja|N|supervisor; foreman"
+    ],
+    "e2369": [
+      "vaihe|N|stage; phase"
+    ],
+    "e2378": [
+      "viestintä|N|communication"
+    ],
+    "e2385": [
+      "yrittäjä|N|entrepreneur; business owner"
+    ],
+    "e2078": [
+      "oppitunti|N|class period; lesson"
+    ],
+    "e2079": [
+      "kurssi|N|course; class"
+    ],
+    "e2080": [
+      "luento|N|lecture"
+    ],
+    "e2081": [
+      "seminaari|N|seminar"
+    ],
+    "e2082": [
+      "lukukausi|N|academic term; semester"
+    ],
+    "e2083": [
+      "lukuvuosi|N|school year; academic year"
+    ],
+    "e2084": [
+      "jakso|N|period; section; episode"
+    ],
+    "e2085": [
+      "periodi|N|period"
+    ],
+    "e2086": [
+      "opinnot|N|studies; coursework"
+    ],
+    "e2087": [
+      "opiskelija|N|student"
+    ],
+    "e2088": [
+      "oppilas|N|pupil; schoolchild; school pupil; student"
+    ],
+    "e2089": [
+      "opiskella|V3|to study"
+    ],
+    "e2090": [
+      "oppia|V1|to learn"
+    ],
+    "e2091": [
+      "opetella|V3|to learn; to practice"
+    ],
+    "e2092": [
+      "harjoitella|V3|to practice; to train"
+    ],
+    "e2093": [
+      "opettaa|V1|to teach"
+    ],
+    "e2094": [
+      "koe|N|test; exam"
+    ],
+    "e2095": [
+      "tentti|N|exam"
+    ],
+    "e2096": [
+      "valintakoe|N|entrance examination"
+    ],
+    "e2097": [
+      "pääsykoe|N|entrance exam"
+    ],
+    "e2098": [
+      "arvosana|N|grade; mark"
+    ],
+    "e2099": [
+      "tutkinto|N|degree; qualification; examination"
+    ],
+    "e2100": [
+      "järjestelmä|N|system"
+    ],
+    "e2129": [
+      "koulutusjärjestelmä|N|education system"
+    ],
+    "e2130": [
+      "ylempi|A|higher; upper"
+    ],
+    "e2131": [
+      "AMK-tutkinto|N|university of applied sciences degree"
+    ],
+    "e2132": [
+      "kandidaatti|N|bachelor's degree holder; candidate"
+    ],
+    "e2133": [
+      "alempi|A|lower"
+    ],
+    "e2134": [
+      "ylioppilas|N|matriculated student; high school graduate"
+    ],
+    "e2135": [
+      "tohtori|N|doctor; doctorate holder"
+    ],
+    "e2136": [
+      "ammattikorkeakoulu|N|university of applied sciences"
+    ],
+    "e2137": [
+      "maisteri|N|master's degree holder"
+    ],
+    "e2138": [
+      "ammattikoulu|N|vocational school"
+    ],
+    "e2139": [
+      "lukio|N|general upper secondary school"
+    ],
+    "e2140": [
+      "peruskoulu|N|comprehensive school"
+    ],
+    "e2141": [
+      "yläkoulu|N|lower secondary school"
+    ],
+    "e2142": [
+      "alakoulu|N|primary school"
+    ],
+    "e2143": [
+      "esikoulu|N|preschool"
+    ],
+    "e2144": [
+      "korkeakoulu|N|higher education institution"
+    ],
+    "e2280": [
+      "harjoittelu|N|practice; training"
+    ],
+    "e2289": [
+      "julkinen|A|public"
+    ],
+    "e2297": [
+      "kotoutuminen|N|integration into society"
+    ],
+    "e2303": [
+      "käydä koulua|PH|to attend school"
+    ],
+    "e2332": [
+      "pätevöitymiskoulutus|N|professional qualification training"
+    ],
+    "e2372": [
+      "varhaiskasvatus|N|early childhood education and care"
+    ],
+    "e2380": [
+      "yhteiskunta|N|society"
+    ],
+    "e2383": [
+      "ylioppilaskirjoitukset|N|matriculation examinations"
+    ],
+    "e1233": [
+      "olla valmis|PH|to be ready; to be willing"
+    ],
+    "e1254": [
+      "seuraavaksi|AV|next"
+    ],
+    "e2101": [
+      "työnhaku|N|job search"
+    ],
+    "e2102": [
+      "luova|A|creative"
+    ],
+    "e2103": [
+      "oma-aloitteinen|A|self-motivated; proactive"
+    ],
+    "e2104": [
+      "pätevä|A|qualified; competent"
+    ],
+    "e2105": [
+      "sosiaalinen|A|sociable; social"
+    ],
+    "e2106": [
+      "täsmällinen|A|punctual; precise"
+    ],
+    "e2107": [
+      "vastuuntuntoinen|A|responsible; conscientious"
+    ],
+    "e2108": [
+      "työpaikka|N|workplace; job"
+    ],
+    "e2109": [
+      "ansioluettelo|N|CV; resume"
+    ],
+    "e2110": [
+      "cv|N|CV; resume"
+    ],
+    "e2111": [
+      "työtehtävä|N|work task; job duty"
+    ],
+    "e2112": [
+      "työhaastattelu|N|job interview"
+    ],
+    "e2113": [
+      "työnhakija|N|job seeker"
+    ],
+    "e2114": [
+      "työkokemus|N|work experience"
+    ],
+    "e2115": [
+      "hakea töitä|PH|to look for work; to apply for jobs"
+    ],
+    "e2116": [
+      "työharjoittelu|N|work placement; internship"
+    ],
+    "e2117": [
+      "työhakemus|N|job application"
+    ],
+    "e2118": [
+      "ahkera|A|hardworking; industrious"
+    ],
+    "e2119": [
+      "ammattitaitoinen|A|professionally skilled; competent"
+    ],
+    "e2120": [
+      "avoin|A|open; honest; receptive"
+    ],
+    "e2121": [
+      "avulias|A|helpful"
+    ],
+    "e2122": [
+      "huolellinen|A|careful; thorough"
+    ],
+    "e2123": [
+      "huumorintajuinen|A|having a sense of humor"
+    ],
+    "e2124": [
+      "järjestelmällinen|A|organized; systematic"
+    ],
+    "e2125": [
+      "kokenut|A|experienced"
+    ],
+    "e2126": [
+      "kunnianhimoinen|A|ambitious"
+    ],
+    "e2127": [
+      "harjoittelija|N|trainee; intern"
+    ],
+    "e2128": [
+      "kärsivällinen|A|patient"
+    ],
+    "e2145": [
+      "työttömyys|N|unemployment"
+    ],
+    "e2146": [
+      "työttömyystuki|N|unemployment benefit; unemployment assistance"
+    ],
+    "e2147": [
+      "työllistymiskoulutus|N|employment-oriented training"
+    ],
+    "e2148": [
+      "työpaikkailmoitus|N|job advertisement"
+    ],
+    "e2149": [
+      "työtodistus|N|employment certificate"
+    ],
+    "e2150": [
+      "pätevyys|N|competence; qualification"
+    ],
+    "e2274": [
+      "ekaks|AV|first; first of all (spoken)"
+    ],
+    "e2279": [
+      "hammashoitaja|N|dental assistant; dental nurse"
+    ],
+    "e2283": [
+      "hoitoala|N|healthcare field"
+    ],
+    "e2295": [
+      "klinikka|N|clinic"
+    ],
+    "e2298": [
+      "kotoutumissuunnitelma|N|integration plan"
+    ],
+    "e2304": [
+      "käännös|N|translation"
+    ],
+    "e2317": [
+      "miettiä|V1|to think about; to consider"
+    ],
+    "e2334": [
+      "riittää|V1|to be sufficient; to be enough; to suffice"
+    ],
+    "e2346": [
+      "suunnilleen|AV|approximately; roughly"
+    ],
+    "e2351": [
+      "terveydenhoito|N|healthcare; health services"
+    ],
+    "e2365": [
+      "tässä vaiheessa|AV|at this stage"
+    ],
+    "e2381": [
+      "yksityinen|A|private"
+    ],
+    "e1182": [
+      "alussa|AV|at the beginning"
+    ],
+    "e2151": [
+      "me haluttais|PH|we would like (spoken)"
+    ],
+    "e2152": [
+      "me saatiin|PH|we got; we received (spoken)"
+    ],
+    "e2153": [
+      "tarviitte|PH|you need (plural, spoken)"
+    ],
+    "e2154": [
+      "huhhuh|IN|phew!; wow!"
+    ],
+    "e2155": [
+      "vertailla|V3|to compare"
+    ],
+    "e2156": [
+      "asia|N|thing; matter; issue"
+    ],
+    "e2157": [
+      "me tarvittais|PH|we would need (spoken)"
+    ],
+    "e2158": [
+      "vertailu|N|comparison"
+    ],
+    "e2159": [
+      "muisti|N|memory"
+    ],
+    "e2160": [
+      "kamera|N|camera"
+    ],
+    "e2161": [
+      "minkä|Q|which; what (genitive question form)"
+    ],
+    "e2162": [
+      "tällä hetkellä|AV|at the moment; currently"
+    ],
+    "e2163": [
+      "harmi|IN|what a pity!; too bad!"
+    ],
+    "e2164": [
+      "jäljellä|AV|remaining; left"
+    ],
+    "e2165": [
+      "laite|N|device; appliance"
+    ],
+    "e2166": [
+      "huolto|N|maintenance; service; repair; servicing"
+    ],
+    "e2167": [
+      "hankala|A|difficult; awkward; troublesome"
+    ],
+    "e2168": [
+      "kodinkoneliike|N|home appliance shop; electronics store"
+    ],
+    "e2169": [
+      "katella|V3|to look around; to browse (spoken)"
+    ],
+    "e2170": [
+      "markkina|N|market"
+    ],
+    "e2171": [
+      "langaton|A|wireless"
+    ],
+    "e2172": [
+      "mahtua|V1|to fit; to have room"
+    ],
+    "e2173": [
+      "olla jäljellä|PH|to be left; to remain"
+    ],
+    "e2174": [
+      "ominaisuus|N|feature; characteristic; property"
+    ],
+    "e2175": [
+      "kodinkone|N|home appliance"
+    ],
+    "e2176": [
+      "markkinat|N|market; marketplace"
+    ],
+    "e2300": [
+      "kuuloke|N|earphone; headphone"
+    ],
+    "e2321": [
+      "näyttelijä|N|actor"
+    ],
+    "e2177": [
+      "olla alennuksessa|PH|to be on sale; to be discounted"
+    ],
+    "e2178": [
+      "olla tarjouksessa|PH|to be on special offer"
+    ],
+    "e2179": [
+      "ALV|N|VAT (abbreviation)"
+    ],
+    "e2180": [
+      "arvonlisävero|N|value-added tax; VAT"
+    ],
+    "e2181": [
+      "takuu|N|warranty; guarantee"
+    ],
+    "e2182": [
+      "takuutodistus|N|warranty certificate"
+    ],
+    "e2183": [
+      "olla voimassa|PH|to be valid; to be in force"
+    ],
+    "e2184": [
+      "vaihto-oikeus|N|right of exchange"
+    ],
+    "e2185": [
+      "palautusoikeus|N|return policy; right to return"
+    ],
+    "e2186": [
+      "laadukas|A|high quality"
+    ],
+    "e2187": [
+      "huonolaatuinen|A|poor quality"
+    ],
+    "e2188": [
+      "ostoksilla|AV|out shopping"
+    ],
+    "e2189": [
+      "ostos|N|purchase; shopping"
+    ],
+    "e2190": [
+      "tuote|N|product; item"
+    ],
+    "e2191": [
+      "hankkia|V1|to acquire; to obtain"
+    ],
+    "e2192": [
+      "ostaa|V1|to buy"
+    ],
+    "e2193": [
+      "lahjakortti|N|gift card"
+    ],
+    "e2194": [
+      "mainos|N|advertisement"
+    ],
+    "e2195": [
+      "mainostaa|V1|to advertise"
+    ],
+    "e2196": [
+      "alennus|N|discount; reduction"
+    ],
+    "e2197": [
+      "ale|N|sale; discount (spoken abbreviation)"
+    ],
+    "e2198": [
+      "tarjous|N|offer; special offer"
+    ],
+    "e2199": [
+      "kauppa|N|shop; store"
+    ],
+    "e2200": [
+      "myymälä|N|retail store; shop"
+    ],
+    "e2201": [
+      "liike|N|store; business; movement"
+    ],
+    "e2202": [
+      "kierrätyskeskus|N|recycling center; second-hand reuse store"
+    ],
+    "e2203": [
+      "kirpputori|N|flea market"
+    ],
+    "e2204": [
+      "osasto|N|department; unit"
+    ],
+    "e2205": [
+      "varasto|N|warehouse; storage; stock"
+    ],
+    "e2206": [
+      "hinta|N|price"
+    ],
+    "e2207": [
+      "laatu|N|quality"
+    ],
+    "e2208": [
+      "käydä ostoksilla|PH|to go shopping"
+    ],
+    "e2209": [
+      "myydä|V2|to sell"
+    ],
+    "e2210": [
+      "kirppari|N|flea market (spoken)"
+    ],
+    "e2211": [
+      "kirppis|N|flea market (spoken)"
+    ],
+    "e2212": [
+      "toimitus|N|delivery; shipment"
+    ],
+    "e2326": [
+      "osto|N|purchase"
+    ],
+    "e1232": [
+      "ohje|N|instruction; advice"
+    ],
+    "e1245": [
+      "putiikki|N|boutique; small shop"
+    ],
+    "e2213": [
+      "lisää|AV|more"
+    ],
+    "e2214": [
+      "nouda myymälästä|PH|collect in store"
+    ],
+    "e2215": [
+      "verkkokauppa|N|online shop; e-commerce"
+    ],
+    "e2216": [
+      "tilata|V4|to order; to subscribe"
+    ],
+    "e2217": [
+      "tilaus|N|order; reservation"
+    ],
+    "e2218": [
+      "ostoskori|N|shopping cart"
+    ],
+    "e2219": [
+      "alennuskoodi|N|discount code"
+    ],
+    "e2220": [
+      "etukoodi|N|promotional code"
+    ],
+    "e2221": [
+      "lähetys|N|shipment; dispatch"
+    ],
+    "e2222": [
+      "seurantakoodi|N|tracking code"
+    ],
+    "e2223": [
+      "toimitusehdot|N|delivery terms; shipping conditions"
+    ],
+    "e2224": [
+      "toimituskulut|N|shipping costs"
+    ],
+    "e2225": [
+      "toimitusmaksu|N|delivery fee; shipping charge"
+    ],
+    "e2226": [
+      "toimitusaika|N|delivery time"
+    ],
+    "e2227": [
+      "lisää ostoskoriin|PH|add to cart"
+    ],
+    "e2228": [
+      "siirry kassalle|PH|proceed to checkout"
+    ],
+    "e2229": [
+      "siirry ostoskoriin|PH|go to cart"
+    ],
+    "e2230": [
+      "jatka ostoksia|PH|continue shopping"
+    ],
+    "e2231": [
+      "palautuslähetys|N|return shipment"
+    ],
+    "e2232": [
+      "verkkokauppaostokset|N|online purchases"
+    ],
+    "e2233": [
+      "maksutapa|N|payment method"
+    ],
+    "e2234": [
+      "kirjautua|V1|to log in"
+    ],
+    "e2235": [
+      "rekisteröityä|V1|to register; to sign up"
+    ],
+    "e2236": [
+      "noutaa|V1|to pick up; to collect"
+    ],
+    "e2237": [
+      "kuulokkeet|N|headphones"
+    ],
+    "e2238": [
+      "tarkasti|AV|carefully; exactly"
+    ],
+    "e2239": [
+      "oikein|AV|correctly; really; very"
+    ],
+    "e2240": [
+      "EU|PN|European Union"
+    ],
+    "e2241": [
+      "seurata|V4|to follow; to track; to monitor"
+    ],
+    "e2242": [
+      "avulla|PO|with the help of; by means of"
+    ],
+    "e2243": [
+      "palauttaminen|N|returning; restoration"
+    ],
+    "e2244": [
+      "palautus|N|return; refund; restoration"
+    ],
+    "e2245": [
+      "palautuslomake|N|return form"
+    ],
+    "e2246": [
+      "alennuskoodikenttä|N|discount code field"
+    ],
+    "e2247": [
+      "arkipäivä|N|weekday; business day"
+    ],
+    "e2248": [
+      "lisätieto|N|additional information"
+    ],
+    "e2249": [
+      "palautusohje|N|return instructions"
+    ],
+    "e2250": [
+      "varmistaa|V1|to make sure; to verify"
+    ],
+    "e2251": [
+      "vastaanottaja|N|recipient"
+    ],
+    "e2252": [
+      "verkkomaksu|N|online payment"
+    ],
+    "e2270": [
+      "automaattinen|A|automatic"
+    ],
+    "e2275": [
+      "Euroopan unioni|N|European Union"
+    ],
+    "e2301": [
+      "käsitellä|V3|to process; to handle; to deal with"
+    ],
+    "e2309": [
+      "liittää|V1|to attach; to add; to connect"
+    ],
+    "e2349": [
+      "tarkka|A|accurate; precise; strict"
+    ],
+    "e2357": [
+      "toimittaa|V1|to deliver; to supply"
+    ]
+  },
+  "deduplicationRevision": 1
 }
