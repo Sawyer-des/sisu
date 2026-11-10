@@ -1,4 +1,7 @@
 import { scrypt } from '@noble/hashes/scrypt.js';
+export const VOCABULARY_OWNER_ID='600b1225-97c5-481e-94bf-377c9096d396';
+export const canEditVocabulary=user=>user?.id===VOCABULARY_OWNER_ID;
+const canonical=value=>JSON.stringify(value,(_key,item)=>item&&typeof item==='object'&&!Array.isArray(item)?Object.fromEntries(Object.entries(item).sort(([a],[b])=>a.localeCompare(b))):item);
 export const PAGES_ORIGIN='https://sawyer-des.github.io';
 const enc=new TextEncoder(),MAX_BODY=2_000_000,SESSION_MS=7*24*60*60*1000;
 const hex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
@@ -39,7 +42,7 @@ async function identity(request,env){
  const token=cookieToken(request,env);if(!/^[a-f0-9]{64}$/.test(token))return null;
  return await env.DB.prepare('SELECT users.id,users.username FROM sessions JOIN users ON users.id=sessions.user_id WHERE sessions.token_hash=? AND sessions.expires_at>?').bind(await digest(token),Date.now()).first();
 }
-async function snapshot(db,user){const row=await db.prepare('SELECT state_json,revision FROM account_state WHERE user_id=?').bind(user.id).first();return {user:{id:user.id,username:user.username},state:row?JSON.parse(row.state_json):emptyState(),revision:row?.revision||0}}
+async function snapshot(db,user){const row=await db.prepare('SELECT state_json,revision FROM account_state WHERE user_id=?').bind(user.id).first();return {user:{id:user.id,username:user.username,canEditVocabulary:canEditVocabulary(user)},state:row?JSON.parse(row.state_json):emptyState(),revision:row?.revision||0}}
 async function signIn(env,user,request){const token=random(32);await env.DB.prepare('DELETE FROM sessions WHERE expires_at<=?').bind(Date.now()).run();await env.DB.prepare('INSERT INTO sessions (token_hash,user_id,expires_at) VALUES (?,?,?)').bind(await digest(token),user.id,Date.now()+SESSION_MS).run();const data=await snapshot(env.DB,user);if(request.headers.get('origin')===PAGES_ORIGIN)data.sessionToken=token;return json(data,200,{'Set-Cookie':sessionCookie(env,token)})}
 function validObject(o){return o&&typeof o==='object'&&!Array.isArray(o)}
 export function cleanState(s){
@@ -72,7 +75,7 @@ async function handleAccountRequest(request,env){
   const user=await identity(request,env);if(!user)throw fail(401,'Please sign in to save your progress.');
   if(method==='POST'&&path==='/api/logout'){const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');await env.DB.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await digest(cookieToken(request,env))).run();return json({ok:true},200,{'Set-Cookie':sessionCookie(env,'',0)})}
   if(method==='PUT'&&path==='/api/state'){
-   const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');const state=cleanState(data.state);if(!Number.isSafeInteger(data.revision)||data.revision<0)throw fail(400,'Invalid save version.');
+   const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');const state=cleanState(data.state);if(!canEditVocabulary(user)){const current=await snapshot(env.DB,user);for(const field of ['overrides','custom','hidden'])if(canonical(state[field])!==canonical(current.state[field]))throw fail(403,'Only Sawyer can change vocabulary.');}if(!Number.isSafeInteger(data.revision)||data.revision<0)throw fail(400,'Invalid save version.');
    const row=await env.DB.prepare('UPDATE account_state SET state_json=?,revision=revision+1 WHERE user_id=? AND revision=? RETURNING revision').bind(JSON.stringify(state),user.id,data.revision).first();
    if(!row)throw fail(409,'Your account changed in another tab or device. Download a backup of this tab, then reload to get the latest progress.');return json({revision:row.revision});
   }

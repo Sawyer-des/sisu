@@ -2,6 +2,9 @@
 
 Finnish–English vocabulary learning with 2,385 entries, 17 chapters, 58 topics and six study modes. Study setup always starts Finnish → English and includes the entire chosen collection, with optional smaller batches. Flashcards offer Still learning, Remembered and Skip; there are no timed reviews. Motion respects device reduced-motion preferences, and appearance can follow the device or use Light/Dark.
 
+## Vocabulary editing permissions
+Only the existing Sawyer account can add, edit, remove or import vocabulary. The API binds this permission to the immutable account ID, not to a browser flag or a typed username. Other users can practise, save progress, star words and restore their own progress backups, but backups cannot change their vocabulary. Existing vocabulary edits were personal to each account; this change does not publish edits globally.
+
 ## User accounts
 Create an account using only a username and password. No email or other profile details are collected. Usernames are case-insensitive, 3–32 characters, using letters, digits, dots, underscores and hyphens. Passwords are 15–128 characters. Keep the password safe: email-based recovery is not available.
 

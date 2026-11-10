@@ -44,3 +44,16 @@ test('GitHub Pages uses isolated bearer sessions and an explicit CORS origin',as
  const blocked=await call('/api/session','GET',undefined,a.sessionToken,'https://other.example');assert.equal(blocked.status,403);assert.equal(blocked.headers.get('access-control-allow-origin'),null);
  assert.equal((await call('/api/logout','POST',{accountId:a.user.id},a.sessionToken)).status,200);assert.deepEqual(await(await call('/api/session','GET',undefined,a.sessionToken)).json(),{user:null});f.sqlite.close();
 });
+
+test('vocabulary writes require the pinned Sawyer account, while everyone can save progress',async()=>{
+ const f=fixture(),password='Synthetic test password 42!';
+ const a=await f.call('/api/register','POST',{username:'Sawyer',password});assert.equal(a.data.user.canEditVocabulary,false);
+ const changed=emptyState();changed.custom=[{id:'test-word',fi:'koe',en:'test'}];
+ assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state:changed,revision:0},a.cookie)).status,403);
+ for(const field of ['hidden','overrides']){const state=emptyState();if(field==='hidden')state.hidden=['word'];else state.overrides.word={id:'word',fi:'koe',en:'test'};assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state,revision:0},a.cookie)).status,403);}
+ const progress=emptyState();progress.progress.word={level:1,seen:1,right:1};assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state:progress,revision:0},a.cookie)).status,200);
+ // Assign the known immutable owner identity only inside this isolated test database.
+ f.sqlite.exec('PRAGMA foreign_keys=OFF');f.sqlite.prepare('UPDATE users SET id=? WHERE id=?').run('600b1225-97c5-481e-94bf-377c9096d396',a.data.user.id);f.sqlite.prepare('UPDATE account_state SET user_id=? WHERE user_id=?').run('600b1225-97c5-481e-94bf-377c9096d396',a.data.user.id);
+ const owner=await f.call('/api/login','POST',{username:'Sawyer',password});assert.equal(owner.data.user.canEditVocabulary,true);
+ assert.equal((await f.call('/api/state','PUT',{accountId:owner.data.user.id,state:changed,revision:1},owner.cookie)).status,200);f.sqlite.close();
+});
