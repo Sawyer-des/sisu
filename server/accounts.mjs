@@ -1,4 +1,5 @@
 import { scrypt } from '@noble/hashes/scrypt.js';
+export const PAGES_ORIGIN='https://sawyer-des.github.io';
 const enc=new TextEncoder(),MAX_BODY=2_000_000,SESSION_MS=7*24*60*60*1000;
 const hex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
 const bytes=s=>Uint8Array.from(s.match(/../g)||[],x=>parseInt(x,16));
@@ -9,7 +10,7 @@ function fail(status,message){return Object.assign(new Error(message),{status})}
 function json(data,status=200,extra={}){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...extra}})}
 function cookieName(env){return env.DEV_MODE?'sisu_dev':'__Host-sisu'}
 function sessionCookie(env,token,maxAge=SESSION_MS/1000){return `${cookieName(env)}=${token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${env.DEV_MODE?'':'; Secure'}`}
-function cookieToken(request,env){return request.headers.get('cookie')?.split(';').map(x=>x.trim()).find(x=>x.startsWith(cookieName(env)+'='))?.slice(cookieName(env).length+1)||''}
+function cookieToken(request,env){const bearer=request.headers.get('authorization');if(bearer?.startsWith('Bearer '))return bearer.slice(7);return request.headers.get('cookie')?.split(';').map(x=>x.trim()).find(x=>x.startsWith(cookieName(env)+'='))?.slice(cookieName(env).length+1)||''}
 function constantEqual(a,b){if(a.length!==b.length)return false;let diff=0;for(let i=0;i<a.length;i++)diff|=a.charCodeAt(i)^b.charCodeAt(i);return diff===0}
 export function passwordHash(password,salt){return hex(scrypt(enc.encode(password),bytes(salt),{N:32768,r:8,p:3,dkLen:32,maxmem:64*1024*1024}))}
 async function body(request){
@@ -39,7 +40,7 @@ async function identity(request,env){
  return await env.DB.prepare('SELECT users.id,users.username FROM sessions JOIN users ON users.id=sessions.user_id WHERE sessions.token_hash=? AND sessions.expires_at>?').bind(await digest(token),Date.now()).first();
 }
 async function snapshot(db,user){const row=await db.prepare('SELECT state_json,revision FROM account_state WHERE user_id=?').bind(user.id).first();return {user:{id:user.id,username:user.username},state:row?JSON.parse(row.state_json):emptyState(),revision:row?.revision||0}}
-async function signIn(env,user){const token=random(32);await env.DB.prepare('DELETE FROM sessions WHERE expires_at<=?').bind(Date.now()).run();await env.DB.prepare('INSERT INTO sessions (token_hash,user_id,expires_at) VALUES (?,?,?)').bind(await digest(token),user.id,Date.now()+SESSION_MS).run();return json(await snapshot(env.DB,user),200,{'Set-Cookie':sessionCookie(env,token)})}
+async function signIn(env,user,request){const token=random(32);await env.DB.prepare('DELETE FROM sessions WHERE expires_at<=?').bind(Date.now()).run();await env.DB.prepare('INSERT INTO sessions (token_hash,user_id,expires_at) VALUES (?,?,?)').bind(await digest(token),user.id,Date.now()+SESSION_MS).run();const data=await snapshot(env.DB,user);if(request.headers.get('origin')===PAGES_ORIGIN)data.sessionToken=token;return json(data,200,{'Set-Cookie':sessionCookie(env,token)})}
 function validObject(o){return o&&typeof o==='object'&&!Array.isArray(o)}
 export function cleanState(s){
  if(!validObject(s)||s.schemaVersion!==1||!validObject(s.progress)||!validObject(s.history)||!validObject(s.overrides)||!Array.isArray(s.stars)||!Array.isArray(s.hidden)||!Array.isArray(s.custom)||!validObject(s.settings))throw fail(400,'Invalid saved progress.');
@@ -50,23 +51,23 @@ export function cleanState(s){
  if(!s.stars.every(x=>typeof x==='string')||!s.hidden.every(x=>typeof x==='string')||!Number.isFinite(s.settings.goal)||s.settings.goal<1||s.settings.goal>500)throw fail(400,'Invalid account settings.');
  return {schemaVersion:1,progress:s.progress,history:s.history,overrides:s.overrides,custom:s.custom,stars:s.stars,hidden:s.hidden,settings:{...s.settings,direction:'fi-en',size:'all'},categoryRevision:Number(s.categoryRevision)||0};
 }
-export async function accountRequest(request,env){
+async function handleAccountRequest(request,env){
  try{
   if(!env.DB)return json({error:'Accounts are not configured on this host.'},503);
   const path=new URL(request.url).pathname,method=request.method;
-  if(method!=='GET'&&request.headers.get('origin')!==new URL(request.url).origin)throw fail(403,'This request must come from Sisu.');
+  if(method!=='GET'&&![new URL(request.url).origin,PAGES_ORIGIN].includes(request.headers.get('origin')))throw fail(403,'This request must come from Sisu.');
   if(method==='GET'&&path==='/api/session'){const user=await identity(request,env);return json(user?await snapshot(env.DB,user):{user:null})}
   if(method==='POST'&&['/api/register','/api/login'].includes(path)){
    const registration=path==='/api/register',c=credentials(await body(request),registration);await throttle(request,env,registration?'register':'login',c.key);
    if(registration){
     const id=crypto.randomUUID(),salt=random(32),hash=passwordHash(c.password,salt);
     try{await env.DB.batch([env.DB.prepare('INSERT INTO users (id,username_key,username,salt,password_hash,created_at) VALUES (?,?,?,?,?,?)').bind(id,c.key,c.username,salt,hash,Date.now()),env.DB.prepare('INSERT INTO account_state (user_id,state_json,revision) VALUES (?,?,0)').bind(id,JSON.stringify(emptyState()))])}catch(error){if(String(error.message).includes('UNIQUE'))throw fail(409,'That username is already taken.');throw error}
-    return await signIn(env,{id,username:c.username});
+    return await signIn(env,{id,username:c.username},request);
    }
    const user=await env.DB.prepare('SELECT id,username,salt,password_hash FROM users WHERE username_key=?').bind(c.key).first();
    const actual=passwordHash(c.password,user?.salt||'00'.repeat(32));
    if(!user||!constantEqual(actual,user.password_hash))throw fail(401,'Incorrect username or password.');
-   return await signIn(env,user);
+   return await signIn(env,user,request);
   }
   const user=await identity(request,env);if(!user)throw fail(401,'Please sign in to save your progress.');
   if(method==='POST'&&path==='/api/logout'){const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');await env.DB.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await digest(cookieToken(request,env))).run();return json({ok:true},200,{'Set-Cookie':sessionCookie(env,'',0)})}
@@ -77,4 +78,16 @@ export async function accountRequest(request,env){
   }
   throw fail(404,'Account endpoint not found.');
  }catch(error){return json({error:error.status?error.message:'Accounts are temporarily unavailable. Please try again.'},error.status||500)}
+}
+
+// Only the published GitHub Pages origin can call the account API from another site.
+export async function accountRequest(request,env){
+ const origin=request.headers.get('origin'),own=new URL(request.url).origin;
+ if(origin&&origin!==own&&origin!==PAGES_ORIGIN)return json({error:'This request must come from Sisu.'},403);
+ if(origin===PAGES_ORIGIN){
+  const headers={'Access-Control-Allow-Origin':PAGES_ORIGIN,'Vary':'Origin'};
+  if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{...headers,'Access-Control-Allow-Methods':'GET, POST, PUT, OPTIONS','Access-Control-Allow-Headers':'Content-Type, Authorization','Access-Control-Max-Age':'600'}});
+  const response=await handleAccountRequest(request,env);const output=new Response(response.body,response);for(const [key,value]of Object.entries(headers))output.headers.set(key,value);return output;
+ }
+ return handleAccountRequest(request,env);
 }

@@ -18,3 +18,6 @@ let portable=html.replace(/<link rel="stylesheet" href="[^"]+">/,()=>'<style>'+s
 for(const name of ['data','app'])portable=portable.replace(new RegExp(`<script src="assets/${name}\\.[^"]+"></script>`),()=>'<script>'+sources[name+'.js'].replace(/<\/script/gi,'<\\/script')+'</script>');
 fs.writeFileSync(path.resolve(root,'Sisu.html'),portable);
 console.log(JSON.stringify({version,total:seed.entries.length,books}));
+
+const docs=path.join(root,'docs');fs.mkdirSync(docs,{recursive:true});fs.writeFileSync(path.join(docs,'index.html'),html);fs.writeFileSync(path.join(docs,'release.json'),fs.readFileSync(path.join(dist,'release.json')));fs.writeFileSync(path.join(docs,'.nojekyll'),'');
+for(const match of html.matchAll(/(?:src|href)="(assets\/[^\"]+)"/g)){const target=path.join(docs,match[1]);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(dist,match[1]),target)}

@@ -30,3 +30,17 @@ test('login throttling and session expiration are enforced',async()=>{
  const a=await f.call('/api/register','POST',{username:'Expiration',password:'Synthetic test password 42!'});assert.equal(a.status,200);
  f.sqlite.prepare('UPDATE sessions SET expires_at=0').run();assert.deepEqual((await f.call('/api/session','GET',undefined,a.cookie)).data,{user:null});f.sqlite.close();
 });
+
+test('GitHub Pages uses isolated bearer sessions and an explicit CORS origin',async()=>{
+ const f=fixture(),origin='https://sawyer-des.github.io',url='http://localhost';
+ const db={DB:adapter(f.sqlite),DEV_MODE:true};
+ const call=async(path,method='GET',body,token,from=origin)=>accountRequest(new Request(url+path,{method,headers:{Origin:from,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},...(body?{body:JSON.stringify(body)}:{})}),db);
+ const preflight=await call('/api/state','OPTIONS');assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),origin);
+ const response=await call('/api/register','POST',{username:'Pages_User',password:'Synthetic test password 42!'});assert.equal(response.status,200);const a=await response.json();assert.match(a.sessionToken,/^[a-f0-9]{64}$/);
+ const state=emptyState();state.progress.sample={level:1,seen:1,right:1};
+ assert.equal((await call('/api/state','PUT',{accountId:a.user.id,state,revision:0},a.sessionToken)).status,200);
+ const login=await call('/api/login','POST',{username:'Pages_User',password:'Synthetic test password 42!'});const otherDevice=await login.json();assert.notEqual(otherDevice.sessionToken,a.sessionToken);assert.equal(otherDevice.state.progress.sample.level,1);
+ assert.equal((await (await call('/api/session','GET',undefined,a.sessionToken)).json()).state.progress.sample.seen,1);
+ const blocked=await call('/api/session','GET',undefined,a.sessionToken,'https://other.example');assert.equal(blocked.status,403);assert.equal(blocked.headers.get('access-control-allow-origin'),null);
+ assert.equal((await call('/api/logout','POST',{accountId:a.user.id},a.sessionToken)).status,200);assert.deepEqual(await(await call('/api/session','GET',undefined,a.sessionToken)).json(),{user:null});f.sqlite.close();
+});

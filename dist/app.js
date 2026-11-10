@@ -266,10 +266,13 @@ function updateAccountUI(){
  const labels={guest:'',saving:'Saving…',saved:'Saved',error:'Save failed',conflict:'Sync conflict'};
  $$('[data-sync]').forEach(e=>{e.textContent=account.user?(labels[account.status]||''):'';e.classList.toggle('sync-error',['error','conflict'].includes(account.status))});
 }
+const ACCOUNT_HOST=typeof location!=='undefined'&&location.origin==='https://sawyer-des.github.io'?'https://sisu-finnish-vocabulary.sawyerperry905.chatgpt.site':'';
+const SESSION_KEY='sisu-account-session';
+let pagesSession='';if(ACCOUNT_HOST)try{pagesSession=localStorage.getItem(SESSION_KEY)||''}catch{}
 async function accountAPI(path,method='GET',body){
- const response=await fetch(path,{method,credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},...(body?{body:JSON.stringify(body)}:{})});
+ const response=await fetch(ACCOUNT_HOST+path,{method,credentials:ACCOUNT_HOST?'omit':'same-origin',cache:'no-store',headers:{...(body?{'Content-Type':'application/json'}:{}),...(ACCOUNT_HOST&&pagesSession?{Authorization:'Bearer '+pagesSession}:{})},...(body?{body:JSON.stringify(body)}:{})});
  let data;try{data=await response.json()}catch{throw Error('Accounts are unavailable on this host. Use the server-backed Sisu site.')}
- if(!response.ok)throw Object.assign(Error(data.error||'The account request failed.'),{status:response.status});return data;
+ if(!response.ok)throw Object.assign(Error(data.error||'The account request failed.'),{status:response.status});if(ACCOUNT_HOST&&data.sessionToken){pagesSession=data.sessionToken;try{localStorage.setItem(SESSION_KEY,pagesSession)}catch{}}if(ACCOUNT_HOST&&(path==='/api/logout'||path==='/api/session'&&!data.user)){pagesSession='';try{localStorage.removeItem(SESSION_KEY)}catch{}}return data;
 }
 function installAccount(data){
  accountEpoch++;state={...freshState(),...(data.state||{})};state.settings={...freshState().settings,...state.settings,direction:'fi-en',size:'all'};

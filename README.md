@@ -5,7 +5,7 @@ Finnish–English vocabulary learning with 2,385 entries, 17 chapters, 58 topics
 ## User accounts
 Create an account using only a username and password. No email or other profile details are collected. Usernames are case-insensitive, 3–32 characters, using letters, digits, dots, underscores and hyphens. Passwords are 15–128 characters. Keep the password safe: email-based recovery is not available.
 
-Guest practice does not record progress, practice counts or learning history. Personal vocabulary, stars and account backups require sign-in. Each account has its own progress and vocabulary in the server database; signing in on another device loads that account. Signing out clears account data from the interface. Passwords and session tokens are never stored in browser localStorage. The only automatically stored browser preference is appearance.
+Guest practice does not record progress, practice counts or learning history. Personal vocabulary, stars and account backups require sign-in. Each account has its own progress and vocabulary in the server database; signing in on another device loads that account. Signing out clears account data from the interface. Passwords and session tokens are never stored in browser localStorage. Appearance is stored on the device. On GitHub Pages, the browser also remembers an opaque login token; progress remains in the shared database. Signing out removes that token.
 
 Passwords are salted and hashed with scrypt (N=32768, r=8, p=3), using @noble/hashes. Sessions use random 256-bit opaque tokens; only their SHA-256 hashes are stored in the database. Production cookies are Secure, HttpOnly, SameSite=Strict and host-only. Authentication is rate limited. Mutating requests require same-origin Origin headers. State writes require both the authenticated account ID and a matching revision, preventing stale tabs or simultaneous devices from silently overwriting another save. If a save conflict occurs, download the unsaved backup, reload and selectively restore what you need.
 
@@ -19,6 +19,11 @@ npm run dev
 ```
 
 Open http://127.0.0.1:8766. The preview uses a local SQLite database in `.local/sisu.sqlite`. It applies the initial schema only when the local database is new. `npm test` verifies authentication, account isolation, save revisions, CSRF protection, expiration and throttling. The local server deliberately uses a development cookie for loopback HTTP; production uses a Secure host-only cookie.
+
+## GitHub Pages setup
+The complete GitHub Pages website is in `docs/`. In repository Settings → Pages, select **Deploy from a branch**, branch **main**, folder **/docs**, then Save. The intended address is https://sawyer-des.github.io/sisu/. The frontend automatically connects to the existing Sisu account backend. No API key or service signup is needed. The backend must remain available to serve shared accounts; the app does not store account data in the GitHub repository.
+
+The GitHub Pages frontend uses per-user bearer sessions because third-party cookies may be blocked. The API accepts browser requests from the exact Pages origin only, and account saves still require that user's session. Both site addresses use the same accounts and progress. `npm run build` refreshes `docs/` from current client sources for future uploads.
 
 ## Deploy
 This is a full-stack Cloudflare Worker with a D1 database, not a GitHub Pages-only website. `npm run build` regenerates the static client and bundles the account API plus assets into `dist/server/index.js`. Bind a D1 database as `DB`, apply the SQL migrations in `drizzle/` before deployment, then deploy that Worker. A Sites deployment uses its existing private project configuration and applies migrations through the Sites workflow. The public GitHub export excludes that private hosting project configuration.
