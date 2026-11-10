@@ -19,3 +19,10 @@ test('the interface and English data use American English',()=>{
  const app=fs.readFileSync(new URL('dist/app.js',root),'utf8'),template=fs.readFileSync(new URL('index.template.html',root),'utf8');assert.match(template,/lang="en-US"/);assert.doesNotMatch(app,/\b(?:practise|practising|colour|favourite|neighbour)\b/i);
  for(const e of seed.entries)assert.doesNotMatch(e.en,/\b(?:grey|trousers|lorry|practise|colour|favourite|neighbour)\b/i);
 });
+
+test('restoring a removed word preserves unrelated hidden words and all progress',()=>{
+ const run=app();run("account.user={id:'owner',username:'Sawyer',canEditVocabulary:true};state.hidden=['e1658','e0021'];state.stars=['e1658'];state.progress['kuusi|NU|six']={level:3,seen:7,right:5};state.history['2026-11-10']={reviews:7,right:5};const beforeRecovery=JSON.stringify({progress:state.progress,history:state.history,stars:state.stars,overrides:state.overrides,custom:state.custom});view='manage'");
+ assert.ok(!run("entries().some(e=>e.id==='e1658')"));assert.ok(run("removedWordsPanel().includes('kuusi')&&removedWordsPanel().includes('six')"));assert.ok(run("restoreRemovedWord('e1658')"));assert.ok(run("entries().some(e=>e.id==='e1658'&&e.chapter==='sm1-1')"));assert.deepEqual(JSON.parse(run('JSON.stringify(state.hidden)')),['e0021']);assert.equal(run('JSON.stringify({progress:state.progress,history:state.history,stars:state.stars,overrides:state.overrides,custom:state.custom})'),run('beforeRecovery'));
+ assert.ok(run("restoreRemovedWord('e0021')"));assert.equal(run('state.hidden.length'),0);
+ run("account.user={id:'learner',username:'Learner'};state.hidden=['e1658']");assert.equal(run("restoreRemovedWord('e1658')"),false);assert.equal(run('state.hidden.length'),1);assert.equal(run('removedWordsPanel()'),'');
+});
