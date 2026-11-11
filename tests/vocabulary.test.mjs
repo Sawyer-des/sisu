@@ -26,3 +26,35 @@ test('restoring a removed word preserves unrelated hidden words and all progress
  assert.ok(run("restoreRemovedWord('e0021')"));assert.equal(run('state.hidden.length'),0);
  run("account.user={id:'learner',username:'Learner'};state.hidden=['e1658']");assert.equal(run("restoreRemovedWord('e1658')"),false);assert.equal(run('state.hidden.length'),1);assert.equal(run('removedWordsPanel()'),'');
 });
+
+test('marking every flashcard Still learning visits the entire fixed deck exactly once',()=>{
+ const run=app();run("account.user={id:'learner',username:'Learner'};const originalDeck=SEED.entries.slice(0,80);startSession('flash',originalDeck);const seenCards=[]");
+ for(let i=0;i<80;i++){assert.equal(run('session.index'),i);run('seenCards.push(session.words[session.index].id);flip();rateFlash(0)');assert.equal(run('session.words.length'),80);}
+ assert.ok(run('session.complete'));assert.equal(run('session.attempts'),80);assert.equal(run('totalToday()'),80);assert.equal(run('new Set(seenCards).size'),80);assert.ok(run('seenCards.every((id,i)=>id===originalDeck[i].id)'));assert.equal(run('originalDeck.length'),80);assert.equal(run('session.misses.length'),80);
+ run("document.querySelector('#retryMissed').onclick()");assert.equal(run('session.words.length'),80);assert.equal(run('session.index'),0);assert.ok(!run('session.browse'));
+});
+test('browse mode flips and moves both ways without modifying any account state',()=>{
+ const run=app();run("account.user={id:'learner',username:'Learner'};account.dirty=false;const beforeBrowse=JSON.stringify(state);startSession('flash',SEED.entries.slice(0,116),'fi-en',SEED.entries,{browse:true})");assert.equal(run('session.direction'),'fi-en');assert.equal(run('session.words.length'),116);
+ run('moveBrowse(-1)');assert.equal(run('session.index'),0);run('flip();rateFlash(1);record(session.words[0],1)');assert.equal(run('session.attempts'),0);
+ for(let i=0;i<115;i++)run('moveBrowse(1)');assert.equal(run('session.index'),115);run('moveBrowse(1)');assert.equal(run('session.index'),115);assert.ok(!run('session.complete'));
+ for(let i=0;i<115;i++)run('moveBrowse(-1)');assert.equal(run('session.index'),0);assert.ok(!run('session.revealed'));assert.equal(run('JSON.stringify(state)'),run('beforeBrowse'));assert.equal(run('account.dirty'),false);assert.equal(run('session.skipped'),0);
+ assert.ok(run("document.querySelector('#app').innerHTML.includes('No progress is saved')"));assert.ok(!run("document.querySelector('#app').innerHTML.includes('id=\"rateAgain\"')"));
+});
+test('rapid clicks and old animation completions do not skip or rate extra cards',()=>{
+ const run=app();run("account.user={id:'learner',username:'Learner'};startSession('flash',SEED.entries.slice(0,5));document.querySelector('.flashcard-shell').animate=()=>({finished:{then(done){window.endMotion=done}}});flip();rateFlash(0);rateFlash(0);skipFlash()");assert.equal(run('session.index'),1);assert.equal(run('session.attempts'),1);assert.equal(run('totalToday()'),1);
+ run("startSession('flash',SEED.entries.slice(5,10));window.endMotion()");assert.equal(run('session.index'),0);assert.equal(run('session.attempts'),0);
+});
+test('Learn and Write use fixed queues and ignore duplicate continuation events',()=>{
+ for(const mode of ['learn','write']){const run=app();run(`account.user={id:'learner',username:'Learner'};startSession('${mode}',SEED.entries.slice(0,6))`);
+ for(let i=0;i<6;i++){run("submitAnswer('definitely incorrect');nextQuestion();nextQuestion()");assert.equal(run('session.words.length'),6);assert.equal(run('session.index'),i+1);}
+ assert.ok(run('session.complete'));assert.equal(run('session.attempts'),6);assert.equal(run('totalToday()'),6);}
+});
+test('guest studying stays untracked; matching cannot count the same pair twice',()=>{
+ const run=app();run("const guestState=JSON.stringify(state);startSession('flash',SEED.entries.slice(0,3));flip();rateFlash(0);flip();rateFlash(1);skipFlash()");assert.equal(run('JSON.stringify(state)'),run('guestState'));
+ run("account.user={id:'learner',username:'Learner'};startSession('match',SEED.entries.slice(0,4));const pair=session.board[0].id;selectMatch(pair,'fi');selectMatch(pair,'en');selectMatch(pair,'fi');selectMatch(pair,'en')");assert.equal(run('session.correct'),1);assert.equal(run('totalToday()'),1);
+});
+
+test('Listen and Test preserve grading and cannot submit twice',()=>{
+ const run=app();run("account.user={id:'learner',username:'Learner'};startSession('listen',SEED.entries.slice(0,2));submitAnswer(session.words[0].fi);nextQuestion();nextQuestion()");assert.equal(run('session.correct'),1);assert.equal(run('session.attempts'),1);assert.equal(run('totalToday()'),1);
+ run("startSession('test',SEED.entries.slice(0,3));session.testAnswers={0:'hi',1:'and',2:'welcome'};const submitTest=document.querySelector('#testForm').onsubmit;submitTest({preventDefault(){}});submitTest({preventDefault(){}})");assert.equal(run('session.correct'),3);assert.equal(run('session.attempts'),3);assert.equal(run('totalToday()'),4);
+});

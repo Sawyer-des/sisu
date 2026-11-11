@@ -3,7 +3,7 @@
 Finnish–English vocabulary learning with 2,358 entries, 17 chapters, 58 topics and six study modes. Study setup always starts Finnish → English and includes the entire chosen collection, with optional smaller batches. Flashcards offer Still learning, Remembered and Skip; there are no timed reviews. Motion respects device reduced-motion preferences, and appearance can follow the device or use Light/Dark.
 
 ## Vocabulary editing permissions
-Only the existing Sawyer account can add, edit, remove or import vocabulary. The API binds this permission to the immutable account ID, not to a browser flag or a typed username. Other users can practise, save progress, star words and restore their own progress backups, but backups cannot change their vocabulary. Existing vocabulary edits were personal to each account; this change does not publish edits globally.
+Only the existing Sawyer account can add, edit, remove or import vocabulary. The API binds this permission to the immutable account ID, not to a browser flag or a typed username. Other users can practice, save progress, star words and restore their own progress backups, but backups cannot change their vocabulary. Existing vocabulary edits were personal to each account; this change does not publish edits globally.
 
 ## User accounts
 Create an account using only a username and password. No email or other profile details are collected. Usernames are case-insensitive, 3–32 characters, using letters, digits, dots, underscores and hyphens. Passwords are 15–128 characters. Keep the password safe: email-based recovery is not available.
@@ -58,3 +58,8 @@ The vocabulary now has one normalized Finnish headword per book/chapter. Twenty-
 Combined entries carry structured senses and a combined grammatical label. Typed English answers accept the original meanings without requiring grammatical labels. Old IDs and progress keys are retained as aliases: old progress is consulted conservatively without adding duplicate review counts, and a new review continues from that progress. Backups retain the original account records. The interface uses en-US and American English spelling/terms.
 
 Sawyer can restore removed original vocabulary individually under Manage & settings → Removed words → Restore word. Restoring a word removes only its hidden ID (including old merged aliases); progress, history, stars and vocabulary edits are retained.
+
+## Flashcard practice and browsing
+Flashcards and Learn use fixed decks: each selected entry appears once, including when every answer is Still learning or incorrect. The session counter stays fixed. Missed cards can be selected for a new practice session after completion; cards are never inserted a few positions ahead.
+
+In the Flashcards setup, select **Browse — no progress saved**. Choose Collection order or Shuffle, then use Previous/Next buttons or left/right arrow keys and flip with Space or a click. The deck includes the entire chosen collection by default. At the last card, Next is disabled and Previous still works; End browsing exits. No recall ratings, practice history or account-state saves occur from browsing. The Practice option retains Still learning, Remembered and Skip. Browse again at the end of a rated session opens genuine browse-only mode; earlier saved ratings remain saved.
