@@ -41,7 +41,7 @@ test('browse mode flips and moves both ways without modifying any account state'
  assert.ok(run("document.querySelector('#app').innerHTML.includes('No progress is saved')"));assert.ok(!run("document.querySelector('#app').innerHTML.includes('id=\"rateAgain\"')"));
 });
 test('rapid clicks and old animation completions do not skip or rate extra cards',()=>{
- const run=app();run("account.user={id:'learner',username:'Learner'};startSession('flash',SEED.entries.slice(0,5));document.querySelector('.flashcard-shell').animate=()=>({finished:{then(done){window.endMotion=done}}});flip();rateFlash(0);rateFlash(0);skipFlash()");assert.equal(run('session.index'),1);assert.equal(run('session.attempts'),1);assert.equal(run('totalToday()'),1);
+ const run=app();run("account.user={id:'learner',username:'Learner'};startSession('flash',SEED.entries.slice(0,5));document.querySelector('.flashcard-shell').animate=()=>({cancel(){},finished:{then(done){window.endMotion=done}}});flip();rateFlash(0);rateFlash(0);skipFlash()");assert.equal(run('session.index'),1);assert.equal(run('session.attempts'),1);assert.equal(run('totalToday()'),1);
  run("startSession('flash',SEED.entries.slice(5,10));window.endMotion()");assert.equal(run('session.index'),0);assert.equal(run('session.attempts'),0);
 });
 test('Learn and Write use fixed queues and ignore duplicate continuation events',()=>{
@@ -57,4 +57,16 @@ test('guest studying stays untracked; matching cannot count the same pair twice'
 test('Listen and Test preserve grading and cannot submit twice',()=>{
  const run=app();run("account.user={id:'learner',username:'Learner'};startSession('listen',SEED.entries.slice(0,2));submitAnswer(session.words[0].fi);nextQuestion();nextQuestion()");assert.equal(run('session.correct'),1);assert.equal(run('session.attempts'),1);assert.equal(run('totalToday()'),1);
  run("startSession('test',SEED.entries.slice(0,3));session.testAnswers={0:'hi',1:'and',2:'welcome'};const submitTest=document.querySelector('#testForm').onsubmit;submitTest({preventDefault(){}});submitTest({preventDefault(){}})");assert.equal(run('session.correct'),3);assert.equal(run('session.attempts'),3);assert.equal(run('totalToday()'),4);
+});
+
+
+test('advancing, feedback, and summaries never request scrolling to the page top',()=>{
+ const run=app();run("window.scrollCalls=0;window.scrollTo=()=>window.scrollCalls++;window.requestAnimationFrame=fn=>fn();document.querySelector('.feedback').scrollIntoView=()=>{throw Error('Unexpected forced feedback scroll')}");
+ for(const mode of ['flash','learn','write','listen']){
+  run(`startSession('${mode}',SEED.entries.slice(0,2));window.scrollCalls=0`);
+  if(mode==='flash')run('flip();rateFlash(0);flip();rateFlash(1)');else run("submitAnswer('incorrect');nextQuestion();submitAnswer('incorrect');nextQuestion()");
+  assert.equal(run('window.scrollCalls'),0,mode);assert.ok(run('session.complete'));
+ }
+ run("startSession('flash',SEED.entries.slice(0,3),'fi-en',SEED.entries,{browse:true});window.scrollCalls=0;moveBrowse(1);moveBrowse(-1)");assert.equal(run('window.scrollCalls'),0);
+ run("startSession('test',SEED.entries.slice(0,2));window.scrollCalls=0;document.querySelector('#testForm').onsubmit({preventDefault(){}})");assert.equal(run('window.scrollCalls'),0);
 });

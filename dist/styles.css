@@ -119,3 +119,5 @@ dialog[open]{animation:dialog-enter .2s ease-out}
 @media(max-width:760px), (max-width:1000px) and (max-height:500px){.flash-face{min-height:190px;padding:20px 8px}}
 
 .browse-banner{text-align:center;font-size:13px;color:var(--muted);margin:16px 0}.browse-navigation{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:12px}.browse-navigation button{min-width:0;min-height:48px}@media(max-width:600px){.browse-navigation{gap:8px}.browse-navigation button{font-size:12px;padding:12px 6px}}
+
+#studyRegion{overflow-anchor:none}.flashcard-shell{overflow-anchor:none}
