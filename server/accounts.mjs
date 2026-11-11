@@ -8,7 +8,7 @@ const hex=b=>Array.from(b,x=>x.toString(16).padStart(2,'0')).join('');
 const bytes=s=>Uint8Array.from(s.match(/../g)||[],x=>parseInt(x,16));
 const random=n=>hex(crypto.getRandomValues(new Uint8Array(n)));
 const digest=async s=>hex(new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode(s))));
-export const emptyState=()=>({schemaVersion:1,progress:{},stars:[],overrides:{},custom:[],hidden:[],history:{},settings:{goal:20,size:'all',direction:'fi-en',strict:true}});
+export const emptyState=()=>({schemaVersion:1,studySessions:[],progress:{},stars:[],overrides:{},custom:[],hidden:[],history:{},settings:{goal:20,size:'all',direction:'fi-en',strict:true}});
 function fail(status,message){return Object.assign(new Error(message),{status})}
 function json(data,status=200,extra={}){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...extra}})}
 function cookieName(env){return env.DEV_MODE?'sisu_dev':'__Host-sisu'}
@@ -52,7 +52,8 @@ export function cleanState(s){
  for(const [d,v] of Object.entries(s.history)){if(!/^\d{4}-\d{2}-\d{2}$/.test(d)||!validObject(v)||!Number.isSafeInteger(v.reviews)||v.reviews<0||!Number.isSafeInteger(v.right)||v.right<0||v.right>v.reviews)throw fail(400,'Invalid practice history.')}
  for(const w of [...s.custom,...Object.values(s.overrides)])if(!validObject(w)||typeof w.id!=='string'||typeof w.fi!=='string'||w.fi.length>1000||typeof w.en!=='string'||w.en.length>4000)throw fail(400,'Invalid personal vocabulary.');
  if(!s.stars.every(x=>typeof x==='string')||!s.hidden.every(x=>typeof x==='string')||!Number.isFinite(s.settings.goal)||s.settings.goal<1||s.settings.goal>500)throw fail(400,'Invalid account settings.');
- return {schemaVersion:1,progress:s.progress,history:s.history,overrides:s.overrides,custom:s.custom,stars:s.stars,hidden:s.hidden,settings:{...s.settings,direction:'fi-en',size:'all'},categoryRevision:Number(s.categoryRevision)||0};
+ const drafts=s.studySessions??[];if(!Array.isArray(drafts)||drafts.length>100||drafts.some(d=>!validObject(d)||typeof d.id!=='string'||d.id.length>100||typeof d.title!=='string'||d.title.length>1000||!['flash','learn','write','listen','match','test'].includes(d.mode)||typeof d.data!=='string'||d.data.length>500000||!Number.isFinite(d.updatedAt)||!Number.isInteger(d.index)||!Number.isInteger(d.total)))throw fail(400,'Invalid saved study sets.');for(const d of drafts){let parsed;try{parsed=JSON.parse(d.data)}catch{throw fail(400,'Invalid saved study set data.')}if(!validObject(parsed)||parsed.mode!==d.mode||!Array.isArray(parsed.words)||!parsed.words.length)throw fail(400,'Invalid saved study set data.');}
+ return {schemaVersion:1,studySessions:drafts,progress:s.progress,history:s.history,overrides:s.overrides,custom:s.custom,stars:s.stars,hidden:s.hidden,settings:{...s.settings,direction:'fi-en',size:'all'},categoryRevision:Number(s.categoryRevision)||0};
 }
 async function handleAccountRequest(request,env){
  try{
@@ -75,7 +76,7 @@ async function handleAccountRequest(request,env){
   const user=await identity(request,env);if(!user)throw fail(401,'Please sign in to save your progress.');
   if(method==='POST'&&path==='/api/logout'){const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');await env.DB.prepare('DELETE FROM sessions WHERE token_hash=?').bind(await digest(cookieToken(request,env))).run();return json({ok:true},200,{'Set-Cookie':sessionCookie(env,'',0)})}
   if(method==='PUT'&&path==='/api/state'){
-   const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');const state=cleanState(data.state);if(!canEditVocabulary(user)){const current=await snapshot(env.DB,user);for(const field of ['overrides','custom','hidden'])if(canonical(state[field])!==canonical(current.state[field]))throw fail(403,'Only Sawyer can change vocabulary.');}if(!Number.isSafeInteger(data.revision)||data.revision<0)throw fail(400,'Invalid save version.');
+   const data=await body(request);if(data.accountId!==user.id)throw fail(401,'The signed-in account changed. Reload this page.');const state=cleanState(data.state);if(!Object.hasOwn(data.state,'studySessions')){const previous=await snapshot(env.DB,user);state.studySessions=previous.state.studySessions||[]}if(!canEditVocabulary(user)){const current=await snapshot(env.DB,user);for(const field of ['overrides','custom','hidden'])if(canonical(state[field])!==canonical(current.state[field]))throw fail(403,'Only Sawyer can change vocabulary.');}if(!Number.isSafeInteger(data.revision)||data.revision<0)throw fail(400,'Invalid save version.');
    const row=await env.DB.prepare('UPDATE account_state SET state_json=?,revision=revision+1 WHERE user_id=? AND revision=? RETURNING revision').bind(JSON.stringify(state),user.id,data.revision).first();
    if(!row)throw fail(409,'Your account changed in another tab or device. Download a backup of this tab, then reload to get the latest progress.');return json({revision:row.revision});
   }

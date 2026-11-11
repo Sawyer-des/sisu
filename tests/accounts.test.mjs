@@ -57,3 +57,14 @@ test('vocabulary writes require the pinned Sawyer account, while everyone can sa
  const owner=await f.call('/api/login','POST',{username:'Sawyer',password});assert.equal(owner.data.user.canEditVocabulary,true);
  assert.equal((await f.call('/api/state','PUT',{accountId:owner.data.user.id,state:changed,revision:1},owner.cookie)).status,200);f.sqlite.close();
 });
+
+
+test('unfinished study sets sync per account, survive older clients, and reject malformed data',async()=>{
+ const f=fixture(),a=await f.call('/api/register','POST',{username:'Resume_A',password:'Synthetic test password 42!'}),b=await f.call('/api/register','POST',{username:'Resume_B',password:'Synthetic test password 42!'});
+ const state=emptyState();state.studySessions=[{id:'draft-1',updatedAt:123,title:'SM1 Chapter 1',mode:'flash',index:0,total:1,data:JSON.stringify({mode:'flash',words:[{$entry:'e0001'}],index:0})}];
+ assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state,revision:0},a.cookie)).status,200);
+ assert.equal((await f.call('/api/session','GET',undefined,a.cookie)).data.state.studySessions[0].id,'draft-1');assert.equal((await f.call('/api/session','GET',undefined,b.cookie)).data.state.studySessions.length,0);
+ const older=emptyState();delete older.studySessions;assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state:older,revision:1},a.cookie)).status,200);assert.equal((await f.call('/api/session','GET',undefined,a.cookie)).data.state.studySessions.length,1);
+ state.studySessions[0].data='not json';assert.equal((await f.call('/api/state','PUT',{accountId:a.data.user.id,state,revision:2},a.cookie)).status,400);f.sqlite.close();
+});
+

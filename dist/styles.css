@@ -152,3 +152,5 @@ dialog{border-radius:23px;padding:30px;box-shadow:0 32px 100px #10201845}dialog 
 
 /* Readability: explanatory notices meet normal-text contrast. */
 :root:not([data-theme="dark"]) .notice{color:#725c2e}
+
+.in-progress{margin:26px 0}.resume-card h3{margin:16px 0 8px;line-height:1.45}.resume-card .row{margin-top:18px}#updateNotice{gap:12px;flex-wrap:wrap;max-width:760px}#updateNotice span{flex:1;min-width:190px}#updateNotice strong,#updateNotice small{display:block}#updateNotice small{margin-top:6px;line-height:1.5;color:var(--muted)}
