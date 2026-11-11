@@ -34478,7 +34478,7 @@
       "sourcePlacement": "located"
     }
   ],
-  "sourceNotes": "Topics follow chapter order and consolidate the books’ vocabulary sections. All 2,385 entries belong to a chapter and topic. The 259 previously unplaced entries were searched against both scanned textbooks using Finnish OCR and relevant pages were inspected. Source information distinguishes located wording, related or inflected book forms, and thematic placement where the supplied wording was not located. Thematic placement is not a claim that the word appears on a specific book page. Original definitions are retained; translations have not been exhaustively checked.",
+  "sourceNotes": "Topics follow chapter order and consolidate the books’ vocabulary sections. All 2,358 entries belong to a chapter and topic after duplicate headwords were consolidated. The 259 previously unplaced entries were searched against both scanned textbooks using Finnish OCR and relevant pages were inspected. Source information distinguishes located wording, related or inflected book forms, and thematic placement where the supplied wording was not located. Thematic placement is not a claim that the word appears on a specific book page. Original definitions are retained; translations have not been exhaustively checked.",
   "categoryRevision": 5,
   "sectionBookMap": {
     "extra-language": {

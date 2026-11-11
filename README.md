@@ -66,3 +66,5 @@ In the Flashcards setup, select **Browse — no progress saved**. Choose Collect
 
 ## Stable study navigation
 Within a study session, the sidebar, header, page content container and study region stay mounted. A keyed DOM update changes only the current study content and retains existing buttons/input nodes where applicable. New flashcard faces reset without rebuilding the page. Advancing cards, answer feedback, matching updates and summaries do not scroll to the page top. Focus uses preventScroll, and the study region preserves its occupied space so shorter questions do not collapse the viewport. Starting a new session or navigating to another section can still reset the page position intentionally.
+
+Appearance and navigation: coordinated light/dark palettes, responsive layouts down to 320px, visible keyboard focus, account-aware home messaging, a home logo link, and account-menu links to progress and settings. Empty search results include recovery actions.

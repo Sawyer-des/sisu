@@ -70,3 +70,19 @@ test('advancing, feedback, and summaries never request scrolling to the page top
  run("startSession('flash',SEED.entries.slice(0,3),'fi-en',SEED.entries,{browse:true});window.scrollCalls=0;moveBrowse(1);moveBrowse(-1)");assert.equal(run('window.scrollCalls'),0);
  run("startSession('test',SEED.entries.slice(0,2));window.scrollCalls=0;document.querySelector('#testForm').onsubmit({preventDefault(){}})");assert.equal(run('window.scrollCalls'),0);
 });
+
+test('account-aware home, navigation, and empty states have clear recovery paths',()=>{
+ const run=app();run('account.ready=false;home()');assert.ok(!run("document.querySelector('#app').innerHTML.includes('guest-invitation')"));
+ run('account.ready=true;home()');assert.ok(run("document.querySelector('#app').innerHTML.includes('guest-invitation')"));
+ run("account.user={id:'learner',username:'Learner'};account.status='saved';home()");
+ assert.ok(!run("document.querySelector('#app').innerHTML.includes('guest-invitation')"));assert.ok(!run("document.querySelector('#app').innerHTML.includes('Guest practice')"));assert.ok(run("document.querySelector('#app').innerHTML.includes('data-home')"));
+ assert.ok(!run("document.querySelector('#app').innerHTML.includes('data-nav=\"manage\"')"));
+ run('openAccount()');assert.ok(run("document.querySelector('#modal').innerHTML.includes('data-account-nav=\"manage\"')"));assert.ok(run("document.querySelector('#modal').innerHTML.includes('data-account-nav=\"progress\"')"));
+ assert.ok(run("emptyVocabulary('No words').includes('data-clear-filters')&&emptyVocabulary('No words').includes('data-nav=\"library\"')"));
+ run("account.user=null;view='manage';guestAccountPage('Settings')");assert.ok(run("document.querySelector('#app').innerHTML.includes('data-appearance-choice=\"system\"')"));
+});
+
+test('initial account loading preserves navigation and ignores stale identity responses',async()=>{
+ const run=app();run("view='library';accountAPI=async()=>({user:{id:'learner',username:'Learner'},state:{},revision:1})");await run('loadAccount()');assert.equal(run('view'),'library');assert.equal(run('account.user.id'),'learner');
+ run("accountAPI=()=>new Promise(resolve=>window.resolveOldSession=resolve);window.oldLoad=loadAccount();installAccount({user:{id:'newer',username:'Newer'},state:{},revision:2});window.resolveOldSession({user:null})");await run('window.oldLoad');assert.equal(run('account.user.id'),'newer');assert.equal(run('account.status'),'saved');
+});
